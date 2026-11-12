@@ -30,7 +30,7 @@ export default function SmoothScroll({ children }) {
 export function scrollToTarget(lenis, target, immediate = false) {
   const el = typeof target === 'string' ? document.getElementById(target) : null
   if (lenis) {
-    lenis.scrollTo(el ?? 0, { immediate, offset: el ? -24 : 0, duration: 1.4 })
+    lenis.scrollTo(el ?? 0, { immediate, offset: el ? -88 : 0, duration: 1.4 })
   } else if (el) {
     el.scrollIntoView({ behavior: immediate ? 'auto' : 'smooth' })
   } else {

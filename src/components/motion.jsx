@@ -1,8 +1,29 @@
-import { useRef } from 'react'
+import { Fragment, useRef } from 'react'
 import { motion, useScroll, useTransform, useInView } from 'framer-motion'
+import { useI18n } from '../i18n/I18nProvider'
 
 // Shared easing — a soft "expo out" like Framer's editorial templates.
 export const EASE = [0.22, 1, 0.36, 1]
+
+const ARABIC = /[؀-ۿݐ-ݿࢠ-ࣿﭐ-﷿ﹰ-﻿]/
+
+/**
+ * Split a line into masked chunks. In RTL, consecutive non-Arabic words
+ * ("Blueism Studio", "DLVRNC.") stay together as one LTR chunk so the bidi
+ * order of brand names is preserved.
+ */
+function chunk(line, rtl) {
+  const words = line.split(' ').filter(Boolean)
+  if (!rtl) return words.map((w) => ({ text: w, ltr: false }))
+  const out = []
+  for (const w of words) {
+    const latin = !ARABIC.test(w)
+    const prev = out[out.length - 1]
+    if (latin && prev?.ltr) prev.text += ` ${w}`
+    else out.push({ text: w, ltr: latin })
+  }
+  return out
+}
 
 /**
  * Masked line/word slide-up reveal.
@@ -11,10 +32,11 @@ export const EASE = [0.22, 1, 0.36, 1]
 export function RevealText({ as = 'div', text, lines, className, delay = 0, stagger = 0.06, once = true, amount = 0.4 }) {
   const ref = useRef(null)
   const inView = useInView(ref, { once, amount })
+  const { isRTL } = useI18n()
   const Tag = motion[as] ?? motion.div
   // Each line is a group of masked words: lines break on desktop (display:block)
   // and reflow naturally on phones (display:inline), with line-based timing kept.
-  const groups = lines ? lines.map((l) => l.split(' ')) : [text.split(' ')]
+  const groups = (lines ?? [text]).map((l) => chunk(l, isRTL))
   const label = lines ? lines.join(' ') : text
   let n = 0
   return (
@@ -24,18 +46,21 @@ export function RevealText({ as = 'div', text, lines, className, delay = 0, stag
           {words.map((w, wi) => {
             const i = n++
             const d = lines ? delay + li * stagger * 1.5 + wi * 0.012 : delay + i * stagger
+            const last = wi === words.length - 1 && (!lines || li === groups.length - 1)
             return (
-              <span key={wi} className="mask-word">
-                <motion.span
-                  className="mask-inner"
-                  initial={{ y: '110%', rotate: 2 }}
-                  animate={inView ? { y: '0%', rotate: 0 } : undefined}
-                  transition={{ duration: 1, ease: EASE, delay: d }}
-                >
-                  {w}
-                </motion.span>
-                {wi < words.length - 1 || (lines && li < groups.length - 1) ? ' ' : ''}
-              </span>
+              <Fragment key={wi}>
+                <span className="mask-word" dir={w.ltr ? 'ltr' : undefined}>
+                  <motion.span
+                    className="mask-inner"
+                    initial={{ y: '110%', rotate: isRTL ? -2 : 2 }}
+                    animate={inView ? { y: '0%', rotate: 0 } : undefined}
+                    transition={{ duration: 1, ease: EASE, delay: d }}
+                  >
+                    {w.text}
+                  </motion.span>
+                </span>
+                {last ? null : ' '}
+              </Fragment>
             )
           })}
         </span>

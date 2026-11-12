@@ -8,11 +8,11 @@ import HeroSlider from '../components/HeroSlider'
 import WorkCard from '../components/WorkCard'
 import { ToggleIcon, Collapse } from '../components/Accordion'
 import { RevealText, FadeUp, Rule, EASE } from '../components/motion'
-import { projects, featured } from '../data/projects'
-import { services } from '../data/site'
+import { useI18n } from '../i18n/I18nProvider'
 
 export default function Home() {
   const [open, setOpen] = useState(0)
+  const { t, lang, projects, featured, services } = useI18n()
 
   return (
     <>
@@ -20,26 +20,21 @@ export default function Home() {
       <Header />
       <main className="page home">
         <section className="intro container">
-          <RevealText
-            as="h1"
-            className="intro-title"
-            lines={['A design studio crafting distinctive', 'identities and purposeful', 'digital experiences.']}
-            delay={0.45}
-          />
+          <RevealText key={`intro-${lang}`} as="h1" className="intro-title" lines={t('home.introLines')} delay={0.45} />
           <FadeUp delay={0.9} className="intro-cta-wrap">
-            <Link to="/contact" className="underline-link intro-cta" data-cursor="LET'S TALK">
-              Start a project
+            <Link to="/contact" className="underline-link intro-cta" data-cursor={t('cursor.letsTalk')}>
+              {t('home.startProject')}
             </Link>
           </FadeUp>
         </section>
 
-        <section className="recent container" aria-label="Recent work">
+        <section className="recent container" aria-label={t('home.recently')}>
           <div className="recent-head">
             <FadeUp as="p" delay={1} className="recent-lede">
-              Blueism turns ideas into a cohesive visual language — designed to scale across every format.
+              {t('home.lede')}
             </FadeUp>
             <FadeUp as="p" delay={1.05} className="recent-label">
-              Recently..
+              {t('home.recently')}
             </FadeUp>
           </div>
           <HeroSlider slides={featured} />
@@ -48,7 +43,7 @@ export default function Home() {
         <Rule className="rule-blue section-rule" />
 
         <section id="work" className="works container">
-          <RevealText as="h2" className="section-label" text="ALL WORKS" />
+          <RevealText key={`works-${lang}`} as="h2" className="section-label" text={t('home.allWorks')} />
           <div className="works-grid">
             {projects.map((p, i) => (
               <WorkCard key={p.slug} project={p} index={i} />
@@ -59,18 +54,18 @@ export default function Home() {
         <Rule className="rule-blue section-rule" />
 
         <section id="services" className="services container">
-          <RevealText as="h2" className="section-label" text="SERVICES" />
+          <RevealText key={`svc-${lang}`} as="h2" className="section-label" text={t('home.services')} />
           <ol className="svc-list">
             {services.map((s, i) => {
               const isOpen = open === i
               return (
-                <FadeUp as="li" key={s.title} className={`svc ${isOpen ? 'is-open' : ''}`} delay={i * 0.05}>
+                <FadeUp as="li" key={i} className={`svc ${isOpen ? 'is-open' : ''}`} delay={i * 0.05}>
                   <button
                     className="svc-head"
                     onClick={() => setOpen(isOpen ? -1 : i)}
                     aria-expanded={isOpen}
                     aria-controls={`svc-${i}`}
-                    data-cursor={isOpen ? 'CLOSE' : 'OPEN'}
+                    data-cursor={isOpen ? t('cursor.close') : t('cursor.open')}
                   >
                     <span className="svc-num">{String(i + 1).padStart(2, '0')}</span>
                     <span className="svc-title">{s.title}</span>

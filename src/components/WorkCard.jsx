@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { EASE } from './motion'
+import { useI18n } from '../i18n/I18nProvider'
 
 /**
  * Project card. On hover the image flips to reveal a blue info panel
@@ -9,6 +10,7 @@ import { EASE } from './motion'
  */
 export default function WorkCard({ project, index }) {
   const [flipped, setFlipped] = useState(false)
+  const { t, isRTL } = useI18n()
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] })
   // Gentle column-offset parallax (odd column drifts a little more) — Orchard-style.
@@ -19,16 +21,16 @@ export default function WorkCard({ project, index }) {
       <div className="card-media" onMouseEnter={() => setFlipped(true)} onMouseLeave={() => setFlipped(false)}>
         <motion.div
           className="card-flip"
-          animate={{ rotateY: flipped ? 180 : 0 }}
+          animate={{ rotateY: flipped ? (isRTL ? -180 : 180) : 0 }}
           transition={{ duration: 0.9, ease: EASE }}
         >
           <div className="card-face card-front">
             <img src={project.cover} alt={project.title} loading="lazy" decoding="async" />
           </div>
-          <div className="card-face card-back">
+          <div className="card-face card-back" style={{ transform: `rotateY(${isRTL ? -180 : 180}deg)` }}>
             <div className="card-back-info">
               <p>{project.blurb}</p>
-              {!project.available && <span className="card-soon">Case study coming soon</span>}
+              {!project.available && <span className="card-soon">{t('card.soon')}</span>}
             </div>
             <div className="card-back-img">
               <img src={project.back ?? project.cover} alt="" loading="lazy" decoding="async" />
@@ -37,7 +39,9 @@ export default function WorkCard({ project, index }) {
         </motion.div>
       </div>
       <div className="card-meta">
-        <span className="card-title">{project.title}</span>
+        <span className="card-title">
+          <bdi>{project.title}</bdi>
+        </span>
         <span className="card-cat">{project.category}</span>
       </div>
     </>
@@ -51,13 +55,20 @@ export default function WorkCard({ project, index }) {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1.1, ease: EASE, delay: (index % 2) * 0.12 }}
       >
-      {project.available ? (
-        <Link to={`/work/${project.slug}`} data-cursor="SHOW MORE" data-cursor-variant="circle" aria-label={`${project.title} — view project`}>
-          {inner}
-        </Link>
-      ) : (
-        <div data-cursor="SOON" data-cursor-variant="circle">{inner}</div>
-      )}
+        {project.available ? (
+          <Link
+            to={`/work/${project.slug}`}
+            data-cursor={t('cursor.showMore')}
+            data-cursor-variant="circle"
+            aria-label={`${project.title} — ${t('card.view')}`}
+          >
+            {inner}
+          </Link>
+        ) : (
+          <div data-cursor={t('cursor.soon')} data-cursor-variant="circle">
+            {inner}
+          </div>
+        )}
       </motion.div>
     </motion.article>
   )

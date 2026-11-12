@@ -3,30 +3,40 @@ import { Logomark } from './Logo'
 import { FadeUp } from './motion'
 import { SITE } from '../data/site'
 import SocialIcon from './SocialIcon'
+import { useI18n } from '../i18n/I18nProvider'
 
 export default function Footer({ muted = false, accent = true }) {
+  const { t } = useI18n()
   return (
     <footer className={`site-footer ${muted ? 'is-muted' : ''}`}>
       <div className="footer-top">
         <FadeUp className="footer-left">
           <Logomark className="footer-mark" />
           <div className="footer-contact">
-            <a href={`mailto:${SITE.email}`} className="footer-big" data-cursor="EMAIL US">
+            {/* dir="ltr" keeps the email and @handle intact inside Arabic pages */}
+            <a href={`mailto:${SITE.email}`} className="footer-big" dir="ltr" data-cursor={t('cursor.emailUs')}>
               {SITE.email}
             </a>
-            <a href="https://www.instagram.com/blueismstudio" target="_blank" rel="noreferrer" className="footer-big" data-cursor="INSTAGRAM">
+            <a
+              href="https://www.instagram.com/blueismstudio"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-big"
+              dir="ltr"
+              data-cursor={t('cursor.instagram')}
+            >
               {SITE.handle}
             </a>
           </div>
         </FadeUp>
         <FadeUp className="footer-right" delay={0.1}>
-          <Link to="/contact" className={`footer-cta ${accent ? 'is-accent' : ''}`} data-cursor="LET'S TALK">
-            Start a project
+          <Link to="/contact" className={`footer-cta ${accent ? 'is-accent' : ''}`} data-cursor={t('cursor.letsTalk')}>
+            {t('footer.startProject')}
           </Link>
           <p>
-            {SITE.location}
+            {t('footer.location')}
             <br />
-            {SITE.reach}
+            {t('footer.reach')}
           </p>
         </FadeUp>
       </div>
@@ -40,7 +50,9 @@ export default function Footer({ muted = false, accent = true }) {
             </li>
           ))}
         </ul>
-        <p>Blueism {new Date().getFullYear()} - All Rights Reserved</p>
+        <p>
+          <bdi>Blueism {new Date().getFullYear()}</bdi> - {t('footer.rights')}
+        </p>
       </div>
     </footer>
   )
