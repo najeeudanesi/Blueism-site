@@ -1,0 +1,5 @@
+# Blueism Studio — https://blueismstudio.com
+User-agent: *
+Allow: /
+
+Sitemap: https://blueismstudio.com/sitemap.xml
