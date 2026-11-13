@@ -74,6 +74,9 @@ export default {
     service: 'Leistung',
     client: 'Kunde',
     year: 'Jahr',
+    scope: 'Umfang',
+    platforms: 'Plattformen',
+    scroll: 'Scrollen',
     palette: ['Farb-', 'palette'],
     appIconAlt: 'App-Icon von DLVRNC.',
   },
@@ -93,6 +96,7 @@ export default {
     contactDesc: 'Sie gründen eine Marke, bauen eine Website oder entwickeln etwas Neues? Erzählen Sie Blueism Studio von Ihrem Projekt.',
   },
   categories: {
+    Website: 'Website',
     Visuals: 'Visuals',
     'Interior Design': 'Innenarchitektur',
     Branding: 'Branding',
@@ -180,6 +184,99 @@ export default {
     },
   ],
   projects: {
+    cubit: {
+        "blurb": "Website, 3D-Regie und Identität für ein Studio, das mit dem Wenigsten das Meiste sagt.",
+        "service": "Webdesign & Entwicklung",
+        "scope": "3D-Regie · Motion · Identität",
+        "platforms": "Web · Mobile",
+        "kicker": "Website & digitale Identität",
+        "eyebrow": "Cubit. — Website, 3D-Regie & Motion",
+        "intro": "Cubit ist ein interdisziplinäres Designstudio, das auf einer Idee beruht: mit dem Wenigsten das Meiste sagen. Unsere Aufgabe war eine Website und Identität, die maßvoll und filmisch wirken – ein Würfel, eine Farbe und Typografie, die in Versalien spricht.",
+        "copy": {
+          "overview": "Überblick",
+          "lead": "Die Identität reduziert das Studio auf ein einziges Objekt – einen Indigo-Würfel – und lässt ihn jede Seite, jedes Druckstück und jeden Bildschirm tragen.",
+          "cols": [
+            "Rund um den Würfel haben wir eine Familie von 3D-Szenen erzeugt: ein einzelner Würfel auf grauer Hohlkehle, ein taumelndes Feld aus Indigo, Weiß und Carbon sowie vier Projektwelten.",
+            "Kondensierte Display-Typografie benennt die vier Säulen – Klarheit, Tiefe, Sinn, Zeitlosigkeit –, während ein ruhiges Raster, abgerundete Flächen und ein Indigo-Footer das Erlebnis vom Desktop bis zum Smartphone schnell und konsistent halten."
+          ],
+          "tags": [
+            "Webdesign",
+            "Entwicklung",
+            "3D-Regie",
+            "Motion",
+            "Identität"
+          ],
+          "brief": "Das Briefing",
+          "challenge": "Herausforderung",
+          "challengeTitle": "Ein vielseitiges Studio – und eine Website, die nicht schreien darf.",
+          "challengeText": "Cubit arbeitet an Marken, Innenräumen, digitalen Erlebnissen und visuellen Identitäten. Die Website musste all das tragen, ohne zum Katalog zu werden – Klarheit statt Masse, eine Haltung statt einer Leistungsliste.",
+          "approach": "Ansatz",
+          "approachTitle": "Ein Objekt, ein Akzent und viel Raum.",
+          "approachText": "Ein einziger Würfel steht für das Studio, die Sprache ist in schweren, kondensierten Versalien gesetzt, und jeder Abschnitt hat Raum zum Atmen. Bewegung ist langsam und bewusst, damit die Arbeit vor dem Effekt gelesen wird.",
+          "process": "Prozess",
+          "processTitle": "So haben wir gearbeitet.",
+          "steps": [
+            {
+              "title": "Zuhören",
+              "lines": [
+                "Vier Säulen",
+                "Das Briefing"
+              ]
+            },
+            {
+              "title": "Regie",
+              "lines": [
+                "3D-Szenen",
+                "Motion-Loops"
+              ]
+            },
+            {
+              "title": "Marke",
+              "lines": [
+                "Identity-Kit",
+                "Print und Produkt"
+              ]
+            },
+            {
+              "title": "Design",
+              "lines": [
+                "Seitensystem",
+                "Mobile Layouts"
+              ]
+            },
+            {
+              "title": "Entwicklung",
+              "lines": [
+                "Ein responsives System",
+                "390 bis 1440 px"
+              ]
+            },
+            {
+              "title": "Launch",
+              "lines": [
+                "cubit.studio",
+                "Web und Mobile"
+              ]
+            }
+          ],
+          "parallel": "Parallel",
+          "live": "Live",
+          "guidelines": "Markenrichtlinien",
+          "guidelinesTitle": "Die Regeln hinter dem Würfel.",
+          "identity": "Identität",
+          "identityTitle": "Vom Bildschirm auf die Straße.",
+          "digital": "Digital",
+          "digitalTitle": "Ein System, jeder Bildschirm.",
+          "caps": {
+            "walkthrough": "cubit.studio — Rundgang durch die Website",
+            "studio": "Das System im Studio – Poster, Objekte und Bildschirme",
+            "process": "Im Studio – Andrucke, Mappen und das erste Indigo-Buch",
+            "guidelines": "Markenrichtlinien – Identität, Logo-Anatomie und Typografie",
+            "identity": "Tasche, Karte, Verpackung und Briefpapier – eine Wortmarke, ein Indigo",
+            "digital": "Tablet, Smartphone und Desktop – dasselbe Raster, dieselbe Schrift, dasselbe Indigo"
+          }
+        }
+      },
     noreving: { blurb: 'Produktionsvisuals für Noreving – Licht, Tempo und Schatten für den Launch eines E-Bikes.' },
     'musical-co-working': {
       blurb: 'Ein Co-Working-Space, gestimmt wie ein Instrument – Nussbaum, Stahl und Klang.',

@@ -74,6 +74,9 @@ export default {
     service: 'Serviço',
     client: 'Cliente',
     year: 'Ano',
+    scope: 'Escopo',
+    platforms: 'Plataformas',
+    scroll: 'Role',
     palette: ['Paleta de', 'cores'],
     appIconAlt: 'Ícone do app DLVRNC.',
   },
@@ -93,6 +96,7 @@ export default {
     contactDesc: 'Vai lançar uma marca, criar um site ou desenvolver algo novo? Conte para a Blueism Studio sobre o seu projeto.',
   },
   categories: {
+    Website: 'Site',
     Visuals: 'Visuais',
     'Interior Design': 'Design de interiores',
     Branding: 'Branding',
@@ -180,6 +184,99 @@ export default {
     },
   ],
   projects: {
+    cubit: {
+        "blurb": "Site, direção 3D e identidade para um estúdio que diz mais com menos.",
+        "service": "Design e desenvolvimento web",
+        "scope": "Direção 3D · Motion · Identidade",
+        "platforms": "Web · Mobile",
+        "kicker": "Site e identidade digital",
+        "eyebrow": "Cubit. — Site, direção 3D e motion",
+        "intro": "A Cubit é um estúdio de design multidisciplinar construído sobre uma ideia: dizer mais com menos. Nosso desafio foi criar um site e uma identidade que parecessem medidos e cinematográficos: um cubo, uma cor e uma tipografia que fala em maiúsculas.",
+        "copy": {
+          "overview": "Visão geral",
+          "lead": "A identidade reduz o estúdio a um único objeto — um cubo índigo — e deixa que ele sustente cada página, cada impresso e cada tela.",
+          "cols": [
+            "Em torno do cubo, geramos uma família de cenas 3D: um cubo sozinho sobre um ciclorama cinza, um campo de cubos índigo, brancos e carvão em movimento, e quatro mundos de projeto.",
+            "A tipografia condensada anuncia os quatro pilares — clareza, profundidade, propósito e atemporalidade —, enquanto um grid sereno, painéis arredondados e um rodapé índigo mantêm a experiência rápida e consistente do desktop ao celular."
+          ],
+          "tags": [
+            "Web design",
+            "Desenvolvimento",
+            "Direção 3D",
+            "Motion",
+            "Identidade"
+          ],
+          "brief": "O briefing",
+          "challenge": "Desafio",
+          "challengeTitle": "Um estúdio versátil, e um site que não pode gritar.",
+          "challengeText": "A Cubit atua em marcas, interiores, experiências digitais e identidades visuais. O site precisava abrigar tudo isso sem virar um catálogo: clareza acima de volume, um ponto de vista acima de uma lista de serviços.",
+          "approach": "Abordagem",
+          "approachTitle": "Um objeto, um destaque e muito espaço.",
+          "approachText": "Deixamos um único cubo representar o estúdio, escrevemos a linguagem em maiúsculas condensadas e pesadas e demos a cada seção espaço para respirar. O movimento é lento e intencional, para que o trabalho seja lido antes do efeito.",
+          "process": "Processo",
+          "processTitle": "Como trabalhamos.",
+          "steps": [
+            {
+              "title": "Ouvir",
+              "lines": [
+                "Quatro pilares",
+                "O briefing"
+              ]
+            },
+            {
+              "title": "Dirigir",
+              "lines": [
+                "Cenas 3D",
+                "Loops de motion"
+              ]
+            },
+            {
+              "title": "Marca",
+              "lines": [
+                "Kit de identidade",
+                "Impressos e produto"
+              ]
+            },
+            {
+              "title": "Design",
+              "lines": [
+                "Sistema de páginas",
+                "Layouts mobile"
+              ]
+            },
+            {
+              "title": "Desenvolvimento",
+              "lines": [
+                "Um sistema responsivo",
+                "De 390 a 1440 px"
+              ]
+            },
+            {
+              "title": "Lançamento",
+              "lines": [
+                "cubit.studio",
+                "Web e mobile"
+              ]
+            }
+          ],
+          "parallel": "Em paralelo",
+          "live": "No ar",
+          "guidelines": "Manual da marca",
+          "guidelinesTitle": "As regras por trás do cubo.",
+          "identity": "Identidade",
+          "identityTitle": "Da tela para a rua.",
+          "digital": "Digital",
+          "digitalTitle": "Um sistema, todas as telas.",
+          "caps": {
+            "walkthrough": "cubit.studio — tour pelo site",
+            "studio": "O sistema no estúdio: pôsteres, objetos e telas",
+            "process": "No estúdio: provas, pastas e o primeiro livro índigo",
+            "guidelines": "Manual da marca: identidade, anatomia do logo e tipografia",
+            "identity": "Ecobag, cartão, embalagem e papelaria: uma marca, um índigo",
+            "digital": "Tablet, celular e desktop: o mesmo grid, tipografia e índigo"
+          }
+        }
+      },
     noreving: { blurb: 'Visuais de produção para a Noreving: luz, velocidade e sombra para o lançamento de uma e-bike.' },
     'musical-co-working': {
       title: 'Coworking Musical',

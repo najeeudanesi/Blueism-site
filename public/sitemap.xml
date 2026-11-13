@@ -3,6 +3,7 @@
   <url><loc>https://blueismstudio.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://blueismstudio.com/about</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://blueismstudio.com/contact</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://blueismstudio.com/work/cubit</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://blueismstudio.com/work/dlvrnc</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://blueismstudio.com/work/nouzha</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://blueismstudio.com/work/musical-co-working</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>

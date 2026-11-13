@@ -3,7 +3,112 @@
 
 const img = (name) => `/images/${name}.webp`
 
-export const projects = [
+const allProjects = [
+  {
+    slug: 'cubit',
+    title: 'Cubit.',
+    category: 'Website',
+    cover: img('cubit-devices'),
+    back: img('cubit-devices'),
+    blurb: 'Website, 3D direction and identity for a studio that says the most with the least.',
+    available: true,
+    service: 'Web Design & Development',
+    scope: '3D Direction · Motion · Identity',
+    platforms: 'Web · Mobile',
+    client: 'Cubit',
+    year: '2026',
+    eyebrow: 'Cubit. — Website, 3D Direction & Motion',
+    kicker: 'Website & Digital Identity',
+    intro:
+      'Cubit is a multidisciplinary design studio built on one idea: say the most with the least. Our challenge was to give it a website and identity that feel measured and cinematic — one cube, one colour, and type that speaks in capitals.',
+    hero: img('cubit-devices'),
+    heroFit: 'tall',
+    // Long-form copy used by the case-study sections below (translated per locale).
+    copy: {
+      overview: 'Overview',
+      lead: 'The identity reduces the studio to a single object — an indigo cube — and lets it carry every page, every print and every screen.',
+      cols: [
+        'Around the cube we generated a family of 3D scenes: a lone cube on a grey cyclorama, a tumbling field of indigo, white and carbon, and four project worlds.',
+        'Condensed display type states the four pillars — clarity, depth, purpose, timelessness — while a calm grid, rounded panels and an indigo footer keep the experience fast and consistent from desktop to phone.',
+      ],
+      tags: ['Web design', 'Development', '3D direction', 'Motion', 'Identity'],
+      brief: 'The brief',
+      challenge: 'Challenge',
+      challengeTitle: 'A studio with range, and a site that must not shout.',
+      challengeText:
+        'Cubit works across brands, interiors, digital experiences and visual identities. The website had to hold all of it without becoming a catalogue — clarity over volume, a point of view over a list of services.',
+      approach: 'Approach',
+      approachTitle: 'One object, one accent, and generous space.',
+      approachText:
+        'We let a single cube stand in for the studio, set the language in heavy condensed capitals, and gave every section room to breathe. Motion is slow and deliberate, so the work reads before the effect does.',
+      process: 'Process',
+      processTitle: 'How we worked.',
+      steps: [
+        { title: 'Listen', lines: ['Four pillars', 'The brief'] },
+        { title: 'Direct', lines: ['3D scenes', 'Motion loops'] },
+        { title: 'Brand', lines: ['Identity kit', 'Print and product'] },
+        { title: 'Design', lines: ['Page system', 'Mobile layouts'] },
+        { title: 'Build', lines: ['One responsive system', '390 to 1440 px'] },
+        { title: 'Launch', lines: ['cubit.studio', 'Web and mobile'] },
+      ],
+      parallel: 'In parallel',
+      live: 'Live',
+      guidelines: 'Brand guidelines',
+      guidelinesTitle: 'The rules behind the cube.',
+      identity: 'Identity',
+      identityTitle: 'Off the screen, into the street.',
+      digital: 'Digital',
+      digitalTitle: 'One system, every screen.',
+      caps: {
+        walkthrough: 'cubit.studio — site walkthrough',
+        studio: 'The system in the studio — posters, objects and screens',
+        process: 'In the studio — proofs, folders and the first indigo book',
+        guidelines: 'Brand guidelines — identity, logo anatomy and typographics',
+        identity: 'Tote, card, packaging and stationery — one wordmark, one indigo',
+        digital: 'Tablet, phone and desktop — the same grid, type and indigo',
+      },
+    },
+    sections: [
+      { type: 'textblock' },
+      { type: 'image', src: img('cubit-studio'), alt: 'Cubit posters on a concrete studio wall, cubes on a stone plinth and the website on two monitors', cap: 'studio', num: '01' },
+      { type: 'brief' },
+      { type: 'heading', label: 'process', title: 'processTitle', n: '03' },
+      { type: 'process' },
+      { type: 'image', src: img('cubit-process'), alt: 'Two designers laughing across a concrete table covered in Cubit prints and indigo rulers', cap: 'process', num: '01' },
+      { type: 'heading', label: 'guidelines', title: 'guidelinesTitle', n: '04' },
+      {
+        type: 'pair',
+        flat: true,
+        items: [
+          { src: img('cubit-guide-identity'), alt: 'Cubit brand guidelines: wordmark, clearspace, colours and logo anatomy' },
+          { src: img('cubit-guide-type'), alt: 'Cubit typographics: the four pillars, typographic scale and grid rules' },
+        ],
+        cap: 'guidelines',
+        num: '02 — 03',
+      },
+      { type: 'heading', label: 'identity', title: 'identityTitle', n: '05' },
+      { type: 'image', src: img('cubit-street'), alt: 'A skater carrying a Cubit tote and a black Cubit card at golden hour', parallax: true },
+      {
+        type: 'pair',
+        flat: true,
+        items: [
+          { src: img('cubit-tote'), alt: 'Cubit tote, black box with an indigo cube seal and an indigo book' },
+          { src: img('cubit-stationery'), alt: 'Cubit stationery: business cards, folder, letterheads and indigo rulers' },
+        ],
+      },
+      { type: 'image', src: img('cubit-card'), alt: 'A black Cubit card, a phone with the Cubit app and a type study on stone', parallax: true, cap: 'identity', num: '02 — 05' },
+      { type: 'heading', label: 'digital', title: 'digitalTitle', n: '06' },
+      { type: 'smallvideo', src: '/media/cubit-walkthrough.mp4', poster: '/media/cubit-walkthrough-poster.jpg', alt: 'The Cubit website scrolling on a desktop monitor', cap: 'walkthrough' },
+      {
+        type: 'duo',
+        items: [
+          { src: img('cubit-app-hand'), alt: 'A hand holding a phone with the Cubit app in a loft studio' },
+          { src: img('cubit-app-phones'), alt: 'Two phones showing Cubit app screens on sandstone' },
+        ],
+      },
+      { type: 'image', src: img('cubit-desk'), alt: 'Cubit page layouts on a desktop display and a tablet', cap: 'digital', num: '06 — 09' },
+    ],
+  },
   {
     slug: 'noreving',
     title: 'Noreving',
@@ -161,14 +266,6 @@ export const projects = [
     ],
   },
   {
-    slug: 'same-hotel',
-    title: 'Project',
-    category: 'Software',
-    cover: img('card-project-software'),
-    blurb: 'Same hotel, different first ten seconds — a booking experience rebuilt.',
-    available: false,
-  },
-  {
     slug: 'villa-013',
     title: 'Villa 013',
     category: 'Interior Design',
@@ -194,6 +291,22 @@ export const projects = [
   },
 ]
 
+
+// Order of the "All Works" grid. DLVRNC leads; Cubit sits mid-grid.
+const ORDER = [
+  'dlvrnc',
+  'noreving',
+  'musical-co-working',
+  'domain-watch',
+  'cubit',
+  'hotel-ground-floor',
+  'nouzha',
+  'villa-013',
+  'standing-orders',
+  'community-app',
+]
+export const projects = ORDER.map((slug) => allProjects.find((p) => p.slug === slug))
+
 export const availableProjects = projects.filter((p) => p.available)
 
 export const getProject = (slug) => availableProjects.find((p) => p.slug === slug)
@@ -206,6 +319,7 @@ export const nextProject = (slug) => {
 // "Recently.." hero slider on the home page
 export const featured = [
   { slug: 'dlvrnc', title: 'Delivrance', category: 'Sportswear', image: img('home-hero-dlvrnc') },
+  { slug: 'cubit', title: 'Cubit.', category: 'Website', image: img('cubit-desk'), pos: 'center 55%' },
   { slug: 'nouzha', title: 'Nouz’ha', category: 'Fragrance', image: img('nz-floral') },
   { slug: 'musical-co-working', title: 'Musical Co-working', category: 'Interior Design', image: img('mc-2') },
   { slug: 'dlvrnc', title: 'Delivrance', category: 'Campaign', image: img('dl-night'), pos: 'center 40%' },

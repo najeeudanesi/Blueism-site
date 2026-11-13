@@ -115,7 +115,7 @@ function Word({ children, progress, range }) {
 /**
  * Image with clip-path reveal + scale-down on enter, optional scroll parallax.
  */
-export function RevealImage({ src, alt, className = '', imgClassName = '', parallax = false, ratio, priority = false, style, delay = 0 }) {
+export function RevealImage({ src, alt, className = '', imgClassName = '', parallax = false, ratio, priority = false, style, delay = 0, video, poster }) {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] })
   const y = useTransform(scrollYProgress, [0, 1], parallax ? ['-8%', '8%'] : ['0%', '0%'])
@@ -129,18 +129,37 @@ export function RevealImage({ src, alt, className = '', imgClassName = '', paral
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 1.3, ease: EASE, delay }}
     >
-      <motion.img
-        src={src}
-        alt={alt}
-        className={imgClassName}
-        loading={priority ? 'eager' : 'lazy'}
-        decoding="async"
-        style={{ y }}
-        initial={{ scale: 1.18 }}
-        whileInView={{ scale: parallax ? 1.12 : 1 }}
-        viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 1.6, ease: EASE, delay }}
-      />
+      {video ? (
+        <motion.video
+          src={video}
+          poster={poster ?? src}
+          aria-label={alt}
+          className={imgClassName}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          style={{ y }}
+          initial={{ scale: 1.18 }}
+          whileInView={{ scale: parallax ? 1.12 : 1 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 1.6, ease: EASE, delay }}
+        />
+      ) : (
+        <motion.img
+          src={src}
+          alt={alt}
+          className={imgClassName}
+          loading={priority ? 'eager' : 'lazy'}
+          decoding="async"
+          style={{ y }}
+          initial={{ scale: 1.18 }}
+          whileInView={{ scale: parallax ? 1.12 : 1 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 1.6, ease: EASE, delay }}
+        />
+      )}
     </motion.figure>
   )
 }

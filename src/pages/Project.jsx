@@ -42,7 +42,7 @@ export default function Project() {
             <RevealText as="h1" className="project-title" text={p.title} delay={0.5} />
             {p.eyebrow && (
               <FadeUp as="p" className="project-kicker" delay={0.7}>
-                {p.service}
+                {p.kicker ?? p.service}
                 <br />
                 <bdi>© {p.year}</bdi>
               </FadeUp>
@@ -61,9 +61,18 @@ export default function Project() {
         </section>
 
         <section className="container">
-          <RevealImage src={p.hero} alt={p.title} className={`project-hero ${p.heroFit === 'tall' ? 'is-tall' : ''}`} priority delay={0.5} />
+          <RevealImage
+            src={p.hero}
+            video={p.heroVideo}
+            alt={p.title}
+            className={`project-hero ${p.heroFit === 'tall' ? 'is-tall' : ''} ${p.heroVideo ? 'is-video' : ''}`}
+            priority
+            delay={0.5}
+          />
+          {p.heroCap && <Caption text={p.copy?.caps?.[p.heroCap]} num={p.heroVideo ? t('project.scroll') : '01'} />}
         </section>
 
+        {p.body && (
         <section className="container project-details">
           <FadeUp as="p" className="project-body">
             {p.body}
@@ -85,10 +94,11 @@ export default function Project() {
             </div>
           </FadeUp>
         </section>
+        )}
 
-        <div className="project-sections">
+        <div className={`project-sections ${p.copy ? 'is-editorial' : ''}`}>
           {p.sections.map((s, i) => (
-            <Section key={i} s={s} />
+            <Section key={i} s={s} p={p} />
           ))}
         </div>
 
@@ -109,13 +119,195 @@ export default function Project() {
   )
 }
 
-function Section({ s }) {
+/** Small caption line under media: description left, figure number right. */
+function Caption({ text, num }) {
+  if (!text && !num) return null
+  return (
+    <FadeUp className="media-cap" amount={0.6}>
+      <span>{text}</span>
+      {num && <span>{num}</span>}
+    </FadeUp>
+  )
+}
+
+/** "(03) Process" label + large heading, as in the studio's case-study format. */
+function SecHead({ n, label, title }) {
+  return (
+    <div className="container sec-head">
+      <FadeUp className="sec-label">
+        <b>({n})</b>
+        {label}
+      </FadeUp>
+      <RevealText as="h2" className="sec-title" text={title} stagger={0.05} />
+    </div>
+  )
+}
+
+const STEP_CLASS = ['', '', 'is-branch', 'is-branch', 'is-dark', 'is-accent']
+
+/** Process flow: Listen → Direct → (Brand ∥ Design) → Build → Launch. Nodes and connectors draw in sequence. */
+function Process({ c }) {
+  const steps = c.steps
+  const node = (st, i) => (
+    <motion.div
+      key={i}
+      className={`pf-node ${STEP_CLASS[i]}`}
+      variants={{ hidden: { opacity: 0, y: 30, filter: 'blur(6px)' }, show: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.9, ease: EASE } } }}
+    >
+      <small>{i === steps.length - 1 ? c.live : String(i + 1).padStart(2, '0')}</small>
+      <strong>{st.title}</strong>
+      {st.lines.map((l) => (
+        <span key={l}>{l}</span>
+      ))}
+    </motion.div>
+  )
+  const line = (k) => (
+    <motion.i
+      key={`l${k}`}
+      className="pf-line"
+      aria-hidden="true"
+      variants={{ hidden: { scaleX: 0 }, show: { scaleX: 1, transition: { duration: 0.7, ease: EASE } } }}
+    />
+  )
+  return (
+    <div className="container">
+      <motion.div
+        className="pf"
+        role="group"
+        aria-label={steps.map((s) => s.title).join(' → ')}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ staggerChildren: 0.14 }}
+      >
+        {node(steps[0], 0)}
+        {line(0)}
+        {node(steps[1], 1)}
+        {line(1)}
+        <div className="pf-branch">
+          <motion.span className="pf-par" variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}>
+            {c.parallel}
+          </motion.span>
+          {node(steps[2], 2)}
+          {node(steps[3], 3)}
+        </div>
+        {line(2)}
+        {node(steps[4], 4)}
+        {line(3)}
+        {node(steps[5], 5)}
+      </motion.div>
+    </div>
+  )
+}
+
+function Section({ s, p }) {
   const { t, color } = useI18n()
+  const c = p.copy ?? {}
+  const cap = s.cap ? <Caption text={c.caps?.[s.cap]} num={s.num} /> : null
   switch (s.type) {
+    case 'textblock':
+      return (
+        <div className="container ed-block">
+          <div>
+            <FadeUp className="sec-label">
+              <b>(01)</b>
+              {c.overview}
+            </FadeUp>
+            <FadeUp as="dl" className="ed-meta" delay={0.1}>
+              <div>
+                <dt>{t('project.client')}</dt>
+                <dd>
+                  <bdi>{p.client}</bdi>
+                </dd>
+              </div>
+              <div>
+                <dt>{t('project.service')}</dt>
+                <dd>{p.service}</dd>
+              </div>
+              {p.scope && (
+                <div>
+                  <dt>{t('project.scope')}</dt>
+                  <dd>{p.scope}</dd>
+                </div>
+              )}
+              {p.platforms && (
+                <div>
+                  <dt>{t('project.platforms')}</dt>
+                  <dd>{p.platforms}</dd>
+                </div>
+              )}
+              <div>
+                <dt>{t('project.year')}</dt>
+                <dd>{p.year}</dd>
+              </div>
+            </FadeUp>
+          </div>
+          <div>
+            <FadeUp as="p" className="ed-lead">
+              {c.lead}
+            </FadeUp>
+            <div className="ed-cols">
+              {c.cols?.map((txt, i) => (
+                <FadeUp as="p" key={i} delay={0.1 + i * 0.1}>
+                  {txt}
+                </FadeUp>
+              ))}
+            </div>
+            <FadeUp className="ed-tags" delay={0.25}>
+              {c.tags?.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </FadeUp>
+          </div>
+        </div>
+      )
+    case 'brief':
+      return (
+        <div className="container ed-block">
+          <FadeUp className="sec-label">
+            <b>(02)</b>
+            {c.brief}
+          </FadeUp>
+          <div className="ed-cols is-brief">
+            {[
+              [c.challenge, c.challengeTitle, c.challengeText],
+              [c.approach, c.approachTitle, c.approachText],
+            ].map(([label, title, text], i) => (
+              <FadeUp key={i} delay={i * 0.12}>
+                <div className="ed-small">{label}</div>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </FadeUp>
+            ))}
+          </div>
+        </div>
+      )
+    case 'heading':
+      return <SecHead n={s.n} label={c[s.label]} title={c[s.title]} />
+    case 'process':
+      return <Process c={c} />
+    case 'smallvideo':
+      return (
+        <div className="container sec sec-smallvideo">
+          <div className="smallvideo-frame">
+            <RevealImage video={s.src} poster={s.poster} src={s.poster} alt={s.alt} />
+          </div>
+          {cap && <div className="smallvideo-cap">{cap}</div>}
+        </div>
+      )
+    case 'duo':
+      return (
+        <div className="container sec sec-duo">
+          {s.items.map((it, k) => (
+            <RevealImage key={k} src={it.src} alt={it.alt} delay={k * 0.12} />
+          ))}
+        </div>
+      )
     case 'image':
       return (
         <div className={s.bleed ? 'sec sec-bleed' : `container sec ${s.size === 'half' ? 'sec-half' : ''} ${s.inset ? 'sec-inset' : ''}`}>
           <RevealImage src={s.src} alt={s.alt} parallax={s.parallax} className={s.bleed ? 'is-bleed' : ''} />
+          {cap}
         </div>
       )
     case 'trio':
@@ -128,11 +320,14 @@ function Section({ s }) {
       )
     case 'pair':
       return (
-        <div className="container sec sec-pair">
-          {s.items.map((it, k) => (
-            <RevealImage key={k} src={it.src} alt={it.alt} delay={k * 0.12} />
-          ))}
-        </div>
+        <>
+          <div className={`container sec sec-pair ${s.flat ? 'is-flat' : ''}`}>
+            {s.items.map((it, k) => (
+              <RevealImage key={k} src={it.src} alt={it.alt} delay={k * 0.12} />
+            ))}
+          </div>
+          {cap && <div className="container">{cap}</div>}
+        </>
       )
     case 'palette':
       return (
