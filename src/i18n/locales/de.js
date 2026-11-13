@@ -110,6 +110,10 @@ export default {
     'Visual Brand Identity': 'Visuelle Markenidentität',
   },
   colors: {
+    'Obsidian Black': 'Obsidianschwarz',
+    'Graphite Slate': 'Graphitschiefer',
+    'Crimson Pulse': 'Karmesinpuls',
+    'Scarlet Glow': 'Scharlachglühen',
     'Light neutral': 'Helles Neutral',
     'Glacier Blue': 'Gletscherblau',
     Carbon: 'Carbon',
@@ -184,6 +188,219 @@ export default {
     },
   ],
   projects: {
+    kinetik: {
+        "blurb": "Ein autonomer ERP-Kern – KI-Agenten, die abgleichen, beschaffen und prüfen, mit Menschen in der Schleife.",
+        "service": "Produktdesign & Entwicklung",
+        "scope": "Marke · UX/UI · KI-Workflows",
+        "platforms": "Web · iOS · Android",
+        "kicker": "KI-Plattform, Marke & Produkt",
+        "eyebrow": "Kinetik. — Autonomes ERP: Marke, Produktdesign & Entwicklung",
+        "intro": "Kinetik ist ein autonomer Unternehmenskern: KI-Agenten, die Rechnungen lesen, Konten abgleichen und Bestellungen selbstständig auslösen – und einen Menschen fragen, wenn viel auf dem Spiel steht. Wir haben die Vision geschärft, die Marke entwickelt und das Produkt gestaltet und gebaut, vom Workflow-Canvas bis zur mobilen Freigabe-App.",
+        "copy": {
+          "overview": "Überblick",
+          "lead": "Finanzteams verbringen ihre Tage damit, Daten zwischen Systemen zu bewegen. Kinetik macht daraus Workflows, die von selbst laufen – sichtbar, nachvollziehbar und jederzeit unter Kontrolle.",
+          "cols": [
+            "Ein visueller Node-Canvas verbindet ERP-Webhooks, Datenbanken, LLM-Reasoning und Drittanbieter-APIs; Datenimpulse zeigen live jeden Schritt, während er läuft. Spezialisierte Agenten geben strukturierten Kontext und Gedächtnis zwischen Aufgaben weiter, statt auf fragile Ein-Prompt-Ketten zu setzen.",
+            "Rund um den Canvas liegen die Module, die Finanzteams wirklich brauchen – Drei-Wege-Rechnungsabgleich, vorausschauende Beschaffung, Prüfung von Lohn und Spesen – und die Governance, die Autonomie sicher macht: Ausgabelimits, Freigaben, nachspielbare Protokolle und begrenzte Zugriffsrechte."
+          ],
+          "tags": [
+            "Produktstrategie",
+            "Markenidentität",
+            "UX/UI",
+            "KI-Agenten",
+            "Web & Mobile",
+            "Entwicklung"
+          ],
+          "vision": "Vision",
+          "visionStatement": "Software, die die Arbeit macht – und zeigt, wie.",
+          "visionItems": [
+            {
+              "label": "Das Problem",
+              "title": "Menschen sind zur Integrationsschicht geworden.",
+              "text": "Rechnungen kommen als PDF, Bestände liegen in einem System, das Hauptbuch in einem anderen. Teams exportieren CSVs, gleichen Zeile für Zeile ab und jagen Freigaben im Chat hinterher – langsam, fehleranfällig und schwer zu prüfen."
+            },
+            {
+              "label": "Die Vision",
+              "title": "Ein ERP, das von selbst läuft – mit einer menschlichen Hand an der Bremse.",
+              "text": "Agenten erledigen die Routine von Anfang bis Ende und halten bei allem Riskanten für Menschen an. Jede Entscheidung wird mit Prompt, Eingaben und Begründung protokolliert – so wird Vertrauen verdient statt vorausgesetzt."
+            }
+          ],
+          "plan": "Der Plan",
+          "planTitle": "Vom Whiteboard zur Launch-Woche.",
+          "phases": [
+            {
+              "tag": "Phase 01",
+              "title": "Verstehen",
+              "text": "Interviews mit Finanzverantwortlichen, Karten der Abgleich- und Beschaffungsprozesse und das Risikomodell, das festlegt, was die KI allein tun darf.",
+              "out": "Prozesskarten · Risikoschwellen"
+            },
+            {
+              "tag": "Phase 02",
+              "title": "Marke",
+              "text": "Positionierung als Hochgeschwindigkeits-Ausführungsmotor, das K-Zeichen, die Palette aus Obsidian und Karmesin und ein ruhiges, geometrisches Schriftsystem.",
+              "out": "Identity-Kit · Tonalität"
+            },
+            {
+              "tag": "Phase 03",
+              "title": "Design & Entwicklung",
+              "text": "Node-Canvas, Agenten-Orchestrator, ERP-Konnektoren und Komponentenbibliothek – gemeinsam gestaltet und entwickelt, in wöchentlichen Releases.",
+              "out": "Web-App · Designsystem"
+            },
+            {
+              "tag": "Phase 04",
+              "title": "Governance & Launch",
+              "text": "Leitplanken, Audit-Trail, selbstheilende Wiederholungen und rollenbasierter Zugriff – danach die mobile App und die Enthüllung in der Launch-Woche.",
+              "out": "Mobile App · Launch"
+            }
+          ],
+          "working": "So funktioniert es",
+          "workingTitle": "Ein Ablauf, viele Agenten.",
+          "flow": [
+            {
+              "title": "Auslöser",
+              "lines": [
+                "ERP-Webhook",
+                "PDF · CSV · EDI"
+              ]
+            },
+            {
+              "title": "Aufbereiten",
+              "lines": [
+                "Bereinigung zu JSON-Schema",
+                "Feldprüfung"
+              ]
+            },
+            {
+              "label": "Agenten parallel",
+              "branch": [
+                {
+                  "title": "Audit-Agent",
+                  "lines": [
+                    "Richtlinienprüfung"
+                  ]
+                },
+                {
+                  "title": "Beschaffungs-Agent",
+                  "lines": [
+                    "Lieferzeit-Prognosen"
+                  ]
+                },
+                {
+                  "title": "Abgleich-Agent",
+                  "lines": [
+                    "Bestellung ↔ Wareneingang ↔ Rechnung"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Leitplanke",
+              "lines": [
+                "Unter 5.000 $: freigeben",
+                "Darüber: eskalieren"
+              ],
+              "tone": "dark"
+            },
+            {
+              "title": "Buchen",
+              "lines": [
+                "Hauptbuch-Sync",
+                "Audit-Trail"
+              ],
+              "tone": "kinetik",
+              "small": "Erledigt"
+            }
+          ],
+          "modulesLabel": "Kernmodule",
+          "modules": [
+            {
+              "title": "Visueller Node-Canvas",
+              "text": "Drag-and-drop-Workflows, die ERP-Webhooks, Datenbankabfragen, LLM-Reasoning und APIs verbinden – mit animierten Datenimpulsen in Echtzeit."
+            },
+            {
+              "title": "Multi-Agenten-Orchestrator",
+              "text": "Audit-, Beschaffungs- und Abgleich-Agenten teilen strukturierten Kontext und Gedächtnis über Aufgaben hinweg."
+            },
+            {
+              "title": "Rechnungs- & Hauptbuchabgleich",
+              "text": "Drei-Wege-Abgleich von Bestellung, Wareneingang und Rechnung, mit automatischer Buchung und Anomalie-Hinweisen."
+            },
+            {
+              "title": "Vorausschauende Beschaffung",
+              "text": "Überwacht Bestandsschwellen und Lieferzeiten und erstellt, leitet und versendet Bestellungen, bevor der Bestand ausgeht."
+            },
+            {
+              "title": "Lohn- & Spesenprüfung",
+              "text": "Prüft Spesen und Zeiterfassungen gegen die Richtlinie, gibt Konformes frei und isoliert Grenzfälle."
+            },
+            {
+              "title": "ERP-übergreifende Synchronisierung",
+              "text": "Native bidirektionale Konnektoren für SAP, NetSuite, QuickBooks, Postgres und Slack oder Teams – Schluss mit CSV-Exporten."
+            },
+            {
+              "title": "Datentransformation",
+              "text": "Parser wandeln rohe PDFs, CSVs und EDI-Nachrichten in standardisierte JSON-Schemata um, bevor etwas ins Hauptbuch gelangt."
+            },
+            {
+              "title": "Copilot „Was kommt als Nächstes?“",
+              "text": "Schlägt den nächsten logischen Schritt vor – auf Basis des Auslösers und der bereits verbundenen ERP-Module."
+            }
+          ],
+          "governance": "Governance",
+          "governanceTitle": "Autonomie, die sich prüfen lässt.",
+          "trust": [
+            {
+              "title": "Leitplanken mit Mensch in der Schleife",
+              "text": "Konfidenzschwellen und Ausgabelimits – automatische Freigabe unter 5.000 $, Pause und Eskalation darüber."
+            },
+            {
+              "title": "Unveränderlicher Audit-Trail",
+              "text": "Nachspielbare Protokolle von Prompt, Modellzustand, Eingabe und Entscheidung für jeden Lauf – bereit für SOC-2-Prüfungen."
+            },
+            {
+              "title": "Selbstheilende Wiederholungen",
+              "text": "Exponentielles Backoff bei Rate-Limits, Failover auf ein zweites Modell und sofortige Alarme, wenn ein Endpunkt ausfällt."
+            },
+            {
+              "title": "Zugriffskontrolle & Tresor",
+              "text": "Verschlüsselte Secrets und eng gefasste Rollen – jeder Agent erreicht nur die Tabellen und APIs, die sein Workflow erlaubt."
+            }
+          ],
+          "branding": "Marke",
+          "brandingTitle": "Gebaut für Ausführung in hohem Tempo.",
+          "execution": "Umsetzung",
+          "executionTitle": "Eine ruhige Kommandozentrale für komplexe Arbeit.",
+          "stats": [
+            {
+              "value": "99,8 %",
+              "label": "Automatische Abgleichquote im Telemetrie-Dashboard"
+            },
+            {
+              "value": "5.000 $",
+              "label": "Standardschwelle, ab der ein Mensch freigeben muss"
+            },
+            {
+              "value": "5",
+              "label": "Native Konnektoren: SAP, NetSuite, QuickBooks, Postgres, Slack/Teams"
+            },
+            {
+              "value": "3",
+              "label": "Spezialisierte Agenten: Audit, Beschaffung, Abgleich"
+            }
+          ],
+          "launch": "Launch",
+          "launchTitle": "Live auf der Bühne, 14.–20. November.",
+          "caps": {
+            "flow": "Ein typischer Lauf – vom Webhook bis ins Hauptbuch, mit menschlichem Kontrollpunkt",
+            "brand": "Moodboard – Palette, Typografie, Fotografie und die ersten Sticker",
+            "mark": "Das K-Zeichen als App-Icon und die Geschichte des Gründers",
+            "components": "UI-Komponenten – Node-Canvas, Bedienelemente und der Copilot „Was kommt als Nächstes?“",
+            "film": "Produktfilm – der Workflow-Canvas im Live-Betrieb",
+            "devices": "Web-App und Kinetik Mobile Companion – freigeben oder ablehnen, von überall",
+            "launch": "Kinetik Live, Launch-Woche – und das Team dahinter"
+          }
+        }
+      },
     cubit: {
         "blurb": "Website, 3D-Regie und Identität für ein Studio, das mit dem Wenigsten das Meiste sagt.",
         "service": "Webdesign & Entwicklung",

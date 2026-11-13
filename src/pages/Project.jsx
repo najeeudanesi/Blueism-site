@@ -143,24 +143,40 @@ function SecHead({ n, label, title }) {
   )
 }
 
-const STEP_CLASS = ['', '', 'is-branch', 'is-branch', 'is-dark', 'is-accent']
+const nodeVariants = {
+  hidden: { opacity: 0, y: 30, filter: 'blur(6px)' },
+  show: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.9, ease: EASE } },
+}
 
-/** Process flow: Listen → Direct → (Brand ∥ Design) → Build → Launch. Nodes and connectors draw in sequence. */
+/** Build a flow from Cubit-style `steps` (0 → 1 → [2 ∥ 3] → 4 → 5) when no explicit `flow` is given. */
+function flowFrom(c) {
+  if (c.flow) return c.flow
+  const st = c.steps
+  return [
+    st[0],
+    st[1],
+    { label: c.parallel, branch: [st[2], st[3]] },
+    { ...st[4], tone: 'dark' },
+    { ...st[5], tone: 'accent', small: c.live },
+  ]
+}
+
+/** Data-driven flow diagram: nodes and arrows draw in sequence; a `branch` stacks nodes that run in parallel. */
 function Process({ c }) {
-  const steps = c.steps
-  const node = (st, i) => (
-    <motion.div
-      key={i}
-      className={`pf-node ${STEP_CLASS[i]}`}
-      variants={{ hidden: { opacity: 0, y: 30, filter: 'blur(6px)' }, show: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.9, ease: EASE } } }}
-    >
-      <small>{i === steps.length - 1 ? c.live : String(i + 1).padStart(2, '0')}</small>
-      <strong>{st.title}</strong>
-      {st.lines.map((l) => (
-        <span key={l}>{l}</span>
-      ))}
-    </motion.div>
-  )
+  const flow = flowFrom(c)
+  let n = 0
+  const node = (st, key) => {
+    n += 1
+    return (
+      <motion.div key={key} className={`pf-node ${st.tone ? `is-${st.tone}` : ''}`} variants={nodeVariants}>
+        <small>{st.small ?? String(n).padStart(2, '0')}</small>
+        <strong>{st.title}</strong>
+        {st.lines.map((l) => (
+          <span key={l}>{l}</span>
+        ))}
+      </motion.div>
+    )
+  }
   const line = (k) => (
     <motion.i
       key={`l${k}`}
@@ -169,32 +185,109 @@ function Process({ c }) {
       variants={{ hidden: { scaleX: 0 }, show: { scaleX: 1, transition: { duration: 0.7, ease: EASE } } }}
     />
   )
+  const names = flow.flatMap((f) => (f.branch ? f.branch.map((b) => b.title) : [f.title]))
   return (
     <div className="container">
       <motion.div
         className="pf"
         role="group"
-        aria-label={steps.map((s) => s.title).join(' → ')}
+        aria-label={names.join(' → ')}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        transition={{ staggerChildren: 0.12 }}
+      >
+        {flow.map((f, i) => [
+          i > 0 && line(i),
+          f.branch ? (
+            <div className="pf-branch" key={`b${i}`}>
+              {f.label && (
+                <motion.span className="pf-par" variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}>
+                  {f.label}
+                </motion.span>
+              )}
+              {f.branch.map((b, k) => node(b, `b${i}-${k}`))}
+            </div>
+          ) : (
+            node(f, `n${i}`)
+          ),
+        ])}
+      </motion.div>
+    </div>
+  )
+}
+
+/** Grid of numbered cards (product modules, governance features). */
+function Features({ items, accent }) {
+  return (
+    <div className="container">
+      <motion.div
+        className={`feat ${accent ? 'is-accent' : ''}`}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ staggerChildren: 0.08 }}
+      >
+        {items.map((it, i) => (
+          <motion.article key={it.title} className="feat-card" variants={nodeVariants}>
+            <span className="feat-n">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{it.title}</h3>
+            <p>{it.text}</p>
+          </motion.article>
+        ))}
+      </motion.div>
+    </div>
+  )
+}
+
+/** Phased plan: cards draw in along a progress rule. */
+function Phases({ items }) {
+  return (
+    <div className="container">
+      <motion.ol
+        className="phases"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ staggerChildren: 0.14 }}
+      >
+        <motion.li
+          className="phases-rule"
+          aria-hidden="true"
+          variants={{ hidden: { scaleX: 0 }, show: { scaleX: 1, transition: { duration: 1.4, ease: EASE } } }}
+        />
+        {items.map((ph) => (
+          <motion.li key={ph.title} className="phase" variants={nodeVariants}>
+            <span className="phase-dot" aria-hidden="true" />
+            <small>{ph.tag}</small>
+            <h3>{ph.title}</h3>
+            <p>{ph.text}</p>
+            <span className="phase-out">{ph.out}</span>
+          </motion.li>
+        ))}
+      </motion.ol>
+    </div>
+  )
+}
+
+function Stats({ items }) {
+  return (
+    <div className="container">
+      <motion.div
+        className="stats"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
-        transition={{ staggerChildren: 0.14 }}
+        transition={{ staggerChildren: 0.1 }}
       >
-        {node(steps[0], 0)}
-        {line(0)}
-        {node(steps[1], 1)}
-        {line(1)}
-        <div className="pf-branch">
-          <motion.span className="pf-par" variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}>
-            {c.parallel}
-          </motion.span>
-          {node(steps[2], 2)}
-          {node(steps[3], 3)}
-        </div>
-        {line(2)}
-        {node(steps[4], 4)}
-        {line(3)}
-        {node(steps[5], 5)}
+        {items.map((st) => (
+          <motion.div key={st.label} className="stat" variants={nodeVariants}>
+            <strong>
+              <bdi>{st.value}</bdi>
+            </strong>
+            <span>{st.label}</span>
+          </motion.div>
+        ))}
       </motion.div>
     </div>
   )
@@ -284,8 +377,51 @@ function Section({ s, p }) {
       )
     case 'heading':
       return <SecHead n={s.n} label={c[s.label]} title={c[s.title]} />
+    case 'split': {
+      const items = c[s.items] ?? []
+      return (
+        <div className="container ed-block">
+          <FadeUp className="sec-label">
+            <b>({s.n})</b>
+            {c[s.label]}
+          </FadeUp>
+          <div>
+            {s.statement && <RevealText as="p" className="ed-statement" text={c[s.statement]} stagger={0.04} />}
+            <div className={`ed-cols is-brief ${s.statement ? 'has-statement' : ''}`}>
+              {items.map((it, i) => (
+                <FadeUp key={i} delay={i * 0.12}>
+                  <div className="ed-small">{it.label}</div>
+                  <h3>{it.title}</h3>
+                  <p>{it.text}</p>
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+        </div>
+      )
+    }
+    case 'phases':
+      return <Phases items={c[s.items] ?? []} />
+    case 'features':
+      return (
+        <>
+          {s.label && (
+            <div className="container feat-head">
+              <FadeUp className="sec-label">{c[s.label]}</FadeUp>
+            </div>
+          )}
+          <Features items={c[s.items] ?? []} accent={s.accent} />
+        </>
+      )
+    case 'stats':
+      return <Stats items={c[s.items] ?? []} />
     case 'process':
-      return <Process c={c} />
+      return (
+        <>
+          <Process c={c} />
+          {cap && <div className="container">{cap}</div>}
+        </>
+      )
     case 'smallvideo':
       return (
         <div className="container sec sec-smallvideo">
@@ -297,11 +433,14 @@ function Section({ s, p }) {
       )
     case 'duo':
       return (
-        <div className="container sec sec-duo">
-          {s.items.map((it, k) => (
-            <RevealImage key={k} src={it.src} alt={it.alt} delay={k * 0.12} />
-          ))}
-        </div>
+        <>
+          <div className="container sec sec-duo">
+            {s.items.map((it, k) => (
+              <RevealImage key={k} src={it.src} alt={it.alt} delay={k * 0.12} />
+            ))}
+          </div>
+          {cap && <div className="container">{cap}</div>}
+        </>
       )
     case 'image':
       return (

@@ -113,6 +113,10 @@ export default {
     'Visual Brand Identity': 'Identité visuelle de marque',
   },
   colors: {
+    'Obsidian Black': 'Noir obsidienne',
+    'Graphite Slate': 'Ardoise graphite',
+    'Crimson Pulse': 'Pulsation cramoisie',
+    'Scarlet Glow': 'Éclat écarlate',
     'Light neutral': 'Neutre clair',
     'Glacier Blue': 'Bleu glacier',
     Carbon: 'Carbone',
@@ -187,6 +191,219 @@ export default {
     },
   ],
   projects: {
+    kinetik: {
+        "blurb": "Un cœur ERP autonome — des agents IA qui rapprochent, achètent et auditent, avec l’humain dans la boucle.",
+        "service": "Design et développement produit",
+        "scope": "Marque · UX/UI · Workflows IA",
+        "platforms": "Web · iOS · Android",
+        "kicker": "Plateforme IA, marque et produit",
+        "eyebrow": "Kinetik. — ERP autonome\u202F: marque, design produit et développement",
+        "intro": "Kinetik est un cœur d’entreprise autonome\u202F: des agents IA qui lisent les factures, rapprochent les comptes et émettent des bons de commande seuls — et s’arrêtent pour consulter une personne quand l’enjeu est important. Nous avons défini la vision, créé la marque, puis conçu et développé le produit, du canevas de workflows à l’application mobile d’approbation.",
+        "copy": {
+          "overview": "Aperçu",
+          "lead": "Les équipes finance passent leurs journées à déplacer des données d’un système à l’autre. Kinetik transforme ce travail en workflows qui s’exécutent seuls — visibles, explicables et toujours sous contrôle.",
+          "cols": [
+            "Un canevas de nœuds visuel relie les webhooks de l’ERP, les bases de données, le raisonnement par LLM et les API tierces, avec des impulsions de données en direct qui montrent chaque étape pendant son exécution. Des agents spécialisés se transmettent contexte structuré et mémoire, plutôt que de dépendre de fragiles chaînes à prompt unique.",
+            "Autour du canevas, les modules dont la finance a vraiment besoin — rapprochement des factures à trois voies, achats prédictifs, audit de la paie et des notes de frais — et la gouvernance qui rend l’autonomie sûre\u202F: plafonds de dépenses, validations, journaux rejouables et accès restreints."
+          ],
+          "tags": [
+            "Stratégie produit",
+            "Identité de marque",
+            "UX/UI",
+            "Agents IA",
+            "Web et mobile",
+            "Développement"
+          ],
+          "vision": "Vision",
+          "visionStatement": "Un logiciel qui fait le travail — et montre comment.",
+          "visionItems": [
+            {
+              "label": "Le problème",
+              "title": "Les équipes sont devenues la couche d’intégration.",
+              "text": "Les factures arrivent en PDF, les stocks vivent dans un système et le grand livre dans un autre. On exporte des CSV, on rapproche ligne à ligne et on relance les validations sur la messagerie — lent, source d’erreurs et difficile à auditer."
+            },
+            {
+              "label": "La vision",
+              "title": "Un ERP qui tourne seul, avec une main humaine sur le frein.",
+              "text": "Les agents traitent la routine de bout en bout et s’arrêtent pour l’humain dès qu’il y a un risque. Chaque décision est enregistrée avec son prompt, ses données et son raisonnement\u202F: la confiance se gagne, elle ne se présume pas."
+            }
+          ],
+          "plan": "Le plan",
+          "planTitle": "Du tableau blanc à la semaine de lancement.",
+          "phases": [
+            {
+              "tag": "Phase 01",
+              "title": "Découvrir",
+              "text": "Entretiens avec les responsables finance, cartographie des flux de rapprochement et d’achat, et modèle de risque qui définit ce que l’IA peut faire seule.",
+              "out": "Cartes de processus · Seuils de risque"
+            },
+            {
+              "tag": "Phase 02",
+              "title": "Marque",
+              "text": "Un positionnement de moteur d’exécution à haute vélocité, le symbole K, la palette obsidienne et cramoisi et un système typographique géométrique et serein.",
+              "out": "Kit d’identité · Ton"
+            },
+            {
+              "tag": "Phase 03",
+              "title": "Design et développement",
+              "text": "Le canevas de nœuds, l’orchestrateur d’agents, les connecteurs ERP et la bibliothèque de composants — conçus et développés ensemble, en livraisons hebdomadaires.",
+              "out": "Application web · Design system"
+            },
+            {
+              "tag": "Phase 04",
+              "title": "Gouvernance et lancement",
+              "text": "Garde-fous, piste d’audit, relances auto-réparatrices et accès par rôle, puis l’application mobile et la révélation lors de la semaine de lancement.",
+              "out": "Application mobile · Lancement"
+            }
+          ],
+          "working": "Fonctionnement",
+          "workingTitle": "Un flux, plusieurs agents.",
+          "flow": [
+            {
+              "title": "Déclencheur",
+              "lines": [
+                "Webhook ERP",
+                "PDF · CSV · EDI"
+              ]
+            },
+            {
+              "title": "Analyse",
+              "lines": [
+                "Nettoyage en schéma JSON",
+                "Validation des champs"
+              ]
+            },
+            {
+              "label": "Agents en parallèle",
+              "branch": [
+                {
+                  "title": "Agent d’audit",
+                  "lines": [
+                    "Contrôles de conformité"
+                  ]
+                },
+                {
+                  "title": "Agent achats",
+                  "lines": [
+                    "Prévision des délais"
+                  ]
+                },
+                {
+                  "title": "Agent de rapprochement",
+                  "lines": [
+                    "BC ↔ réception ↔ facture"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Garde-fou",
+              "lines": [
+                "Moins de 5\u202F000\u00A0$\u202F: valider",
+                "Au-delà\u202F: escalader"
+              ],
+              "tone": "dark"
+            },
+            {
+              "title": "Comptabiliser",
+              "lines": [
+                "Synchronisation du grand livre",
+                "Piste d’audit"
+              ],
+              "tone": "kinetik",
+              "small": "Terminé"
+            }
+          ],
+          "modulesLabel": "Modules clés",
+          "modules": [
+            {
+              "title": "Canevas de nœuds visuel",
+              "text": "Des workflows en glisser-déposer reliant webhooks ERP, requêtes base de données, raisonnement LLM et API, avec des impulsions de données animées en temps réel."
+            },
+            {
+              "title": "Orchestrateur multi-agents",
+              "text": "Les agents d’audit, d’achat et de rapprochement partagent contexte structuré et mémoire d’une tâche à l’autre."
+            },
+            {
+              "title": "Rapprochement factures et grand livre",
+              "text": "Rapprochement à trois voies du bon de commande, de la réception et de la facture, avec écriture automatique et signalement des anomalies."
+            },
+            {
+              "title": "Achats prédictifs",
+              "text": "Surveille les seuils de stock et les délais fournisseurs, puis rédige, achemine et émet les bons de commande avant la rupture."
+            },
+            {
+              "title": "Audit paie et notes de frais",
+              "text": "Vérifie notes de frais et feuilles de temps selon la politique, valide ce qui est conforme et isole les cas limites."
+            },
+            {
+              "title": "Synchronisation multi-ERP",
+              "text": "Connecteurs natifs bidirectionnels pour SAP, NetSuite, QuickBooks, Postgres et Slack ou Teams — fini les exports CSV."
+            },
+            {
+              "title": "Transformation des données",
+              "text": "Des parseurs convertissent PDF, CSV et messages EDI bruts en schémas JSON standard avant toute écriture comptable."
+            },
+            {
+              "title": "Copilote «\u00A0Et ensuite\u202F?\u00A0»",
+              "text": "Propose l’étape suivante la plus logique à partir du déclencheur et des modules ERP déjà connectés."
+            }
+          ],
+          "governance": "Gouvernance",
+          "governanceTitle": "Une autonomie auditable.",
+          "trust": [
+            {
+              "title": "Garde-fous avec humain dans la boucle",
+              "text": "Seuils de confiance et plafonds de dépenses — validation automatique sous 5\u202F000\u00A0$, pause et escalade au-delà."
+            },
+            {
+              "title": "Piste d’audit immuable",
+              "text": "Journaux rejouables du prompt, de l’état du modèle, des données et de la décision pour chaque exécution, prêts pour les audits SOC 2."
+            },
+            {
+              "title": "Relances auto-réparatrices",
+              "text": "Temporisation exponentielle face aux limites d’API, bascule vers un modèle secondaire et alertes immédiates en cas de panne."
+            },
+            {
+              "title": "Contrôle d’accès et coffre-fort",
+              "text": "Secrets chiffrés et rôles restreints\u202F: chaque agent n’accède qu’aux tables et API autorisées pour son workflow."
+            }
+          ],
+          "branding": "Marque",
+          "brandingTitle": "Conçue pour une exécution à haute vélocité.",
+          "execution": "Exécution",
+          "executionTitle": "Un poste de commande serein pour un travail complexe.",
+          "stats": [
+            {
+              "value": "99,8\u00A0%",
+              "label": "Taux de rapprochement automatique affiché dans le tableau de bord"
+            },
+            {
+              "value": "5\u202F000\u00A0$",
+              "label": "Seuil par défaut avant validation humaine"
+            },
+            {
+              "value": "5",
+              "label": "Connecteurs natifs\u202F: SAP, NetSuite, QuickBooks, Postgres, Slack/Teams"
+            },
+            {
+              "value": "3",
+              "label": "Agents spécialisés\u202F: audit, achats, rapprochement"
+            }
+          ],
+          "launch": "Lancement",
+          "launchTitle": "En direct sur scène, du 14 au 20 novembre.",
+          "caps": {
+            "flow": "Une exécution type — du webhook au grand livre, avec un point de contrôle humain",
+            "brand": "Moodboard — palette, typographie, photographie et premiers stickers",
+            "mark": "Le symbole K en icône d’application, et l’histoire du fondateur",
+            "components": "Composants d’interface — canevas de nœuds, contrôles et copilote «\u00A0Et ensuite\u202F?\u00A0»",
+            "film": "Film produit — le canevas de workflows en action",
+            "devices": "Application web et Kinetik Mobile Companion — valider ou refuser où que vous soyez",
+            "launch": "Kinetik Live, semaine de lancement — et l’équipe derrière"
+          }
+        }
+      },
     cubit: {
         "blurb": "Site web, direction 3D et identité pour un studio qui en dit le plus avec le moins.",
         "service": "Design et développement web",
