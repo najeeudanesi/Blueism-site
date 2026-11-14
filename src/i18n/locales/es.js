@@ -627,7 +627,7 @@ export default {
           }
         ],
         "caps": {
-          "crew": "La pandilla trepando al asador, y el patrón de personajes donde vive",
+          "crew": "La pandilla trepando al asador, y detrás del mostrador",
           "pack": "Bolsas, papel de wrap, cajas, menús y bandejas: un naranja, una pandilla",
           "ayran": "Ayran en seis ambientes: piedra, humo, hielo, acantilado y atardecer",
           "shop": "El mostrador, el menú y los uniformes",

@@ -176,7 +176,7 @@ const allProjects = [
         { value: '0', label: 'Boring days at the counter' },
       ],
       caps: {
-        crew: 'The crew climbing the spit — and the character pattern they live in',
+        crew: 'The crew climbing the spit — and behind the counter',
         pack: 'Bags, wrap paper, boxes, menus and trays — one orange, one crew',
         ayran: 'Ayran in six moods — stone, smoke, ice, cliff and sunset',
         shop: 'The counter, the menu board and the uniforms',
@@ -194,7 +194,7 @@ const allProjects = [
         type: 'bento',
         items: [
           { src: img('sh-climbers'), alt: 'Illustrated characters climbing a real shawarma spit', span: 7, ratio: 1.67 },
-          { src: img('sh-pattern-crew'), alt: 'Character pattern: the crew running, carving and eating wraps', span: 5, ratio: 1.19 },
+          { src: img('sh-crew-shop'), alt: 'The crew behind the counter: carving the spit, wrapping, and a customer grabbing her wrap', span: 5, ratio: 1.19 },
         ],
         cap: 'crew',
         num: '01 — 02',
@@ -203,9 +203,9 @@ const allProjects = [
       {
         type: 'bento',
         items: [
-          { src: img('sh-bag-wraps'), alt: 'Cream Shoowarma bag with two wraps in branded paper', span: 3, ratio: 0.6, m: 6 },
+          { src: img('sh-bag-wraps'), alt: 'Cream Shoowarma bag with two wraps in branded paper', span: 3, ratio: 0.6 },
           { src: img('sh-takeaway'), alt: 'Orange and cream bags, Ayran bottle, wrap and menus', span: 6, ratio: 1.2 },
-          { src: img('sh-wraps-orange'), alt: 'Two wraps in character-printed paper on an orange table', span: 3, ratio: 0.6, m: 6 },
+          { src: img('sh-wraps-orange'), alt: 'Two wraps in character-printed paper on an orange table', span: 3, ratio: 0.6 },
           { src: img('sh-ayran-box'), alt: 'Ayran bottle next to a chicken shawarma wrap box', span: 6, ratio: 2.2 },
           { src: img('sh-tray'), alt: 'Orange tray with printed paper liner, a wrap and the menu card', span: 6, ratio: 2.2 },
         ],
@@ -218,12 +218,12 @@ const allProjects = [
         type: 'bento',
         items: [
           { src: img('sh-bottle'), alt: 'Upside-down Ayran bottle covered in droplets against a warm gradient', span: 4, rows: 2 },
-          { src: img('sh-ayran-glow'), alt: 'Ayran bottle on a glowing orange horizon', span: 4, ratio: 1, m: 6 },
-          { src: img('sh-ayran-ice'), alt: 'Ayran bottle with ice and smoke on black stone', span: 4, ratio: 1, m: 6 },
-          { src: img('sh-ayran-close'), alt: 'Close-up of the Ayran label and cap beaded with water', span: 4, ratio: 1, m: 6 },
-          { src: img('sh-ayran-dark'), alt: 'Ayran bottle floating against a dark background', span: 4, ratio: 1, m: 6 },
-          { src: img('sh-ayran-rock'), alt: 'Ayran bottle on dark rock in dappled shade', span: 6, ratio: 1.2, m: 6 },
-          { src: img('sh-ayran-cliff'), alt: 'Ayran bottle floating between sandstone cliffs', span: 6, ratio: 1.2, m: 6 },
+          { src: img('sh-ayran-glow'), alt: 'Ayran bottle on a glowing orange horizon', span: 4, ratio: 1 },
+          { src: img('sh-ayran-ice'), alt: 'Ayran bottle with ice and smoke on black stone', span: 4, ratio: 1 },
+          { src: img('sh-ayran-close'), alt: 'Close-up of the Ayran label and cap beaded with water', span: 4, ratio: 1 },
+          { src: img('sh-ayran-dark'), alt: 'Ayran bottle floating against a dark background', span: 4, ratio: 1 },
+          { src: img('sh-ayran-rock'), alt: 'Ayran bottle on dark rock in dappled shade', span: 6, ratio: 1.2 },
+          { src: img('sh-ayran-cliff'), alt: 'Ayran bottle floating between sandstone cliffs', span: 6, ratio: 1.2 },
         ],
         cap: 'ayran',
         num: '08 — 14',
@@ -242,10 +242,10 @@ const allProjects = [
       {
         type: 'bento',
         items: [
-          { src: img('sh-counter'), alt: 'Shoowarma counter with the menu board, steel bar and staff in orange aprons', span: 6, ratio: 1.66 },
-          { src: img('sh-crew-back'), alt: 'Back of a cream tee: the runner and “Fresh off the spit”', span: 2, ratio: 0.555, m: 4 },
-          { src: img('sh-crew-apron'), alt: 'Orange cap, cream tee and black apron on a hook', span: 2, ratio: 0.555, m: 4 },
-          { src: img('sh-crew-front'), alt: 'Black polo and orange apron printed with the crew', span: 2, ratio: 0.555, m: 4 },
+          { src: img('sh-counter'), alt: 'Shoowarma counter with the menu board, steel bar and staff in orange aprons', span: 12, ratio: 2 },
+          { src: img('sh-crew-back'), alt: 'Back of a cream tee: the runner and “Fresh off the spit”', span: 4, ratio: 0.5 },
+          { src: img('sh-crew-apron'), alt: 'Orange cap, cream tee and black apron on a hook', span: 4, ratio: 0.5 },
+          { src: img('sh-crew-front'), alt: 'Black polo and orange apron printed with the crew', span: 4, ratio: 0.5 },
         ],
         cap: 'shop',
         num: '15 — 18',

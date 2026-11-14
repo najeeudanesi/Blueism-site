@@ -537,7 +537,7 @@ function Section({ s, p }) {
             {s.items.map((it, k) => (
               <div
                 key={k}
-                className={`bento-cell ${it.m ? `m-${it.m}` : ''}`}
+                className="bento-cell"
                 style={{ '--span': it.span ?? 6, '--rows': it.rows ?? 1, '--r': it.ratio ?? 'auto' }}
               >
                 <RevealImage src={it.src} alt={it.alt} delay={(k % 3) * 0.08} />

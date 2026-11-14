@@ -627,7 +627,7 @@ export default {
           }
         ],
         "caps": {
-          "crew": "Die Crew erklimmt den Spieß – und das Figurenmuster, in dem sie lebt",
+          "crew": "Die Crew erklimmt den Spieß – und steht hinter dem Tresen",
           "pack": "Tüten, Wrap-Papier, Boxen, Menüs und Tabletts – ein Orange, eine Crew",
           "ayran": "Ayran in sechs Stimmungen – Stein, Rauch, Eis, Fels und Sonnenuntergang",
           "shop": "Der Tresen, die Menütafel und die Uniformen",

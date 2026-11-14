@@ -630,7 +630,7 @@ export default {
           }
         ],
         "caps": {
-          "crew": "La bande à l’assaut de la broche — et le motif où elle vit",
+          "crew": "La bande à l’assaut de la broche — et derrière le comptoir",
           "pack": "Sacs, papier à wrap, boîtes, menus et plateaux — un orange, une bande",
           "ayran": "L’Ayran en six ambiances — pierre, fumée, glace, falaise et coucher de soleil",
           "shop": "Le comptoir, le menu et les tenues",

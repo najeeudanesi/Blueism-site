@@ -627,7 +627,7 @@ export default {
           }
         ],
         "caps": {
-          "crew": "A turma escalando o espeto — e o padrão de personagens onde ela vive",
+          "crew": "A turma escalando o espeto — e atrás do balcão",
           "pack": "Sacolas, papel de wrap, caixas, cardápios e bandejas — um laranja, uma turma",
           "ayran": "Ayran em seis climas — pedra, fumaça, gelo, penhasco e pôr do sol",
           "shop": "O balcão, o cardápio e os uniformes",
