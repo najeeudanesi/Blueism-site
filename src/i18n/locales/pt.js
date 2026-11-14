@@ -125,6 +125,14 @@ export default {
     'Cobalt Blue': 'Azul-cobalto',
     Black: 'Preto',
     'Mist Grey': 'Cinza-névoa',
+    'Lime Plaster': 'Reboco de cal',
+    'Tetouan Blue': 'Azul Tetuão',
+    'Cedar': 'Cedro',
+    'Nero Marble': 'Mármore negro',
+    'Pita Cream': 'Creme de pita',
+    'Spit Orange': 'Laranja espeto',
+    'Charcoal': 'Carvão',
+    'Grill Crust': 'Casca grelhada',
   },
   services: [
     {
@@ -498,6 +506,135 @@ export default {
         }
       }
     },
+    shoowarma: {
+      "blurb": "Identidade, personagens, embalagens e site para uma casa de shawarma com muita energia de wrap.",
+      "service": "Identidade de marca e web design",
+      "scope": "Personagens · Embalagens · Ayran · Site",
+      "platforms": "Loja · Embalagens · Web · Redes",
+      "eyebrow": "Shoowarma — Identidade, personagens, embalagens e web",
+      "kicker": "Marca de restaurante e site",
+      "intro": "A Shoowarma é uma casa de shawarma que se recusa a ser séria. Demos a ela um laranja barulhento, um logotipo robusto e uma turma de personagens desenhados à mão que correm, escalam e fatiam por sacolas, garrafas, camisetas e telas — para que cada wrap pareça feito por alguém num dia ótimo.",
+      "copy": {
+        "overview": "Visão geral",
+        "lead": "Comida boa. Vibe boa. Uma marca com o gosto do que diz: saída do espeto, meio bagunçada e impossível de ignorar.",
+        "cols": [
+          "A identidade nasce de três ingredientes: laranja espeto, creme de pita e tinta carvão; um logotipo grosso e arredondado; e um elenco de frequentadores ilustrados — o que fatia, o que corre e o amigo que sempre pega o último wrap.",
+          "A turma está em todo lugar. Corre pelas sacolas, embrulha o papel, escala o espeto e estrela a garrafa de Ayran, enquanto três padrões — personagens, logo e fita — transformam qualquer superfície em Shoowarma num segundo."
+        ],
+        "tags": [
+          "Identidade de marca",
+          "Personagens",
+          "Embalagens",
+          "Garrafa de Ayran",
+          "Site",
+          "Redes"
+        ],
+        "brief": "O briefing",
+        "challenge": "Desafio",
+        "challengeTitle": "Shawarma tem em todo canto. A Shoowarma precisava ser a que dá vontade.",
+        "challengeText": "Toda rua tem uma casa de shawarma com placa vermelha e cardápio de fotos. A Shoowarma precisava de uma personalidade que se visse do outro lado da rua, que se lembrasse depois da primeira mordida e que desse vontade de vestir.",
+        "approach": "Abordagem",
+        "approachTitle": "Dar fome, ser humana, ser laranja.",
+        "approachText": "Trocamos fotos de banco de imagens por personagens com atitude, escrevemos a voz em frases curtas e altas — “Saído do espeto”, “Energia de wrap”, “Rola com a gente” — e demos as mesmas três cores a cada ponto de contato, para a marca funcionar tanto num guardanapo quanto numa home.",
+        "process": "Processo",
+        "processTitle": "Do espeto para a rua.",
+        "steps": [
+          {
+            "title": "Provar",
+            "lines": [
+              "O cardápio",
+              "Os frequentadores"
+            ]
+          },
+          {
+            "title": "Desenhar",
+            "lines": [
+              "A turma",
+              "O logotipo"
+            ]
+          },
+          {
+            "title": "Embrulhar",
+            "lines": [
+              "Sacolas e caixas",
+              "Papel de wrap"
+            ]
+          },
+          {
+            "title": "Engarrafar",
+            "lines": [
+              "Ayran 250 ml",
+              "Seis cenas"
+            ]
+          },
+          {
+            "title": "Construir",
+            "lines": [
+              "Site",
+              "Pedido online"
+            ]
+          },
+          {
+            "title": "Rolar",
+            "lines": [
+              "Inauguração",
+              "Lançamento nas redes"
+            ]
+          }
+        ],
+        "parallel": "Em paralelo",
+        "live": "Aberto",
+        "shout": [
+          "Shoowarma",
+          "Saído do espeto",
+          "Comida boa. Vibe boa.",
+          "Energia de wrap",
+          "Rola com a gente"
+        ],
+        "menu": [
+          "Wrap de frango",
+          "Wrap de carne",
+          "Wrap de falafel",
+          "Batata frita",
+          "Ayran 250 ml"
+        ],
+        "crew": "Personagens",
+        "crewTitle": "Conheça a turma.",
+        "pack": "Embalagens",
+        "packTitle": "Embrulhado, ensacado, levado.",
+        "ayran": "Ayran",
+        "ayranTitle": "A bebida ganhou seu próprio ensaio.",
+        "shop": "A loja",
+        "shopTitle": "Saído do espeto.",
+        "digital": "Digital",
+        "digitalTitle": "Peça em dois toques.",
+        "stats": [
+          {
+            "value": "3",
+            "label": "Wraps no cardápio — frango, carne e falafel"
+          },
+          {
+            "value": "250 ml",
+            "label": "De Ayran gelado em cada garrafa"
+          },
+          {
+            "value": "3",
+            "label": "Padrões — personagens, logo e fita"
+          },
+          {
+            "value": "0",
+            "label": "Dias chatos no balcão"
+          }
+        ],
+        "caps": {
+          "crew": "A turma escalando o espeto — e o padrão de personagens onde ela vive",
+          "pack": "Sacolas, papel de wrap, caixas, cardápios e bandejas — um laranja, uma turma",
+          "ayran": "Ayran em seis climas — pedra, fumaça, gelo, penhasco e pôr do sol",
+          "shop": "O balcão, o cardápio e os uniformes",
+          "digital": "Home, notebook, celular e redes — energia de wrap em todo lugar"
+        }
+      }
+    },
     noreving: { blurb: 'Visuais de produção para a Noreving: luz, velocidade e sombra para o lançamento de uma e-bike.' },
     'musical-co-working': {
       title: 'Coworking Musical',
@@ -517,7 +654,7 @@ export default {
       body: 'A identidade visual se apoia em um logotipo compacto, tipografia marcante e uma paleta contida de preto, branco e azul-gelo. Padrões fluidos e desfoque de movimento trazem sensação de ritmo, equilibrados por layouts limpos e imagens de produto em close. Em roupas, peças digitais e animação, esses elementos criam uma expressão consistente da marca, construída em torno do movimento, da individualidade e do pertencimento.',
     },
     'domain-watch': { blurb: 'Visuais de produto para um relógio de aço escovado: a luz como matéria.' },
-    'hotel-ground-floor': { title: 'Térreo de hotel', blurb: 'Uma recepção esculpida em areia e gesso, emoldurada por arcos de madeira.' },
+    'dar-titawin': { title: 'Dar Titawin', blurb: 'Uma recepção esculpida em areia e gesso, emoldurada por arcos de madeira.', service: 'Design de interiores', client: 'Confidencial', intro: 'O térreo de um hotel à beira-mar em Tetuão — recepção, lounge e café — inspirado na própria Pomba Branca: reboco de cal, azul andaluz e cedro entalhado.', body: 'Tratamos o térreo como um único percurso da rua até o mar. Um balcão de recepção talhado como pedra bruta fica sob arcos de reboco azul; um muxarabi de cedro resguarda o lounge e espalha luz desenhada sobre o concreto; e o café se abre por inteiro para o Mediterrâneo, com nogueira, couro terracota e mármore negro mantendo a paleta quente e assentada.' },
     nouzha: {
       blurb: 'Identidade e direção de arte de fragrância: aroma, memória e ritual pessoal.',
       service: 'Identidade visual de marca',

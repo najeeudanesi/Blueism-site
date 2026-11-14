@@ -125,6 +125,14 @@ export default {
     'Cobalt Blue': 'Kobaltblau',
     Black: 'Schwarz',
     'Mist Grey': 'Nebelgrau',
+    'Lime Plaster': 'Kalkputz',
+    'Tetouan Blue': 'Tétouan-Blau',
+    'Cedar': 'Zeder',
+    'Nero Marble': 'Schwarzer Marmor',
+    'Pita Cream': 'Pita-Creme',
+    'Spit Orange': 'Spieß-Orange',
+    'Charcoal': 'Anthrazit',
+    'Grill Crust': 'Grillkruste',
   },
   services: [
     {
@@ -498,6 +506,135 @@ export default {
         }
       }
     },
+    shoowarma: {
+      "blurb": "Identität, Figuren, Verpackung und Website für einen Shawarma-Laden mit großer Wrap-Energie.",
+      "service": "Markenidentität & Webdesign",
+      "scope": "Figuren · Verpackung · Ayran · Website",
+      "platforms": "Laden · Verpackung · Web · Social",
+      "eyebrow": "Shoowarma – Identität, Figuren, Verpackung & Web",
+      "kicker": "Restaurantmarke & Website",
+      "intro": "Shoowarma ist ein Shawarma-Laden, der sich weigert, ernst zu sein. Wir haben ihm ein lautes Orange, eine kräftige Wortmarke und eine Crew handgezeichneter Figuren gegeben, die über Tüten, Flaschen, Shirts und Screens rennen, klettern und schneiden – damit jeder Wrap wirkt, als hätte ihn jemand mit richtig guter Laune gemacht.",
+      "copy": {
+        "overview": "Überblick",
+        "lead": "Gutes Essen. Gute Laune. Eine Marke, die so schmeckt, wie sie klingt – frisch vom Spieß, ein bisschen chaotisch und nicht zu übersehen.",
+        "cols": [
+          "Die Identität besteht aus drei Zutaten: Spieß-Orange, Pita-Creme und anthrazitfarbene Tinte; eine dicke, runde Wortmarke; und ein Ensemble illustrierter Stammgäste – der Schneider, der Läufer und die Freundin, die sich immer den letzten Wrap schnappt.",
+          "Die Crew ist überall. Sie rennt über die Tüten, wickelt das Papier, klettert auf den Spieß und ist der Star der Ayran-Flasche, während drei Muster – Figuren, Logo und Band – jede Fläche in Sekunden zu Shoowarma machen."
+        ],
+        "tags": [
+          "Markenidentität",
+          "Figuren",
+          "Verpackung",
+          "Ayran-Flasche",
+          "Website",
+          "Social"
+        ],
+        "brief": "Das Briefing",
+        "challenge": "Herausforderung",
+        "challengeTitle": "Shawarma gibt es überall. Shoowarma musste der sein, auf den man Lust hat.",
+        "challengeText": "Jede Straße hat einen Shawarma-Laden mit rotem Schild und Fotomenü. Shoowarma brauchte eine Persönlichkeit, die man von der anderen Straßenseite erkennt, nach einem Bissen im Kopf hat und gern trägt.",
+        "approach": "Ansatz",
+        "approachTitle": "Hungrig machen, menschlich bleiben, orange sein.",
+        "approachText": "Wir haben Stockfotos durch Figuren mit Haltung ersetzt, die Stimme in kurzen, lauten Zeilen geschrieben – „Frisch vom Spieß“, „Große Wrap-Energie“, „Roll mit uns“ – und jedem Touchpoint dieselben drei Farben gegeben, damit die Marke auf der Serviette genauso funktioniert wie auf der Startseite.",
+        "process": "Prozess",
+        "processTitle": "Vom Spieß auf die Straße.",
+        "steps": [
+          {
+            "title": "Probieren",
+            "lines": [
+              "Das Menü",
+              "Die Stammgäste"
+            ]
+          },
+          {
+            "title": "Zeichnen",
+            "lines": [
+              "Die Crew",
+              "Die Wortmarke"
+            ]
+          },
+          {
+            "title": "Einwickeln",
+            "lines": [
+              "Tüten und Boxen",
+              "Wrap-Papier"
+            ]
+          },
+          {
+            "title": "Abfüllen",
+            "lines": [
+              "Ayran 250 ml",
+              "Sechs Szenen"
+            ]
+          },
+          {
+            "title": "Bauen",
+            "lines": [
+              "Website",
+              "Online bestellen"
+            ]
+          },
+          {
+            "title": "Rollen",
+            "lines": [
+              "Eröffnung",
+              "Social-Launch"
+            ]
+          }
+        ],
+        "parallel": "Parallel",
+        "live": "Geöffnet",
+        "shout": [
+          "Shoowarma",
+          "Frisch vom Spieß",
+          "Gutes Essen. Gute Laune.",
+          "Große Wrap-Energie",
+          "Roll mit uns"
+        ],
+        "menu": [
+          "Chicken-Wrap",
+          "Beef-Wrap",
+          "Falafel-Wrap",
+          "Pommes",
+          "Ayran 250 ml"
+        ],
+        "crew": "Figuren",
+        "crewTitle": "Das ist die Crew.",
+        "pack": "Verpackung",
+        "packTitle": "Eingewickelt, eingetütet, mitgenommen.",
+        "ayran": "Ayran",
+        "ayranTitle": "Das Getränk bekam ein eigenes Shooting.",
+        "shop": "Der Laden",
+        "shopTitle": "Frisch vom Spieß.",
+        "digital": "Digital",
+        "digitalTitle": "Bestellt mit zwei Taps.",
+        "stats": [
+          {
+            "value": "3",
+            "label": "Wraps auf der Karte – Hähnchen, Rind und Falafel"
+          },
+          {
+            "value": "250 ml",
+            "label": "Eiskalter Ayran in jeder Flasche"
+          },
+          {
+            "value": "3",
+            "label": "Muster – Figuren, Logo und Band"
+          },
+          {
+            "value": "0",
+            "label": "Langweilige Tage am Tresen"
+          }
+        ],
+        "caps": {
+          "crew": "Die Crew erklimmt den Spieß – und das Figurenmuster, in dem sie lebt",
+          "pack": "Tüten, Wrap-Papier, Boxen, Menüs und Tabletts – ein Orange, eine Crew",
+          "ayran": "Ayran in sechs Stimmungen – Stein, Rauch, Eis, Fels und Sonnenuntergang",
+          "shop": "Der Tresen, die Menütafel und die Uniformen",
+          "digital": "Startseite, Laptop, Smartphone und Social – Wrap-Energie überall"
+        }
+      }
+    },
     noreving: { blurb: 'Produktionsvisuals für Noreving – Licht, Tempo und Schatten für den Launch eines E-Bikes.' },
     'musical-co-working': {
       blurb: 'Ein Co-Working-Space, gestimmt wie ein Instrument – Nussbaum, Stahl und Klang.',
@@ -516,7 +653,7 @@ export default {
       body: 'Die visuelle Identität basiert auf einer kompakten Wortmarke, kräftiger Typografie und einer reduzierten Palette aus Schwarz, Weiß und Eisblau. Fließende Muster und Bewegungsunschärfe vermitteln Tempo, ausbalanciert durch klare Layouts und Produktaufnahmen aus nächster Nähe. Auf Bekleidung, digitalen Medien und in Animationen ergibt sich so ein konsistenter Markenausdruck – gebaut auf Bewegung, Individualität und Zugehörigkeit.',
     },
     'domain-watch': { blurb: 'Produktvisuals für eine Uhr aus gebürstetem Stahl – Licht als Material.' },
-    'hotel-ground-floor': { title: 'Hotel-Erdgeschoss', blurb: 'Eine Rezeption, geformt aus Sand und Putz, gerahmt von Holzbögen.' },
+    'dar-titawin': { title: 'Dar Titawin', blurb: 'Eine Rezeption, geformt aus Sand und Putz, gerahmt von Holzbögen.', service: 'Innenarchitektur', client: 'Vertraulich', intro: 'Das Erdgeschoss eines Hotels am Meer in Tétouan – Rezeption, Lounge und Café –, inspiriert von der „Weißen Taube“ selbst: Kalkputz, andalusisches Blau und geschnitzte Zeder.', body: 'Wir haben das Geschoss als einen einzigen Weg von der Straße zum Meer gedacht. Ein Empfangstresen, behauen wie roher Stein, steht unter Bögen aus blauem Putz; eine Maschrabiya aus Zeder schirmt die Lounge ab und streut gemustertes Licht über den Beton; und das Café öffnet sich ganz zum Mittelmeer, wo Nussbaum, terrakottafarbenes Leder und schwarzer Marmor die Palette warm und geerdet halten.' },
     nouzha: {
       blurb: 'Duft-Identität und Art Direction – Duft, Erinnerung und persönliches Ritual.',
       service: 'Visuelle Markenidentität',

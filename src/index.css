@@ -1189,6 +1189,17 @@ body:has(.project-page) {
   background: var(--p-bg);
   color: var(--p-ink);
 }
+/* palette on the same edges as the images around it */
+.project .sec-palette.is-contained {
+  padding-inline: calc(var(--gutter) * 0.35);
+}
+.sec-palette.is-contained .palette {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.sec-palette.is-contained .palette-title {
+  padding-inline: 0;
+}
 .palette-title {
   font-size: clamp(32px, 4.4vw, 64px);
   font-weight: 400;
@@ -2299,4 +2310,221 @@ body:has(.project-page) {
 /* grid children with auto inline margins would shrink to content — keep them full width */
 .project-sections > .container {
   width: 100%;
+}
+
+/* ======================================================================
+   Marquee band + bento grid (generic section types)
+   ====================================================================== */
+.sec-marquee {
+  overflow: hidden;
+  background: var(--p-accent, #111);
+  color: #fff;
+  padding-block: clamp(12px, 1.6vw, 22px);
+}
+.sec-marquee.is-dark {
+  background: var(--p-ink, #111);
+  color: var(--p-bg, #fff);
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+.sec-marquee.is-reverse .marquee-track {
+  animation-direction: reverse;
+}
+.marquee-run {
+  display: flex;
+  flex-shrink: 0;
+}
+.marquee-run span {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: clamp(22px, 3.2vw, 46px);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+.marquee-run i {
+  font-style: normal;
+  margin-inline: 0.6em;
+  display: inline-block;
+  animation: marquee-spin 6s linear infinite;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes marquee-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+[dir='rtl'] .marquee-track {
+  animation-name: marquee-rtl;
+}
+@keyframes marquee-rtl {
+  to {
+    transform: translateX(50%);
+  }
+}
+
+.sec-bento {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(10px, 1.4vw, 20px);
+}
+.bento-cell {
+  grid-column: span var(--span);
+  grid-row: span var(--rows);
+  min-width: 0;
+}
+.bento-cell .reveal-img {
+  height: 100%;
+}
+.bento-cell .reveal-img img {
+  height: 100%;
+  aspect-ratio: var(--r);
+  object-fit: cover;
+}
+@media (max-width: 760px) {
+  .bento-cell {
+    grid-column: span 12;
+    grid-row: auto;
+  }
+  .bento-cell.m-6 {
+    grid-column: span 6;
+  }
+  .bento-cell.m-4 {
+    grid-column: span 4;
+  }
+}
+
+/* ======================================================================
+   Skin: Shoowarma — pita cream, spit orange, charcoal; loud and friendly
+   ====================================================================== */
+.skin-shoowarma {
+  --sw-cream: #fbeddc;
+  --sw-orange: #f54c04;
+  --sw-ink: #232323;
+  --p-bg: var(--sw-cream);
+  --p-ink: var(--sw-ink);
+  --p-accent: var(--sw-orange);
+  --sw-display: 'Archivo Black', 'Inter Tight', sans-serif;
+  --sw-mono: 'Space Mono', ui-monospace, monospace;
+  background: var(--sw-cream);
+  color: var(--sw-ink);
+}
+body:has(.skin-shoowarma) {
+  --page-bg: #fbeddc;
+  background: #fbeddc;
+}
+.skin-shoowarma .rule-blue {
+  background: var(--sw-orange);
+}
+.skin-shoowarma .project-title,
+.skin-shoowarma .sec-title,
+.skin-shoowarma .palette-title,
+.skin-shoowarma .ed-cols.is-brief h3,
+.skin-shoowarma .marquee-run span {
+  font-family: var(--sw-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+.skin-shoowarma .project-title {
+  font-size: clamp(34px, 4.4vw, 68px);
+  line-height: 0.92;
+}
+.skin-shoowarma .sec-title {
+  font-size: clamp(36px, 5.2vw, 84px);
+  line-height: 0.9;
+}
+.skin-shoowarma .ed-cols.is-brief h3 {
+  line-height: 0.98;
+}
+.skin-shoowarma .project-kicker,
+.skin-shoowarma .project-eyebrow,
+.skin-shoowarma .sec-label,
+.skin-shoowarma .media-cap,
+.skin-shoowarma .ed-meta,
+.skin-shoowarma .ed-small,
+.skin-shoowarma .pf-node small,
+.skin-shoowarma .pf-node span,
+.skin-shoowarma .pf-par,
+.skin-shoowarma .stat span,
+.skin-shoowarma .swatch {
+  font-family: var(--sw-mono);
+  letter-spacing: 0;
+}
+.skin-shoowarma .sec-label b,
+.skin-shoowarma .ed-lead::first-line {
+  color: var(--sw-orange);
+}
+.skin-shoowarma .reveal-img {
+  border-radius: 18px;
+  background: #f1dcc4;
+}
+.skin-shoowarma .ed-tags span {
+  box-shadow: none;
+  background: var(--sw-orange);
+  color: #fff;
+  font-family: var(--sw-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.skin-shoowarma .ed-tags span:nth-child(even) {
+  background: var(--sw-ink);
+  transform: rotate(-2deg);
+}
+.skin-shoowarma .ed-tags span:nth-child(3n) {
+  transform: rotate(2.5deg);
+}
+.skin-shoowarma .pf-node {
+  background: #fff7ee;
+  border: 2px solid var(--sw-ink);
+  border-radius: 18px;
+  box-shadow: 5px 5px 0 var(--sw-ink);
+}
+.skin-shoowarma .pf-node strong {
+  font-family: var(--sw-display);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.skin-shoowarma .pf-node.is-dark {
+  background: var(--sw-ink);
+  color: var(--sw-cream);
+}
+.skin-shoowarma .pf-node.is-accent {
+  background: var(--sw-orange);
+  border-color: var(--sw-ink);
+}
+.skin-shoowarma .stat strong {
+  font-family: var(--sw-display);
+  font-weight: 400;
+  color: var(--sw-orange);
+}
+.skin-shoowarma .sec-palette.is-contained .palette {
+  border-radius: 18px;
+}
+.skin-shoowarma .next-link,
+.skin-shoowarma .back-link {
+  font-family: var(--sw-display);
+  text-transform: uppercase;
+}
+
+/* Archivo Black and Space Mono have no Arabic glyphs — keep the site's Arabic face */
+:lang(ar) .skin-shoowarma * {
+  font-family: inherit;
+  text-transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .marquee-run i {
+    animation: none;
+  }
 }

@@ -19,7 +19,7 @@ export default function Project() {
 
   return (
     <div
-      className={`project-page ${themed ? 'is-themed' : ''}`}
+      className={`project-page ${themed ? 'is-themed' : ''} ${p.skin ? `skin-${p.skin}` : ''}`}
       style={themed ? { '--p-bg': p.theme.bg, '--p-ink': p.theme.ink, '--p-accent': p.theme.accent } : undefined}
     >
       <Seo title={p.fullName ? `${p.title} (${p.fullName})` : p.title} description={p.intro} image={p.hero} />
@@ -470,8 +470,8 @@ function Section({ s, p }) {
       )
     case 'palette':
       return (
-        <div className="sec sec-palette">
-          <div className="container">
+        <div className={`sec sec-palette ${s.contained ? 'container is-contained' : ''}`}>
+          <div className={s.contained ? undefined : 'container'}>
             <RevealText as="h2" className="palette-title" lines={t('project.palette')} />
           </div>
           <motion.div
@@ -508,6 +508,44 @@ function Section({ s, p }) {
             ))}
           </motion.div>
         </div>
+      )
+    case 'marquee': {
+      const words = c[s.items] ?? []
+      const run = (hidden) => (
+        <div className="marquee-run" aria-hidden={hidden || undefined}>
+          {words.map((w, k) => (
+            <span key={k}>
+              {w}
+              <i aria-hidden="true">✺</i>
+            </span>
+          ))}
+        </div>
+      )
+      return (
+        <div className={`sec sec-marquee ${s.reverse ? 'is-reverse' : ''} ${s.tone ? `is-${s.tone}` : ''}`}>
+          <div className="marquee-track">
+            {run(false)}
+            {run(true)}
+          </div>
+        </div>
+      )
+    }
+    case 'bento':
+      return (
+        <>
+          <div className="container sec sec-bento">
+            {s.items.map((it, k) => (
+              <div
+                key={k}
+                className={`bento-cell ${it.m ? `m-${it.m}` : ''}`}
+                style={{ '--span': it.span ?? 6, '--rows': it.rows ?? 1, '--r': it.ratio ?? 'auto' }}
+              >
+                <RevealImage src={it.src} alt={it.alt} delay={(k % 3) * 0.08} />
+              </div>
+            ))}
+          </div>
+          {cap && <div className="container">{cap}</div>}
+        </>
       )
     case 'video':
       return (

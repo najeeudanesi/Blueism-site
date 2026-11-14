@@ -125,6 +125,14 @@ export default {
     'Cobalt Blue': 'Azul cobalto',
     Black: 'Negro',
     'Mist Grey': 'Gris niebla',
+    'Lime Plaster': 'Yeso de cal',
+    'Tetouan Blue': 'Azul Tetuán',
+    'Cedar': 'Cedro',
+    'Nero Marble': 'Mármol negro',
+    'Pita Cream': 'Crema de pita',
+    'Spit Orange': 'Naranja asador',
+    'Charcoal': 'Carbón',
+    'Grill Crust': 'Corteza a la brasa',
   },
   services: [
     {
@@ -498,6 +506,135 @@ export default {
         }
       }
     },
+    shoowarma: {
+      "blurb": "Identidad, personajes, packaging y web para una shawarmería con mucha energía de wrap.",
+      "service": "Identidad de marca y diseño web",
+      "scope": "Personajes · Packaging · Ayran · Web",
+      "platforms": "Local · Packaging · Web · Redes",
+      "eyebrow": "Shoowarma — Identidad, personajes, packaging y web",
+      "kicker": "Marca de restaurante y web",
+      "intro": "Shoowarma es una shawarmería que se niega a ponerse seria. Le dimos un naranja ruidoso, un logotipo contundente y una pandilla de personajes dibujados a mano que corren, trepan y cortan por bolsas, botellas, camisetas y pantallas, para que cada wrap parezca hecho por alguien que está teniendo un buen día.",
+      "copy": {
+        "overview": "Resumen",
+        "lead": "Buena comida. Mejor rollo. Una marca que sabe como suena: recién salida del asador, un poco desordenada e imposible de ignorar.",
+        "cols": [
+          "La identidad se construye con tres ingredientes: naranja asador, crema de pita y tinta carbón; un logotipo grueso y redondeado; y un reparto de clientes habituales ilustrados: el que corta, el que corre y el amigo que siempre se lleva el último wrap.",
+          "La pandilla está en todas partes. Corre por las bolsas, envuelve el papel, trepa al asador y protagoniza la botella de Ayran, mientras tres patrones —personajes, logo y cinta— convierten cualquier superficie en Shoowarma en un segundo."
+        ],
+        "tags": [
+          "Identidad de marca",
+          "Personajes",
+          "Packaging",
+          "Botella de Ayran",
+          "Web",
+          "Redes"
+        ],
+        "brief": "El encargo",
+        "challenge": "Reto",
+        "challengeTitle": "Hay shawarma en cada esquina. Shoowarma tenía que ser el que se te antoja.",
+        "challengeText": "Cada calle tiene un local de shawarma con un letrero rojo y un menú de fotos. Shoowarma necesitaba una personalidad que se viera desde la otra acera, se recordara tras el primer bocado y que apeteciera llevar puesta.",
+        "approach": "Enfoque",
+        "approachTitle": "Que dé hambre, que sea humana, que sea naranja.",
+        "approachText": "Cambiamos las fotos de stock por personajes con actitud, escribimos la voz en frases cortas y ruidosas —«Recién salido del asador», «Energía de wrap», «Rueda con nosotros»— y dimos a cada punto de contacto los mismos tres colores, para que la marca funcione igual en una servilleta que en una web.",
+        "process": "Proceso",
+        "processTitle": "Del asador a la calle.",
+        "steps": [
+          {
+            "title": "Probar",
+            "lines": [
+              "El menú",
+              "Los habituales"
+            ]
+          },
+          {
+            "title": "Dibujar",
+            "lines": [
+              "La pandilla",
+              "El logotipo"
+            ]
+          },
+          {
+            "title": "Envolver",
+            "lines": [
+              "Bolsas y cajas",
+              "Papel de wrap"
+            ]
+          },
+          {
+            "title": "Embotellar",
+            "lines": [
+              "Ayran 250 ml",
+              "Seis escenas"
+            ]
+          },
+          {
+            "title": "Construir",
+            "lines": [
+              "Web",
+              "Pedidos online"
+            ]
+          },
+          {
+            "title": "Rodar",
+            "lines": [
+              "Apertura del local",
+              "Lanzamiento en redes"
+            ]
+          }
+        ],
+        "parallel": "En paralelo",
+        "live": "Abierto",
+        "shout": [
+          "Shoowarma",
+          "Recién salido del asador",
+          "Buena comida. Mejor rollo.",
+          "Energía de wrap",
+          "Rueda con nosotros"
+        ],
+        "menu": [
+          "Wrap de pollo",
+          "Wrap de ternera",
+          "Wrap de falafel",
+          "Patatas fritas",
+          "Ayran 250 ml"
+        ],
+        "crew": "Personajes",
+        "crewTitle": "Conoce a la pandilla.",
+        "pack": "Packaging",
+        "packTitle": "Envuelto, embolsado y para llevar.",
+        "ayran": "Ayran",
+        "ayranTitle": "La bebida tuvo su propia sesión de fotos.",
+        "shop": "El local",
+        "shopTitle": "Recién salido del asador.",
+        "digital": "Digital",
+        "digitalTitle": "Pide en dos toques.",
+        "stats": [
+          {
+            "value": "3",
+            "label": "Wraps en el menú: pollo, ternera y falafel"
+          },
+          {
+            "value": "250 ml",
+            "label": "De Ayran bien frío en cada botella"
+          },
+          {
+            "value": "3",
+            "label": "Patrones: personajes, logo y cinta"
+          },
+          {
+            "value": "0",
+            "label": "Días aburridos en el mostrador"
+          }
+        ],
+        "caps": {
+          "crew": "La pandilla trepando al asador, y el patrón de personajes donde vive",
+          "pack": "Bolsas, papel de wrap, cajas, menús y bandejas: un naranja, una pandilla",
+          "ayran": "Ayran en seis ambientes: piedra, humo, hielo, acantilado y atardecer",
+          "shop": "El mostrador, el menú y los uniformes",
+          "digital": "Web, portátil, móvil y redes: energía de wrap en todas partes"
+        }
+      }
+    },
     noreving: { blurb: 'Visuales de producción para Noreving: luz, velocidad y sombra para el lanzamiento de una e-bike.' },
     'musical-co-working': {
       title: 'Coworking Musical',
@@ -517,7 +654,7 @@ export default {
       body: 'La identidad visual se basa en un logotipo compacto, una tipografía contundente y una paleta contenida de negro, blanco y azul hielo. Los patrones fluidos y el desenfoque de movimiento aportan sensación de ritmo, equilibrados con maquetaciones limpias e imágenes de producto en primer plano. En ropa, piezas digitales y animación, estos elementos crean una expresión coherente de la marca, construida en torno al movimiento, la individualidad y la pertenencia.',
     },
     'domain-watch': { blurb: 'Visuales de producto para un reloj de acero cepillado: la luz como material.' },
-    'hotel-ground-floor': { title: 'Planta baja de hotel', blurb: 'Una recepción tallada en arena y yeso, enmarcada por arcos de madera.' },
+    'dar-titawin': { title: 'Dar Titawin', blurb: 'Una recepción tallada en arena y yeso, enmarcada por arcos de madera.', service: 'Interiorismo', client: 'Confidencial', intro: 'La planta baja de un hotel frente al mar en Tetuán —recepción, salón y café— inspirada en la propia Paloma Blanca: yeso de cal, azul andalusí y cedro tallado.', body: 'Tratamos la planta como un único recorrido de la calle al mar. Un mostrador de recepción tallado como piedra en bruto se alza bajo arcos de yeso azul; una celosía de cedro separa el salón y esparce luz con dibujo sobre el hormigón; y el café se abre por completo al Mediterráneo, con nogal, cuero terracota y mármol negro que mantienen la paleta cálida y serena.' },
     nouzha: {
       blurb: 'Identidad y dirección de arte de fragancia: aroma, memoria y ritual personal.',
       service: 'Identidad visual de marca',

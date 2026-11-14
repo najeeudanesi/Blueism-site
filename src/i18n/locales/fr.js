@@ -128,6 +128,14 @@ export default {
     'Cobalt Blue': 'Bleu cobalt',
     Black: 'Noir',
     'Mist Grey': 'Gris brume',
+    'Lime Plaster': 'Enduit à la chaux',
+    'Tetouan Blue': 'Bleu de Tétouan',
+    'Cedar': 'Cèdre',
+    'Nero Marble': 'Marbre noir',
+    'Pita Cream': 'Crème de pita',
+    'Spit Orange': 'Orange broche',
+    'Charcoal': 'Charbon',
+    'Grill Crust': 'Croûte grillée',
   },
   services: [
     {
@@ -501,6 +509,135 @@ export default {
         }
       }
     },
+    shoowarma: {
+      "blurb": "Identité, personnages, packaging et site web pour une enseigne de shawarma pleine d’énergie.",
+      "service": "Identité de marque et web design",
+      "scope": "Personnages · Packaging · Ayran · Site web",
+      "platforms": "Boutique · Packaging · Web · Réseaux",
+      "eyebrow": "Shoowarma — Identité, personnages, packaging et web",
+      "kicker": "Marque de restaurant et site web",
+      "intro": "Shoowarma est une enseigne de shawarma qui refuse de se prendre au sérieux. Nous lui avons donné un orange qui claque, un logotype bien gras et une bande de personnages dessinés à la main qui courent, grimpent et découpent sur les sacs, les bouteilles, les tee-shirts et les écrans — pour que chaque wrap ait l’air préparé par quelqu’un de bonne humeur.",
+      "copy": {
+        "overview": "Aperçu",
+        "lead": "Bonne bouffe. Bonne vibe. Une marque qui a le goût de ce qu’elle dit : tout juste sortie de la broche, un peu brouillonne et impossible à ignorer.",
+        "cols": [
+          "L’identité tient en trois ingrédients : l’orange broche, la crème de pita et l’encre charbon ; un logotype épais et arrondi ; et une galerie d’habitués illustrés — celui qui découpe, celui qui court et l’ami qui prend toujours le dernier wrap.",
+          "La bande est partout. Elle court sur les sacs, habille le papier, escalade la broche et fait la une de la bouteille d’Ayran, tandis que trois motifs — personnages, logo et ruban — transforment n’importe quelle surface en Shoowarma en une seconde."
+        ],
+        "tags": [
+          "Identité de marque",
+          "Personnages",
+          "Packaging",
+          "Bouteille d’Ayran",
+          "Site web",
+          "Réseaux"
+        ],
+        "brief": "Le brief",
+        "challenge": "Enjeu",
+        "challengeTitle": "Le shawarma est partout. Shoowarma devait être celui dont on a envie.",
+        "challengeText": "Chaque rue a son shawarma avec une enseigne rouge et un menu en photos. Shoowarma avait besoin d’une personnalité qu’on repère depuis le trottoir d’en face, qu’on retient après une bouchée et qu’on a envie de porter.",
+        "approach": "Approche",
+        "approachTitle": "Donner faim, rester humain, voir orange.",
+        "approachText": "Nous avons remplacé les photos de banque d’images par des personnages qui ont du caractère, écrit la voix en phrases courtes et fortes — « Tout juste sorti de la broche », « Énergie wrap », « Roule avec nous » — et donné les trois mêmes couleurs à chaque support, pour que la marque fonctionne sur une serviette comme sur une page d’accueil.",
+        "process": "Processus",
+        "processTitle": "De la broche à la rue.",
+        "steps": [
+          {
+            "title": "Goûter",
+            "lines": [
+              "Le menu",
+              "Les habitués"
+            ]
+          },
+          {
+            "title": "Dessiner",
+            "lines": [
+              "La bande",
+              "Le logotype"
+            ]
+          },
+          {
+            "title": "Emballer",
+            "lines": [
+              "Sacs et boîtes",
+              "Papier à wrap"
+            ]
+          },
+          {
+            "title": "Embouteiller",
+            "lines": [
+              "Ayran 250 ml",
+              "Six mises en scène"
+            ]
+          },
+          {
+            "title": "Développer",
+            "lines": [
+              "Site web",
+              "Commande en ligne"
+            ]
+          },
+          {
+            "title": "Rouler",
+            "lines": [
+              "Ouverture",
+              "Lancement sur les réseaux"
+            ]
+          }
+        ],
+        "parallel": "En parallèle",
+        "live": "Ouvert",
+        "shout": [
+          "Shoowarma",
+          "Tout juste sorti de la broche",
+          "Bonne bouffe. Bonne vibe.",
+          "Énergie wrap",
+          "Roule avec nous"
+        ],
+        "menu": [
+          "Wrap poulet",
+          "Wrap bœuf",
+          "Wrap falafel",
+          "Frites",
+          "Ayran 250 ml"
+        ],
+        "crew": "Personnages",
+        "crewTitle": "Voici la bande.",
+        "pack": "Packaging",
+        "packTitle": "Emballé, ensaché, emporté.",
+        "ayran": "Ayran",
+        "ayranTitle": "La boisson a eu droit à son shooting.",
+        "shop": "La boutique",
+        "shopTitle": "Tout juste sorti de la broche.",
+        "digital": "Digital",
+        "digitalTitle": "Commander en deux clics.",
+        "stats": [
+          {
+            "value": "3",
+            "label": "Wraps à la carte — poulet, bœuf et falafel"
+          },
+          {
+            "value": "250 ml",
+            "label": "D’Ayran bien frais dans chaque bouteille"
+          },
+          {
+            "value": "3",
+            "label": "Motifs — personnages, logo et ruban"
+          },
+          {
+            "value": "0",
+            "label": "Journée ennuyeuse au comptoir"
+          }
+        ],
+        "caps": {
+          "crew": "La bande à l’assaut de la broche — et le motif où elle vit",
+          "pack": "Sacs, papier à wrap, boîtes, menus et plateaux — un orange, une bande",
+          "ayran": "L’Ayran en six ambiances — pierre, fumée, glace, falaise et coucher de soleil",
+          "shop": "Le comptoir, le menu et les tenues",
+          "digital": "Page d’accueil, ordinateur, téléphone et réseaux — l’énergie wrap partout"
+        }
+      }
+    },
     noreving: { blurb: 'Visuels de production pour Noreving : lumière, vitesse et ombre pour le lancement d’un vélo électrique.' },
     'musical-co-working': {
       title: 'Coworking musical',
@@ -520,7 +657,7 @@ export default {
       body: 'L’identité visuelle repose sur un logotype resserré, une typographie affirmée et une palette sobre de noir, de blanc et de bleu glacier. Motifs fluides et flou de mouvement installent une sensation de vitesse, équilibrée par des mises en page épurées et des gros plans produit. Sur les vêtements, les supports numériques et l’animation, ces éléments forment une expression cohérente de la marque, construite autour du mouvement, de l’individualité et de l’appartenance.',
     },
     'domain-watch': { blurb: 'Visuels produit pour une montre en acier brossé : la lumière comme matière.' },
-    'hotel-ground-floor': { title: 'Rez-de-chaussée d’hôtel', blurb: 'Une réception sculptée dans le sable et le plâtre, encadrée d’arches en bois.' },
+    'dar-titawin': { title: 'Dar Titawin', blurb: 'Une réception sculptée dans le sable et le plâtre, encadrée d’arches en bois.', service: 'Architecture intérieure', client: 'Confidentiel', intro: 'Le rez-de-chaussée d’un hôtel face à la mer à Tétouan — réception, salon et café — inspiré de la Colombe blanche elle-même : enduit à la chaux, bleu andalou et cèdre sculpté.', body: 'Nous avons pensé l’étage comme une seule promenade, de la rue à la mer. Un comptoir de réception taillé comme une pierre brute s’installe sous des arches d’enduit bleu ; un moucharabieh en cèdre abrite le salon et projette une lumière ciselée sur le béton ; et le café s’ouvre entièrement sur la Méditerranée, où noyer, cuir terracotta et marbre noir gardent une palette chaleureuse et ancrée.' },
     nouzha: {
       blurb: 'Identité et direction artistique de parfum : senteur, mémoire et rituel intime.',
       service: 'Identité visuelle de marque',
