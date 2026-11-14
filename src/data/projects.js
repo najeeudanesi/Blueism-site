@@ -293,8 +293,13 @@ const allProjects = [
     hero: img('mc-1'),
     sections: [
       { type: 'image', src: img('mc-2'), alt: 'Lounge with steel speaker wall and walnut panelling' },
-      { type: 'image', src: img('mc-3'), alt: 'Record console beneath a wall of vinyl', size: 'half' },
-      { type: 'image', src: img('mc-4'), alt: 'Lounge with marble, walnut shelving and bean bags' },
+      {
+        type: 'bento',
+        items: [
+          { src: img('mc-3'), alt: 'Record console beneath a wall of vinyl', span: 4, ratio: 1.08 },
+          { src: img('mc-4'), alt: 'Lounge with marble, walnut shelving and bean bags', span: 8, ratio: 2.16 },
+        ],
+      },
     ],
   },
   {
