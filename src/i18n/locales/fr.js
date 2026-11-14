@@ -124,6 +124,10 @@ export default {
     Oxblood: 'Sang de bœuf',
     'Warm Gray': 'Gris chaud',
     'Ink Black': 'Noir d’encre',
+    'Off-White': 'Blanc cassé',
+    'Cobalt Blue': 'Bleu cobalt',
+    Black: 'Noir',
+    'Mist Grey': 'Gris brume',
   },
   services: [
     {
@@ -405,98 +409,98 @@ export default {
         }
       },
     cubit: {
-        "blurb": "Site web, direction 3D et identité pour un studio qui en dit le plus avec le moins.",
-        "service": "Design et développement web",
-        "scope": "Direction 3D · Motion · Identité",
-        "platforms": "Web · Mobile",
-        "kicker": "Site web et identité numérique",
-        "eyebrow": "Cubit. — Site web, direction 3D et motion",
-        "intro": "Cubit est un studio de design pluridisciplinaire bâti sur une idée\u202F: en dire le plus avec le moins. Notre défi\u202F: lui donner un site et une identité mesurés et cinématographiques — un cube, une couleur et une typographie qui parle en capitales.",
-        "copy": {
-          "overview": "Aperçu",
-          "lead": "L’identité réduit le studio à un seul objet — un cube indigo — et lui confie chaque page, chaque imprimé et chaque écran.",
-          "cols": [
-            "Autour du cube, nous avons généré une famille de scènes 3D\u202F: un cube seul sur un cyclorama gris, un champ de cubes indigo, blancs et carbone en mouvement, et quatre univers de projets.",
-            "Une typographie condensée énonce les quatre piliers — clarté, profondeur, intention, intemporalité — tandis qu’une grille sereine, des panneaux arrondis et un pied de page indigo gardent l’expérience rapide et cohérente, de l’ordinateur au téléphone."
-          ],
-          "tags": [
-            "Web design",
-            "Développement",
-            "Direction 3D",
-            "Motion",
-            "Identité"
-          ],
-          "brief": "Le brief",
-          "challenge": "Enjeu",
-          "challengeTitle": "Un studio aux multiples talents, et un site qui ne doit pas crier.",
-          "challengeText": "Cubit travaille la marque, l’intérieur, le digital et l’identité visuelle. Le site devait tout contenir sans devenir un catalogue — la clarté plutôt que le volume, un point de vue plutôt qu’une liste de services.",
-          "approach": "Approche",
-          "approachTitle": "Un objet, un accent et de l’espace.",
-          "approachText": "Nous avons laissé un seul cube représenter le studio, posé le langage en capitales condensées et donné à chaque section de quoi respirer. Le mouvement est lent et réfléchi, pour que le travail se lise avant l’effet.",
-          "process": "Processus",
-          "processTitle": "Notre méthode.",
-          "steps": [
-            {
-              "title": "Écouter",
-              "lines": [
-                "Quatre piliers",
-                "Le brief"
-              ]
-            },
-            {
-              "title": "Diriger",
-              "lines": [
-                "Scènes 3D",
-                "Boucles de motion"
-              ]
-            },
-            {
-              "title": "Marque",
-              "lines": [
-                "Kit d’identité",
-                "Imprimés et produits"
-              ]
-            },
-            {
-              "title": "Design",
-              "lines": [
-                "Système de pages",
-                "Maquettes mobiles"
-              ]
-            },
-            {
-              "title": "Développement",
-              "lines": [
-                "Un système responsive",
-                "De 390 à 1440 px"
-              ]
-            },
-            {
-              "title": "Lancement",
-              "lines": [
-                "cubit.studio",
-                "Web et mobile"
-              ]
-            }
-          ],
-          "parallel": "En parallèle",
-          "live": "En ligne",
-          "guidelines": "Charte de marque",
-          "guidelinesTitle": "Les règles derrière le cube.",
-          "identity": "Identité",
-          "identityTitle": "Hors de l’écran, dans la rue.",
-          "digital": "Digital",
-          "digitalTitle": "Un système, tous les écrans.",
-          "caps": {
-            "walkthrough": "cubit.studio — visite du site",
-            "studio": "Le système au studio — affiches, objets et écrans",
-            "process": "Au studio — épreuves, chemises et le premier livre indigo",
-            "guidelines": "Charte de marque — identité, anatomie du logo et typographie",
-            "identity": "Tote, carte, packaging et papeterie — un logotype, un indigo",
-            "digital": "Tablette, téléphone et ordinateur — même grille, même typographie, même indigo"
+      "blurb": "Site web, application mobile et design system pour un studio qui en dit le plus avec le moins.",
+      "service": "Design et développement web et mobile",
+      "scope": "UI/UX · Design system · Application mobile",
+      "platforms": "Web · iOS · Android",
+      "kicker": "Produit web et mobile",
+      "eyebrow": "Cubit. — Site web, application mobile et design system",
+      "intro": "Cubit est un studio de design pluridisciplinaire bâti sur une idée : en dire le plus avec le moins. Nous avons conçu et développé son site et son application sur un seul système responsive — une seule couleur d’accent, une seule grille et des composants qui se comportent de la même façon sur un écran de 1440 px comme sur un téléphone tenu d’une main.",
+      "copy": {
+        "overview": "Aperçu",
+        "lead": "Un seul design system anime chaque écran — le site, l’espace client et l’application mobile partagent les mêmes tokens, la même grille et les mêmes composants.",
+        "cols": [
+          "Nous avons commencé sur papier : parcours utilisateurs, croquis du tableau de bord et wireframes mobiles, puis nous les avons transformés en bibliothèque de composants — navigation, interrupteurs, cartes, graphiques et boutons — en mode clair et sombre.",
+          "Le bleu cobalt est le seul accent. Il signale les actions, les états actifs et les données, tandis que le noir, le blanc cassé et un gris doux portent tout le reste. Une grille de 12 colonnes se réduit à une mise en page mobile avec des marges de 16 px sans perdre son rythme."
+        ],
+        "tags": [
+          "Web design",
+          "Application mobile",
+          "UI/UX",
+          "Design system",
+          "Développement"
+        ],
+        "brief": "Le brief",
+        "challenge": "Enjeu",
+        "challengeTitle": "Un studio aux multiples talents, et un produit qui ne doit pas crier.",
+        "challengeText": "Cubit avait besoin d’un site pour présenter son travail et d’une application où les clients suivent leurs projets, consultent leurs statistiques et gèrent leur compte. Les deux devaient former un seul produit — rapide, calme et évident sur tous les écrans.",
+        "approach": "Approche",
+        "approachTitle": "Un accent, une grille, tous les écrans.",
+        "approachText": "Nous avons conçu en mobile first, défini espacements et typographie sous forme de tokens et construit chaque page avec le même jeu de composants. Le mouvement est lent et réfléchi, pour que le contenu se lise avant l’effet.",
+        "process": "Processus",
+        "processTitle": "Du croquis au système.",
+        "steps": [
+          {
+            "title": "Écouter",
+            "lines": [
+              "Besoins utilisateurs",
+              "Le brief"
+            ]
+          },
+          {
+            "title": "Esquisser",
+            "lines": [
+              "Parcours utilisateurs",
+              "Wireframes papier"
+            ]
+          },
+          {
+            "title": "Wireframe",
+            "lines": [
+              "Écrans mobiles",
+              "Spécifications d’espacement"
+            ]
+          },
+          {
+            "title": "Kit UI",
+            "lines": [
+              "Composants",
+              "Clair et sombre"
+            ]
+          },
+          {
+            "title": "Développement",
+            "lines": [
+              "Un système responsive",
+              "De 390 à 1440 px"
+            ]
+          },
+          {
+            "title": "Lancement",
+            "lines": [
+              "cubit.studio",
+              "Web et mobile"
+            ]
           }
+        ],
+        "parallel": "En parallèle",
+        "live": "En ligne",
+        "system": "Couleur et interface",
+        "systemTitle": "Un accent, deux modes.",
+        "mobile": "Mobile",
+        "mobileTitle": "Pensé pour une main.",
+        "digital": "Digital",
+        "digitalTitle": "Un système, tous les écrans.",
+        "caps": {
+          "system": "La bibliothèque de composants — navigation, contrôles, cartes et graphiques dans un seul système",
+          "sketches": "Premiers parcours — onboarding, tableau de bord et statistiques esquissés sur papier",
+          "type": "Charte — logotype et couleurs, échelle typographique, grille de 12 colonnes et modes clair et sombre",
+          "wireframes": "Wireframes mobiles — onboarding, statistiques, cartes et réglages, avec spécifications d’espacement",
+          "walkthrough": "cubit.studio — visite du site",
+          "digital": "Tablette, téléphone et ordinateur — même grille, même typographie, même cobalt"
         }
-      },
+      }
+    },
     noreving: { blurb: 'Visuels de production pour Noreving : lumière, vitesse et ombre pour le lancement d’un vélo électrique.' },
     'musical-co-working': {
       title: 'Coworking musical',

@@ -121,6 +121,10 @@ export default {
     Oxblood: 'Sangre de buey',
     'Warm Gray': 'Gris cálido',
     'Ink Black': 'Negro tinta',
+    'Off-White': 'Blanco roto',
+    'Cobalt Blue': 'Azul cobalto',
+    Black: 'Negro',
+    'Mist Grey': 'Gris niebla',
   },
   services: [
     {
@@ -402,98 +406,98 @@ export default {
         }
       },
     cubit: {
-        "blurb": "Web, dirección 3D e identidad para un estudio que dice más con menos.",
-        "service": "Diseño y desarrollo web",
-        "scope": "Dirección 3D · Motion · Identidad",
-        "platforms": "Web · Móvil",
-        "kicker": "Sitio web e identidad digital",
-        "eyebrow": "Cubit. — Sitio web, dirección 3D y motion",
-        "intro": "Cubit es un estudio de diseño multidisciplinar construido sobre una idea: decir más con menos. Nuestro reto era darle una web y una identidad que se sintieran medidas y cinematográficas: un cubo, un color y una tipografía que habla en mayúsculas.",
-        "copy": {
-          "overview": "Resumen",
-          "lead": "La identidad reduce el estudio a un único objeto, un cubo índigo, y le deja sostener cada página, cada impreso y cada pantalla.",
-          "cols": [
-            "Alrededor del cubo generamos una familia de escenas 3D: un cubo solitario sobre un ciclorama gris, un campo de cubos índigo, blancos y carbón en movimiento, y cuatro mundos de proyecto.",
-            "Una tipografía condensada enuncia los cuatro pilares (claridad, profundidad, propósito y atemporalidad), mientras una retícula serena, paneles redondeados y un pie de página índigo mantienen la experiencia rápida y coherente del escritorio al móvil."
-          ],
-          "tags": [
-            "Diseño web",
-            "Desarrollo",
-            "Dirección 3D",
-            "Motion",
-            "Identidad"
-          ],
-          "brief": "El encargo",
-          "challenge": "Reto",
-          "challengeTitle": "Un estudio con amplitud, y una web que no debe gritar.",
-          "challengeText": "Cubit trabaja en marcas, interiores, experiencias digitales e identidades visuales. La web tenía que abarcarlo todo sin convertirse en un catálogo: claridad antes que volumen, un punto de vista antes que una lista de servicios.",
-          "approach": "Enfoque",
-          "approachTitle": "Un objeto, un acento y mucho espacio.",
-          "approachText": "Dejamos que un único cubo representara al estudio, escribimos el lenguaje en mayúsculas condensadas y pesadas, y dimos a cada sección espacio para respirar. El movimiento es lento y deliberado, para que el trabajo se lea antes que el efecto.",
-          "process": "Proceso",
-          "processTitle": "Cómo trabajamos.",
-          "steps": [
-            {
-              "title": "Escuchar",
-              "lines": [
-                "Cuatro pilares",
-                "El encargo"
-              ]
-            },
-            {
-              "title": "Dirigir",
-              "lines": [
-                "Escenas 3D",
-                "Loops de motion"
-              ]
-            },
-            {
-              "title": "Marca",
-              "lines": [
-                "Kit de identidad",
-                "Impresos y producto"
-              ]
-            },
-            {
-              "title": "Diseño",
-              "lines": [
-                "Sistema de páginas",
-                "Diseños móviles"
-              ]
-            },
-            {
-              "title": "Desarrollo",
-              "lines": [
-                "Un sistema responsive",
-                "De 390 a 1440 px"
-              ]
-            },
-            {
-              "title": "Lanzamiento",
-              "lines": [
-                "cubit.studio",
-                "Web y móvil"
-              ]
-            }
-          ],
-          "parallel": "En paralelo",
-          "live": "En vivo",
-          "guidelines": "Guía de marca",
-          "guidelinesTitle": "Las reglas detrás del cubo.",
-          "identity": "Identidad",
-          "identityTitle": "Fuera de la pantalla, a la calle.",
-          "digital": "Digital",
-          "digitalTitle": "Un sistema, todas las pantallas.",
-          "caps": {
-            "walkthrough": "cubit.studio — recorrido por la web",
-            "studio": "El sistema en el estudio: pósteres, objetos y pantallas",
-            "process": "En el estudio: pruebas, carpetas y el primer libro índigo",
-            "guidelines": "Guía de marca: identidad, anatomía del logotipo y tipografía",
-            "identity": "Tote, tarjeta, packaging y papelería: un logotipo, un índigo",
-            "digital": "Tableta, móvil y escritorio: la misma retícula, tipografía e índigo"
+      "blurb": "Sitio web, app móvil y sistema de diseño para un estudio que dice lo máximo con lo mínimo.",
+      "service": "Diseño y desarrollo web y móvil",
+      "scope": "UI/UX · Sistema de diseño · App móvil",
+      "platforms": "Web · iOS · Android",
+      "kicker": "Producto web y móvil",
+      "eyebrow": "Cubit. — Sitio web, app móvil y sistema de diseño",
+      "intro": "Cubit es un estudio de diseño multidisciplinar construido sobre una idea: decir lo máximo con lo mínimo. Diseñamos y desarrollamos su sitio web y su app sobre un único sistema responsive: un solo color de acento, una sola retícula y componentes que se comportan igual en un escritorio de 1440 px que en un teléfono en una mano.",
+      "copy": {
+        "overview": "Resumen",
+        "lead": "Un único sistema de diseño impulsa cada pantalla: el sitio, el panel de clientes y la app móvil comparten los mismos tokens, retícula y componentes.",
+        "cols": [
+          "Empezamos en papel: flujos de usuario, bocetos del panel y wireframes móviles, que luego convertimos en una librería de componentes —navegación, interruptores, tarjetas, gráficos y botones— en modo claro y oscuro.",
+          "El azul cobalto es el único acento. Marca acciones, estados activos y datos, mientras el negro, el blanco roto y un gris suave sostienen todo lo demás. Una retícula de 12 columnas se reduce a un diseño móvil con márgenes de 16 px sin perder el ritmo."
+        ],
+        "tags": [
+          "Diseño web",
+          "App móvil",
+          "UI/UX",
+          "Sistema de diseño",
+          "Desarrollo"
+        ],
+        "brief": "El encargo",
+        "challenge": "Reto",
+        "challengeTitle": "Un estudio versátil y un producto que no debe gritar.",
+        "challengeText": "Cubit necesitaba un sitio que presentara su trabajo y una app donde los clientes siguieran proyectos, revisaran analíticas y gestionaran su cuenta. Ambos debían sentirse como un solo producto: rápido, sereno y evidente en cualquier pantalla.",
+        "approach": "Enfoque",
+        "approachTitle": "Un acento, una retícula, todas las pantallas.",
+        "approachText": "Diseñamos primero para móvil, definimos el espaciado y la tipografía como tokens y construimos cada página con el mismo conjunto de componentes. El movimiento es lento y deliberado, para que el contenido se lea antes que el efecto.",
+        "process": "Proceso",
+        "processTitle": "Del boceto al sistema.",
+        "steps": [
+          {
+            "title": "Escuchar",
+            "lines": [
+              "Necesidades del usuario",
+              "El encargo"
+            ]
+          },
+          {
+            "title": "Bocetar",
+            "lines": [
+              "Flujos de usuario",
+              "Wireframes en papel"
+            ]
+          },
+          {
+            "title": "Wireframe",
+            "lines": [
+              "Pantallas móviles",
+              "Especificaciones de espaciado"
+            ]
+          },
+          {
+            "title": "Kit de UI",
+            "lines": [
+              "Componentes",
+              "Claro y oscuro"
+            ]
+          },
+          {
+            "title": "Desarrollo",
+            "lines": [
+              "Un sistema responsive",
+              "De 390 a 1440 px"
+            ]
+          },
+          {
+            "title": "Lanzamiento",
+            "lines": [
+              "cubit.studio",
+              "Web y móvil"
+            ]
           }
+        ],
+        "parallel": "En paralelo",
+        "live": "En vivo",
+        "system": "Color e interfaz",
+        "systemTitle": "Un acento, dos modos.",
+        "mobile": "Móvil",
+        "mobileTitle": "Diseñado para una mano.",
+        "digital": "Digital",
+        "digitalTitle": "Un sistema, todas las pantallas.",
+        "caps": {
+          "system": "La librería de componentes: navegación, controles, tarjetas y gráficos en un solo sistema",
+          "sketches": "Primeros flujos: onboarding, panel y analíticas bocetados en papel",
+          "type": "Guía — logotipo y colores, escala tipográfica, retícula de 12 columnas y modo claro y oscuro",
+          "wireframes": "Wireframes móviles: onboarding, analíticas, tarjetas y ajustes, con especificaciones de espaciado",
+          "walkthrough": "cubit.studio — recorrido por el sitio",
+          "digital": "Tableta, teléfono y escritorio: la misma retícula, tipografía y cobalto"
         }
-      },
+      }
+    },
     noreving: { blurb: 'Visuales de producción para Noreving: luz, velocidad y sombra para el lanzamiento de una e-bike.' },
     'musical-co-working': {
       title: 'Coworking Musical',
