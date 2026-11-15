@@ -540,7 +540,7 @@ function Section({ s, p }) {
                 className="bento-cell"
                 style={{ '--span': it.span ?? 6, '--rows': it.rows ?? 1, '--r': it.ratio ?? 'auto' }}
               >
-                <RevealImage src={it.src} alt={it.alt} delay={(k % 3) * 0.08} />
+                <RevealImage src={it.src} video={it.video} alt={it.alt} delay={(k % 3) * 0.08} />
               </div>
             ))}
           </div>
