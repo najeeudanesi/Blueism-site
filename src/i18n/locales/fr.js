@@ -450,6 +450,21 @@ export default {
         'DLVRNC. est un concept de sportswear inspiré par la culture running et la liberté que procure le mouvement. Notre défi : créer une identité concentrée et assurée, qui relie la discipline de l’entraînement à l’énergie collective d’un club de course.',
       body: 'L’identité visuelle repose sur un logotype resserré, une typographie affirmée et une palette sobre de noir, de blanc et de bleu glacier. Motifs fluides et flou de mouvement installent une sensation de vitesse, équilibrée par des mises en page épurées et des gros plans produit. Sur les vêtements, les supports numériques et l’animation, ces éléments forment une expression cohérente de la marque, construite autour du mouvement, de l’individualité et de l’appartenance.',
     },
+    aurared: {
+      blurb: "Packaging de soins botaniques, mis en scène là où poussent les ingrédients.",
+      service: "Packaging et direction artistique",
+      intro: "Aurared est une gamme de soins botaniques en trois essentiels : un savon pour les mains, un nettoyant visage et un baume pour les mains. Nous avons conçu le packaging et assuré la direction artistique d’une campagne qui ramène chaque produit dans le paysage dont sa formule est issue.",
+      body: "Verre vert bouteille et tubes au toucher doux portent une étiquette crème discrète. Pas de fonds de studio : chaque produit est posé sur la mousse, la pierre, le bois flotté ou la falaise, pour que le packaging soit toujours vu dans la lumière et la matière qu’il veut évoquer.",
+      stories: {
+        branchNum: "02 / Nettoyant visage",
+        branchTitle: "Posé sur une branche vivante.",
+        branchText: "Le nettoyant repose là où la fougère rejoint la mousse : air frais, lumière verte et douce, rien de pressé. Un nettoyage quotidien tout en douceur, photographié comme il doit se ressentir — frais, clair et discrètement vivant.",
+        strip: "Trois climats, un même vert : le baume dans les fleurs sauvages, le savon dans le sous-bois, puis le baume sur la pierre mouillée.",
+        labelNum: "L’étiquette",
+        labelTitle: "Un carnet de terrain, pas un comptoir de beauté.",
+        labelText: "Chaque étiquette se lit comme une page de notes : un numéro, un nom, ce qu’il fait et la contenance — 01 Savon mains, 02 Nettoyant visage, 03 Baume mains. Un seul filet rouille comme accent, pour laisser le verre, le vert et le paysage faire le reste.",
+      },
+    },
     silvatch: {
       title: "Silvatch",
       blurb: "Visuels produit pour une montre en acier brossé : la lumière comme matière.",

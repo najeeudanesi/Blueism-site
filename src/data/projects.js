@@ -370,6 +370,48 @@ const allProjects = [
     ],
   },
   {
+    slug: 'aurared',
+    title: 'Aurared',
+    category: 'Branding',
+    fullbleed: true,
+    cover: img('card-aurared'),
+    back: img('ar-wash-moss'),
+    blurb: 'Botanical skincare packaging, staged where the ingredients grow.',
+    available: true,
+    service: 'Packaging & Art Direction',
+    client: 'Aurared',
+    year: '2026',
+    intro:
+      'Aurared is a botanical skincare line of three essentials — a hand wash, a facial cleanser and a hand balm. We designed the packaging and art-directed a campaign that returns each product to the landscape its formula comes from.',
+    body:
+      'Bottle-green glass and soft-touch tubes carry a quiet cream label. Instead of studio sweeps, every product is set on moss, stone, driftwood and sea cliff, so the packaging is always seen in the light and texture it is meant to evoke.',
+    hero: img('ar-hero'),
+    stories: {
+      branchNum: '02 / Facial Cleanser',
+      branchTitle: 'Rested on a living branch.',
+      branchText:
+        'The cleanser sits where fern meets moss — cool air, soft green light and nothing in a hurry. A gentle daily cleanse, photographed the way it should feel: fresh, clear and quietly alive.',
+      strip: 'Three climates, one green — the Hand Balm in wildflowers, the Hand Wash in the undergrowth, the Balm again on wet stone.',
+      labelNum: 'The label',
+      labelTitle: 'A field journal, not a beauty counter.',
+      labelText:
+        'Each label reads like a page of notes: a number, a name, what it does and how much is inside — 01 Hand Wash, 02 Facial Cleanser, 03 Hand Balm. A single rust-red rule is the only accent, so the glass, the green and the landscape do the rest.',
+    },
+    sections: [
+      { type: 'story', src: img('ar-cleanser-branch'), alt: 'Aurared Facial Cleanser resting on a moss-covered branch among ferns', num: 'branchNum', title: 'branchTitle', text: 'branchText', bg: '#E4E9E2', ink: '#1D2A1A' },
+      {
+        type: 'row',
+        cap: 'strip',
+        items: [
+          { src: img('ar-balm-flowers'), alt: 'Aurared Hand Balm standing on moss among wildflowers', ratio: 1 },
+          { src: img('ar-wash-moss'), alt: 'Aurared Hand Wash lying in deep green moss and ferns', ratio: 1 },
+          { src: img('ar-balm-stone'), alt: 'Aurared Hand Balm resting on wet, mossy stone', ratio: 1 },
+        ],
+      },
+      { type: 'story', flip: true, src: img('ar-cleanser-driftwood'), alt: 'Aurared Facial Cleanser set in weathered driftwood and moss', num: 'labelNum', title: 'labelTitle', text: 'labelText', bg: '#1D2A1A', ink: '#EEF0E6' },
+    ],
+  },
+  {
     slug: 'kinetik',
     title: 'Kinetik.',
     category: 'Automations',
@@ -532,6 +574,7 @@ const ORDER = [
   'avren',
   'musical-co-working',
   'silvatch',
+  'aurared',
   'dar-titawin',
   'nouzha',
   'villa-013',

@@ -447,6 +447,21 @@ export default {
         'DLVRNC. es un concepto de ropa deportiva inspirado en la cultura del running y la libertad que se encuentra en el movimiento. Nuestro reto era crear una identidad que transmitiera foco y confianza, uniendo la disciplina del entrenamiento con la energía compartida de un club de running.',
       body: 'La identidad visual se basa en un logotipo compacto, una tipografía contundente y una paleta contenida de negro, blanco y azul hielo. Los patrones fluidos y el desenfoque de movimiento aportan sensación de ritmo, equilibrados con maquetaciones limpias e imágenes de producto en primer plano. En ropa, piezas digitales y animación, estos elementos crean una expresión coherente de la marca, construida en torno al movimiento, la individualidad y la pertenencia.',
     },
+    aurared: {
+      blurb: "Packaging de cuidado botánico, puesto en escena donde crecen los ingredientes.",
+      service: "Packaging y dirección de arte",
+      intro: "Aurared es una línea de cuidado botánico con tres esenciales: un jabón de manos, un limpiador facial y un bálsamo de manos. Diseñamos el packaging y dirigimos una campaña que devuelve cada producto al paisaje del que viene su fórmula.",
+      body: "Vidrio verde botella y tubos de tacto suave llevan una etiqueta crema y serena. En lugar de fondos de estudio, cada producto se apoya en musgo, piedra, madera de deriva o acantilado, para que el packaging siempre se vea en la luz y la textura que quiere evocar.",
+      stories: {
+        branchNum: "02 / Limpiador facial",
+        branchTitle: "Sobre una rama viva.",
+        branchText: "El limpiador descansa donde el helecho se encuentra con el musgo: aire fresco, luz verde y suave, y ninguna prisa. Una limpieza diaria suave, fotografiada como debe sentirse: fresca, clara y discretamente viva.",
+        strip: "Tres climas, un mismo verde: el bálsamo entre flores silvestres, el jabón en el sotobosque y otra vez el bálsamo sobre piedra mojada.",
+        labelNum: "La etiqueta",
+        labelTitle: "Un cuaderno de campo, no un mostrador de belleza.",
+        labelText: "Cada etiqueta se lee como una página de notas: un número, un nombre, qué hace y cuánto contiene — 01 Jabón de manos, 02 Limpiador facial, 03 Bálsamo de manos. Un solo filete rojo óxido es el único acento; el vidrio, el verde y el paisaje hacen el resto.",
+      },
+    },
     silvatch: {
       title: "Silvatch",
       blurb: "Visuales de producto para un reloj de acero cepillado: la luz como material.",

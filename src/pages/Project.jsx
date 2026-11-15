@@ -297,7 +297,7 @@ function Stats({ items }) {
 function Section({ s, p }) {
   const { t, color } = useI18n()
   const c = p.copy ?? {}
-  const cap = s.cap ? <Caption text={c.caps?.[s.cap]} num={s.num} /> : null
+  const cap = s.cap ? <Caption text={c.caps?.[s.cap] ?? p.stories?.[s.cap]} num={s.type === 'story' ? undefined : s.num} /> : null
   switch (s.type) {
     case 'textblock':
       return (
@@ -446,7 +446,7 @@ function Section({ s, p }) {
     case 'image':
       return (
         <div className={s.bleed ? 'sec sec-bleed' : `container sec ${s.size === 'half' ? 'sec-half' : ''} ${s.inset ? 'sec-inset' : ''}`}>
-          <RevealImage src={s.src} alt={s.alt} parallax={s.parallax} className={s.bleed ? 'is-bleed' : ''} />
+          <RevealImage src={s.src} video={s.video} alt={s.alt} parallax={s.parallax} className={`${s.bleed ? 'is-bleed' : ''} ${s.video ? 'is-showcase' : ''}`} />
           {cap}
         </div>
       )
@@ -461,14 +461,35 @@ function Section({ s, p }) {
     case 'row':
       // images side by side at one shared height, each shown whole — widths follow each image's ratio
       return (
-        <div className="sec sec-row">
-          {s.items.map((it, k) => (
-            <div key={k} className="row-cell" style={{ flex: `${it.ratio} 1 0` }}>
-              <RevealImage src={it.src} alt={it.alt} delay={k * 0.1} className="is-bleed is-whole" />
-            </div>
-          ))}
+        <>
+          <div className="sec sec-row">
+            {s.items.map((it, k) => (
+              <div key={k} className="row-cell" style={{ flex: `${it.ratio} 1 0` }}>
+                <RevealImage src={it.src} alt={it.alt} delay={k * 0.1} className="is-bleed is-whole" />
+              </div>
+            ))}
+          </div>
+          {cap && <div className="container row-cap">{cap}</div>}
+        </>
+      )
+    case 'story': {
+      // half-screen image beside a written panel; `flip` puts the text first
+      const st = p.stories ?? {}
+      return (
+        <div className={`sec sec-story ${s.flip ? 'is-flip' : ''}`} style={{ '--story-bg': s.bg, '--story-ink': s.ink }}>
+          <RevealImage src={s.src} alt={s.alt} className="is-bleed is-whole story-img" />
+          <div className="story-text">
+            <FadeUp as="p" className="story-num">
+              {st[s.num]}
+            </FadeUp>
+            <RevealText as="h2" className="story-title" text={st[s.title]} />
+            <FadeUp as="p" className="story-body" delay={0.15}>
+              {st[s.text]}
+            </FadeUp>
+          </div>
         </div>
       )
+    }
     case 'pair':
       return (
         <>
