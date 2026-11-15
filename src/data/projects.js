@@ -183,13 +183,33 @@ const allProjects = [
     ],
   },
   {
-    slug: 'noreving',
-    title: 'Noreving',
+    slug: 'avren',
+    title: 'Avren',
     category: 'Visuals',
-    cover: img('card-noreving'),
-    back: img('noreving-bike'),
-    blurb: 'Noreving production visuals — light, speed and shadow for an e-bike launch.',
-    available: false,
+    fullbleed: true,
+    cover: img('card-avren'),
+    back: img('av-front'),
+    blurb: 'Avren production visuals — light, speed and shadow for an e-bike launch.',
+    available: true,
+    service: 'Product Visuals · 3D Rendering',
+    client: 'Avren',
+    year: '2026',
+    intro:
+      'Launch visuals for Avren, a city e-bike built around a single bar of light. We kept the bike in near darkness and let its integrated headlight do the talking — every frame is lit by the product itself.',
+    body:
+      'The renders work like a slow reveal: a streak of light at speed, the frame stepping out of the shadow, then the headtube up close, where the light bar sits flush in the carbon. A tight monochrome palette, soft falloff and motion blur keep the focus on form, finish and that one line of light.',
+    hero: img('av-hero'),
+    sections: [
+      {
+        type: 'row',
+        items: [
+          { src: img('av-light'), alt: 'Avren headlight cutting through the dark in a motion-blurred streak', ratio: 0.7993 },
+          { src: img('av-front'), alt: 'Avren e-bike front wheel and frame emerging from shadow', ratio: 0.7515 },
+          { src: img('av-headtube'), alt: 'Close-up of the Avren headtube with its integrated light bar', ratio: 0.4447 },
+        ],
+      },
+      { type: 'image', src: img('av-front'), alt: 'Avren e-bike in low light, front three-quarter view', bleed: true },
+    ],
   },
   {
     slug: 'musical-co-working',
@@ -286,12 +306,31 @@ const allProjects = [
     ],
   },
   {
-    slug: 'domain-watch',
-    title: 'Domain Watch',
+    slug: 'silvatch',
+    title: 'Silvatch',
     category: 'Visuals',
-    cover: img('card-domain-watch'),
+    fullbleed: true,
+    cover: img('card-silvatch'),
+    back: img('sv-wrist'),
     blurb: 'Product visuals for a brushed-steel timepiece — light as material.',
-    available: false,
+    available: true,
+    service: 'Product Visuals · 3D Rendering',
+    client: 'Silvatch',
+    year: '2026',
+    intro:
+      'Launch visuals for Silvatch, a brushed-steel watch with an octagonal bezel and an integrated bracelet. We lit it with a single amber source raking across the metal, so the finish tells the story.',
+    body:
+      'The series moves from detail to wrist: the sunray dial and screw-set bezel, the caseback catching a hard rim of light, the case suspended in a glow, and finally the watch worn by a figure in silhouette. One colour of light, one material, and shadows deep enough to make the steel the brightest thing in the frame.',
+    hero: img('sv-hero'),
+    sections: [
+      {
+        type: 'row',
+        items: [
+          { src: img('sv-wrist'), alt: 'Figure in silhouette wearing the Silvatch watch against an amber spotlight', ratio: 0.7959 },
+          { src: img('sv-case'), alt: 'Silvatch case and bracelet suspended in a warm glow', ratio: 0.8021 },
+        ],
+      },
+    ],
   },
   {
     slug: 'dar-titawin',
@@ -566,9 +605,9 @@ const allProjects = [
 const ORDER = [
   'dlvrnc',
   'shoowarma',
-  'noreving',
+  'avren',
   'musical-co-working',
-  'domain-watch',
+  'silvatch',
   'cubit',
   'dar-titawin',
   'nouzha',

@@ -516,7 +516,13 @@ export default {
       "intro": "Shoowarma ist ein Shawarma-Laden, der sich weigert, ernst zu sein. Wir haben ihm ein lautes Orange, eine kräftige Wortmarke und eine Crew handgezeichneter Figuren gegeben, die über Tüten, Flaschen, Shirts und Screens rennen, klettern und schneiden – damit jeder Wrap wirkt, als hätte ihn jemand mit richtig guter Laune gemacht.",
       "body": "Die Identität besteht aus drei Zutaten: Spieß-Orange, Pita-Creme und anthrazitfarbene Tinte; eine dicke, runde Wortmarke; und ein Ensemble illustrierter Stammgäste – der Schneider, der Läufer und die Freundin, die sich immer den letzten Wrap schnappt. Die Crew ist überall. Sie rennt über die Tüten, wickelt das Papier, klettert auf den Spieß und ist der Star der Ayran-Flasche, während drei Muster – Figuren, Logo und Band – jede Fläche in Sekunden zu Shoowarma machen."
     },
-    noreving: { blurb: 'Produktionsvisuals für Noreving – Licht, Tempo und Schatten für den Launch eines E-Bikes.' },
+    avren: {
+      title: "Avren",
+      blurb: "Produktionsvisuals für Avren – Licht, Tempo und Schatten für den Launch eines E-Bikes.",
+      service: "Produktvisuals · 3D-Rendering",
+      intro: "Launch-Visuals für Avren, ein Stadt-E-Bike rund um einen einzigen Lichtbalken. Wir haben das Rad fast im Dunkeln gelassen und den integrierten Scheinwerfer sprechen lassen – jedes Bild wird vom Produkt selbst beleuchtet.",
+      body: "Die Renderings wirken wie eine langsame Enthüllung: ein Lichtstreif in voller Fahrt, der Rahmen, der aus dem Schatten tritt, dann das Steuerrohr ganz nah, wo der Lichtbalken bündig im Carbon sitzt. Eine knappe Monochrom-Palette, weiche Verläufe und Bewegungsunschärfe lenken den Blick auf Form, Finish und diese eine Lichtlinie.",
+    },
     'musical-co-working': {
       blurb: 'Ein Co-Working-Space, gestimmt wie ein Instrument – Nussbaum, Stahl und Klang.',
       service: 'Innenarchitektur',
@@ -533,7 +539,13 @@ export default {
         'DLVRNC. ist ein Sportswear-Konzept, inspiriert von der Laufkultur und der Freiheit, die in Bewegung steckt. Unsere Aufgabe war es, eine Identität zu schaffen, die fokussiert und selbstbewusst wirkt und die Disziplin des Trainings mit der gemeinsamen Energie eines Laufclubs verbindet.',
       body: 'Die visuelle Identität basiert auf einer kompakten Wortmarke, kräftiger Typografie und einer reduzierten Palette aus Schwarz, Weiß und Eisblau. Fließende Muster und Bewegungsunschärfe vermitteln Tempo, ausbalanciert durch klare Layouts und Produktaufnahmen aus nächster Nähe. Auf Bekleidung, digitalen Medien und in Animationen ergibt sich so ein konsistenter Markenausdruck – gebaut auf Bewegung, Individualität und Zugehörigkeit.',
     },
-    'domain-watch': { blurb: 'Produktvisuals für eine Uhr aus gebürstetem Stahl – Licht als Material.' },
+    silvatch: {
+      title: "Silvatch",
+      blurb: "Produktvisuals für eine Uhr aus gebürstetem Stahl – Licht als Material.",
+      service: "Produktvisuals · 3D-Rendering",
+      intro: "Launch-Visuals für Silvatch, eine Uhr aus gebürstetem Stahl mit achteckiger Lünette und integriertem Armband. Eine einzige bernsteinfarbene Lichtquelle streift über das Metall – so erzählt das Finish die Geschichte.",
+      body: "Die Serie führt vom Detail zum Handgelenk: das Sonnenschliff-Zifferblatt und die verschraubte Lünette, der Gehäuseboden mit einer harten Lichtkante, das Gehäuse schwebend im Schein und schließlich die Uhr an einer Silhouette. Eine Lichtfarbe, ein Material und Schatten, tief genug, dass der Stahl das Hellste im Bild ist.",
+    },
     'dar-titawin': { title: 'Dar Titawin', blurb: 'Eine Rezeption, geformt aus Sand und Putz, gerahmt von Holzbögen.', service: 'Innenarchitektur', client: 'Vertraulich', intro: 'Das Erdgeschoss eines Hotels am Meer in Tétouan – Rezeption, Lounge und Café –, inspiriert von der „Weißen Taube“ selbst: Kalkputz, andalusisches Blau und geschnitzte Zeder.', body: 'Wir haben das Geschoss als einen einzigen Weg von der Straße zum Meer gedacht. Ein Empfangstresen, behauen wie roher Stein, steht unter Bögen aus blauem Putz; eine Maschrabiya aus Zeder schirmt die Lounge ab und streut gemustertes Licht über den Beton; und das Café öffnet sich ganz zum Mittelmeer, wo Nussbaum, terrakottafarbenes Leder und schwarzer Marmor die Palette warm und geerdet halten.' },
     nouzha: {
       blurb: 'Duft-Identität und Art Direction – Duft, Erinnerung und persönliches Ritual.',

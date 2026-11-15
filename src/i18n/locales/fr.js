@@ -519,7 +519,13 @@ export default {
       "intro": "Shoowarma est une enseigne de shawarma qui refuse de se prendre au sérieux. Nous lui avons donné un orange qui claque, un logotype bien gras et une bande de personnages dessinés à la main qui courent, grimpent et découpent sur les sacs, les bouteilles, les tee-shirts et les écrans — pour que chaque wrap ait l’air préparé par quelqu’un de bonne humeur.",
       "body": "L’identité tient en trois ingrédients : l’orange broche, la crème de pita et l’encre charbon ; un logotype épais et arrondi ; et une galerie d’habitués illustrés — celui qui découpe, celui qui court et l’ami qui prend toujours le dernier wrap. La bande est partout. Elle court sur les sacs, habille le papier, escalade la broche et fait la une de la bouteille d’Ayran, tandis que trois motifs — personnages, logo et ruban — transforment n’importe quelle surface en Shoowarma en une seconde."
     },
-    noreving: { blurb: 'Visuels de production pour Noreving : lumière, vitesse et ombre pour le lancement d’un vélo électrique.' },
+    avren: {
+      title: "Avren",
+      blurb: "Visuels de production pour Avren : lumière, vitesse et ombre pour le lancement d’un vélo électrique.",
+      service: "Visuels produit · Rendu 3D",
+      intro: "Les visuels de lancement d’Avren, un vélo électrique urbain conçu autour d’une seule barre de lumière. Nous avons gardé le vélo dans une quasi-obscurité pour laisser parler son phare intégré : chaque image est éclairée par le produit lui-même.",
+      body: "Les rendus fonctionnent comme une lente révélation : un trait de lumière en pleine vitesse, le cadre qui sort de l’ombre, puis le tube de direction en gros plan, où la barre lumineuse s’intègre au carbone. Une palette monochrome, des dégradés doux et un flou de mouvement gardent l’attention sur la forme, la finition et cette ligne de lumière.",
+    },
     'musical-co-working': {
       title: 'Coworking musical',
       blurb: 'Un espace de coworking accordé comme un instrument : noyer, acier et son.',
@@ -537,7 +543,13 @@ export default {
         'DLVRNC. est un concept de sportswear inspiré par la culture running et la liberté que procure le mouvement. Notre défi : créer une identité concentrée et assurée, qui relie la discipline de l’entraînement à l’énergie collective d’un club de course.',
       body: 'L’identité visuelle repose sur un logotype resserré, une typographie affirmée et une palette sobre de noir, de blanc et de bleu glacier. Motifs fluides et flou de mouvement installent une sensation de vitesse, équilibrée par des mises en page épurées et des gros plans produit. Sur les vêtements, les supports numériques et l’animation, ces éléments forment une expression cohérente de la marque, construite autour du mouvement, de l’individualité et de l’appartenance.',
     },
-    'domain-watch': { blurb: 'Visuels produit pour une montre en acier brossé : la lumière comme matière.' },
+    silvatch: {
+      title: "Silvatch",
+      blurb: "Visuels produit pour une montre en acier brossé : la lumière comme matière.",
+      service: "Visuels produit · Rendu 3D",
+      intro: "Les visuels de lancement de Silvatch, une montre en acier brossé à lunette octogonale et bracelet intégré. Nous l’avons éclairée d’une seule source ambrée qui rase le métal, pour que la finition raconte l’histoire.",
+      body: "La série va du détail au poignet : le cadran soleillé et la lunette vissée, le fond de boîte saisi par un liseré de lumière, la boîte suspendue dans un halo, puis la montre portée par une silhouette. Une seule couleur de lumière, un seul matériau, et des ombres assez profondes pour que l’acier soit le point le plus lumineux de l’image.",
+    },
     'dar-titawin': { title: 'Dar Titawin', blurb: 'Une réception sculptée dans le sable et le plâtre, encadrée d’arches en bois.', service: 'Architecture intérieure', client: 'Confidentiel', intro: 'Le rez-de-chaussée d’un hôtel face à la mer à Tétouan — réception, salon et café — inspiré de la Colombe blanche elle-même : enduit à la chaux, bleu andalou et cèdre sculpté.', body: 'Nous avons pensé l’étage comme une seule promenade, de la rue à la mer. Un comptoir de réception taillé comme une pierre brute s’installe sous des arches d’enduit bleu ; un moucharabieh en cèdre abrite le salon et projette une lumière ciselée sur le béton ; et le café s’ouvre entièrement sur la Méditerranée, où noyer, cuir terracotta et marbre noir gardent une palette chaleureuse et ancrée.' },
     nouzha: {
       blurb: 'Identité et direction artistique de parfum : senteur, mémoire et rituel intime.',

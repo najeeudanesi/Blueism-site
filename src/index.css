@@ -1123,6 +1123,24 @@ body:has(.project-page) {
   object-fit: contain;
   transform: none !important; /* no zoom-in, so the edges are never cropped */
 }
+.sec-row {
+  display: flex;
+}
+.row-cell {
+  min-width: 0;
+}
+.row-cell .reveal-img img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 760px) {
+  .sec-row {
+    flex-direction: column;
+  }
+  .row-cell {
+    flex: none !important;
+  }
+}
 .reveal-img.is-whole img {
   /* animated artwork with captions: never cropped, never zoomed */
   object-fit: contain;

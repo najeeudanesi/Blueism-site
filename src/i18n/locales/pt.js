@@ -516,7 +516,13 @@ export default {
       "intro": "A Shoowarma é uma casa de shawarma que se recusa a ser séria. Demos a ela um laranja barulhento, um logotipo robusto e uma turma de personagens desenhados à mão que correm, escalam e fatiam por sacolas, garrafas, camisetas e telas — para que cada wrap pareça feito por alguém num dia ótimo.",
       "body": "A identidade nasce de três ingredientes: laranja espeto, creme de pita e tinta carvão; um logotipo grosso e arredondado; e um elenco de frequentadores ilustrados — o que fatia, o que corre e o amigo que sempre pega o último wrap. A turma está em todo lugar. Corre pelas sacolas, embrulha o papel, escala o espeto e estrela a garrafa de Ayran, enquanto três padrões — personagens, logo e fita — transformam qualquer superfície em Shoowarma num segundo."
     },
-    noreving: { blurb: 'Visuais de produção para a Noreving: luz, velocidade e sombra para o lançamento de uma e-bike.' },
+    avren: {
+      title: "Avren",
+      blurb: "Visuais de produção para a Avren: luz, velocidade e sombra para o lançamento de uma e-bike.",
+      service: "Visuais de produto · Renderização 3D",
+      intro: "Visuais de lançamento para a Avren, uma e-bike urbana pensada em torno de uma única barra de luz. Mantivemos a bicicleta quase no escuro e deixámos o farol integrado falar: cada imagem é iluminada pelo próprio produto.",
+      body: "Os renders funcionam como uma revelação lenta: um rasto de luz em velocidade, o quadro a sair da sombra e, de perto, o tubo de direção, onde a barra de luz fica embutida no carbono. Uma paleta monocromática, transições suaves e desfoque de movimento mantêm o foco na forma, no acabamento e nessa linha de luz.",
+    },
     'musical-co-working': {
       title: 'Coworking Musical',
       blurb: 'Um coworking afinado como um instrumento: nogueira, aço e som.',
@@ -534,7 +540,13 @@ export default {
         'DLVRNC. é um conceito de moda esportiva inspirado na cultura da corrida e na liberdade encontrada no movimento. Nosso desafio foi criar uma identidade focada e confiante, que unisse a disciplina do treino à energia compartilhada de um clube de corrida.',
       body: 'A identidade visual se apoia em um logotipo compacto, tipografia marcante e uma paleta contida de preto, branco e azul-gelo. Padrões fluidos e desfoque de movimento trazem sensação de ritmo, equilibrados por layouts limpos e imagens de produto em close. Em roupas, peças digitais e animação, esses elementos criam uma expressão consistente da marca, construída em torno do movimento, da individualidade e do pertencimento.',
     },
-    'domain-watch': { blurb: 'Visuais de produto para um relógio de aço escovado: a luz como matéria.' },
+    silvatch: {
+      title: "Silvatch",
+      blurb: "Visuais de produto para um relógio de aço escovado: a luz como material.",
+      service: "Visuais de produto · Renderização 3D",
+      intro: "Visuais de lançamento para a Silvatch, um relógio de aço escovado com luneta octogonal e bracelete integrada. Iluminámo-lo com uma única fonte âmbar a rasar o metal, para que o acabamento conte a história.",
+      body: "A série vai do detalhe ao pulso: o mostrador raiado e a luneta aparafusada, o fundo da caixa a apanhar um fio de luz, a caixa suspensa num brilho e, por fim, o relógio no pulso de uma silhueta. Uma só cor de luz, um só material e sombras fundas o suficiente para que o aço seja o ponto mais luminoso do enquadramento.",
+    },
     'dar-titawin': { title: 'Dar Titawin', blurb: 'Uma recepção esculpida em areia e gesso, emoldurada por arcos de madeira.', service: 'Design de interiores', client: 'Confidencial', intro: 'O térreo de um hotel à beira-mar em Tetuão — recepção, lounge e café — inspirado na própria Pomba Branca: reboco de cal, azul andaluz e cedro entalhado.', body: 'Tratamos o térreo como um único percurso da rua até o mar. Um balcão de recepção talhado como pedra bruta fica sob arcos de reboco azul; um muxarabi de cedro resguarda o lounge e espalha luz desenhada sobre o concreto; e o café se abre por inteiro para o Mediterrâneo, com nogueira, couro terracota e mármore negro mantendo a paleta quente e assentada.' },
     nouzha: {
       blurb: 'Identidade e direção de arte de fragrância: aroma, memória e ritual pessoal.',

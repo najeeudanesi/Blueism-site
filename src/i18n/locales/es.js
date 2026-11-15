@@ -516,7 +516,13 @@ export default {
       "intro": "Shoowarma es una shawarmería que se niega a ponerse seria. Le dimos un naranja ruidoso, un logotipo contundente y una pandilla de personajes dibujados a mano que corren, trepan y cortan por bolsas, botellas, camisetas y pantallas, para que cada wrap parezca hecho por alguien que está teniendo un buen día.",
       "body": "La identidad se construye con tres ingredientes: naranja asador, crema de pita y tinta carbón; un logotipo grueso y redondeado; y un reparto de clientes habituales ilustrados: el que corta, el que corre y el amigo que siempre se lleva el último wrap. La pandilla está en todas partes. Corre por las bolsas, envuelve el papel, trepa al asador y protagoniza la botella de Ayran, mientras tres patrones —personajes, logo y cinta— convierten cualquier superficie en Shoowarma en un segundo."
     },
-    noreving: { blurb: 'Visuales de producción para Noreving: luz, velocidad y sombra para el lanzamiento de una e-bike.' },
+    avren: {
+      title: "Avren",
+      blurb: "Visuales de producción para Avren: luz, velocidad y sombra para el lanzamiento de una e-bike.",
+      service: "Visuales de producto · Render 3D",
+      intro: "Visuales de lanzamiento para Avren, una e-bike urbana diseñada en torno a una sola barra de luz. Mantuvimos la bici casi en penumbra y dejamos que hablara su faro integrado: cada imagen está iluminada por el propio producto.",
+      body: "Los renders funcionan como una revelación lenta: un trazo de luz a toda velocidad, el cuadro saliendo de la sombra y, de cerca, el tubo de dirección, donde la barra de luz queda integrada en el carbono. Una paleta monocroma, degradados suaves y desenfoque de movimiento mantienen la atención en la forma, el acabado y esa única línea de luz.",
+    },
     'musical-co-working': {
       title: 'Coworking Musical',
       blurb: 'Un coworking afinado como un instrumento: nogal, acero y sonido.',
@@ -534,7 +540,13 @@ export default {
         'DLVRNC. es un concepto de ropa deportiva inspirado en la cultura del running y la libertad que se encuentra en el movimiento. Nuestro reto era crear una identidad que transmitiera foco y confianza, uniendo la disciplina del entrenamiento con la energía compartida de un club de running.',
       body: 'La identidad visual se basa en un logotipo compacto, una tipografía contundente y una paleta contenida de negro, blanco y azul hielo. Los patrones fluidos y el desenfoque de movimiento aportan sensación de ritmo, equilibrados con maquetaciones limpias e imágenes de producto en primer plano. En ropa, piezas digitales y animación, estos elementos crean una expresión coherente de la marca, construida en torno al movimiento, la individualidad y la pertenencia.',
     },
-    'domain-watch': { blurb: 'Visuales de producto para un reloj de acero cepillado: la luz como material.' },
+    silvatch: {
+      title: "Silvatch",
+      blurb: "Visuales de producto para un reloj de acero cepillado: la luz como material.",
+      service: "Visuales de producto · Render 3D",
+      intro: "Visuales de lanzamiento para Silvatch, un reloj de acero cepillado con bisel octogonal y brazalete integrado. Lo iluminamos con una sola fuente ámbar que roza el metal, para que el acabado cuente la historia.",
+      body: "La serie va del detalle a la muñeca: la esfera rayos de sol y el bisel atornillado, el fondo de la caja captando un filo de luz, la caja suspendida en un resplandor y, al final, el reloj en la muñeca de una silueta. Un solo color de luz, un solo material y sombras tan profundas que el acero es lo más brillante del encuadre.",
+    },
     'dar-titawin': { title: 'Dar Titawin', blurb: 'Una recepción tallada en arena y yeso, enmarcada por arcos de madera.', service: 'Interiorismo', client: 'Confidencial', intro: 'La planta baja de un hotel frente al mar en Tetuán —recepción, salón y café— inspirada en la propia Paloma Blanca: yeso de cal, azul andalusí y cedro tallado.', body: 'Tratamos la planta como un único recorrido de la calle al mar. Un mostrador de recepción tallado como piedra en bruto se alza bajo arcos de yeso azul; una celosía de cedro separa el salón y esparce luz con dibujo sobre el hormigón; y el café se abre por completo al Mediterráneo, con nogal, cuero terracota y mármol negro que mantienen la paleta cálida y serena.' },
     nouzha: {
       blurb: 'Identidad y dirección de arte de fragancia: aroma, memoria y ritual personal.',

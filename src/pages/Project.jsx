@@ -458,6 +458,17 @@ function Section({ s, p }) {
           ))}
         </div>
       )
+    case 'row':
+      // images side by side at one shared height, each shown whole — widths follow each image's ratio
+      return (
+        <div className="sec sec-row">
+          {s.items.map((it, k) => (
+            <div key={k} className="row-cell" style={{ flex: `${it.ratio} 1 0` }}>
+              <RevealImage src={it.src} alt={it.alt} delay={k * 0.1} className="is-bleed is-whole" />
+            </div>
+          ))}
+        </div>
+      )
     case 'pair':
       return (
         <>
