@@ -126,7 +126,9 @@ const allProjects = [
       'Shoowarma is a shawarma shop that refuses to be serious. We gave it a loud orange, a chunky wordmark and a crew of hand-drawn characters who sprint, climb and carve their way across bags, bottles, tees and screens — so every wrap feels like it was made by someone having a good day.',
     body:
       'The identity is built from three ingredients: Spit Orange, pita cream and charcoal ink; a heavy rounded wordmark; and a cast of illustrated regulars — the carver, the runner and the friend who always grabs the last wrap. The crew goes everywhere. They sprint across the bags, wrap the paper, climb the spit and star on the Ayran bottle, while three patterns — characters, logo wrap and ribbon — turn any surface into Shoowarma in a second.',
-    hero: img('sh-hero'),
+    hero: img('sh-hero-anim'),
+    heroFit: 'full',
+    heroBg: '#F8F5ED',
     sections: [
       { type: 'image', src: img('sh-wordmarks'), alt: 'Shoowarma wordmark in orange on charcoal and charcoal on orange', bleed: true },
       { type: 'image', src: img('sh-patterns'), alt: 'Three patterns: the crew, the logo wrap and the ribbon', bleed: true },
@@ -142,8 +144,8 @@ const allProjects = [
       {
         type: 'bento',
         items: [
-          { src: img('sh-climbers'), alt: 'Illustrated characters climbing a real shawarma spit', span: 6, ratio: 0.91 },
-          { src: img('sh-box'), alt: 'Open cream wrap box with an orange inside', span: 6, ratio: 0.91 },
+          { src: img('sh-climbers'), alt: 'Illustrated characters climbing a real shawarma spit', span: 6, ratio: 0.842 },
+          { src: img('sh-box-anim'), alt: 'Shoowarma wrap box opening and closing — “Good food. Ready to go.”', span: 6, ratio: 0.842, whole: true },
           { src: img('sh-wrap-hand'), alt: 'Hands holding two wraps with Shoowarma character stickers', span: 6, ratio: 0.56 },
           { src: img('sh-wraps-paper'), alt: 'Two wraps in character-printed paper on an orange table', span: 6, ratio: 0.56 },
         ],

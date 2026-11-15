@@ -65,7 +65,8 @@ export default function Project() {
             src={p.hero}
             video={p.heroVideo}
             alt={p.title}
-            className={`project-hero ${p.fullbleed ? 'is-bleed' : ''} ${p.heroFit === 'tall' ? 'is-tall' : ''} ${p.heroVideo ? 'is-video' : ''}`}
+            className={`project-hero ${p.fullbleed ? 'is-bleed' : ''} ${p.heroFit === 'tall' ? 'is-tall' : ''} ${p.heroFit === 'full' ? 'is-full' : ''} ${p.heroVideo ? 'is-video' : ''}`}
+            style={p.heroBg ? { background: p.heroBg } : undefined}
             priority
             delay={0.5}
           />
@@ -540,7 +541,7 @@ function Section({ s, p }) {
                 className="bento-cell"
                 style={{ '--span': it.span ?? 6, '--rows': it.rows ?? 1, '--r': it.ratio ?? 'auto' }}
               >
-                <RevealImage src={it.src} video={it.video} alt={it.alt} delay={(k % 3) * 0.08} />
+                <RevealImage src={it.src} video={it.video} alt={it.alt} delay={(k % 3) * 0.08} className={it.whole ? 'is-whole' : ''} />
               </div>
             ))}
           </div>

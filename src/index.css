@@ -1115,6 +1115,19 @@ body:has(.project-page) {
   aspect-ratio: 2.02 / 1;
   object-fit: cover;
 }
+.project-hero.is-full img {
+  /* show the whole artwork — no crop — centred on its own background colour */
+  aspect-ratio: auto;
+  width: 100%;
+  height: min(86vh, 100vw);
+  object-fit: contain;
+  transform: none !important; /* no zoom-in, so the edges are never cropped */
+}
+.reveal-img.is-whole img {
+  /* animated artwork with captions: never cropped, never zoomed */
+  object-fit: contain;
+  transform: none !important;
+}
 .project-hero.is-tall img {
   aspect-ratio: 16 / 10;
   object-position: center 35%;
