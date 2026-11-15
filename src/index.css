@@ -1149,6 +1149,32 @@ body:has(.project-page) {
 .is-themed .project-sections {
   gap: 0;
 }
+/* Full-screen presentation: every image runs edge to edge — no gutters, gaps or rounded corners */
+.is-fullbleed .project-sections {
+  gap: 0;
+}
+.is-fullbleed .project-sections .sec,
+.is-fullbleed .project-sections .sec-pair,
+.is-fullbleed .project-sections .sec-bento {
+  padding-inline: 0 !important;
+  gap: 0;
+}
+.is-fullbleed .reveal-img {
+  border-radius: 0;
+  clip-path: none !important; /* no rounded inset reveal — images keep only the zoom-in */
+}
+.is-fullbleed .sec-pair .reveal-img {
+  height: 100%;
+}
+.is-fullbleed .sec-pair .reveal-img img {
+  height: 100%;
+  object-fit: cover;
+}
+.is-fullbleed .project-hero img {
+  aspect-ratio: 16 / 9;
+  max-height: 92vh;
+  width: 100%;
+}
 .is-themed .project-sections .sec:not(.sec-bleed):not(.sec-palette):not(.sec-video):not(.is-flush) {
   padding-block: clamp(14px, 2vw, 28px);
 }

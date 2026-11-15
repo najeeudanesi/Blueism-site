@@ -193,6 +193,7 @@ const allProjects = [
     slug: 'musical-co-working',
     title: 'Musical Co-working',
     category: 'Interior Design',
+    fullbleed: true,
     cover: img('card-musical-coworking'),
     blurb: 'A co-working space tuned like an instrument — walnut, steel and sound.',
     available: true,
@@ -205,7 +206,7 @@ const allProjects = [
       'We approached the space like an acoustic object. Warm timber absorbs and softens, the steel wall reflects and projects, and low lounge seating keeps sight lines open across the room. Vinyl, hi-fi and soft furnishings set a slower pace — a place to focus, meet, or simply listen.',
     hero: img('mc-1'),
     sections: [
-      { type: 'image', src: img('mc-2'), alt: 'Lounge with steel speaker wall and walnut panelling' },
+      { type: 'image', src: img('mc-2'), alt: 'Lounge with steel speaker wall and walnut panelling', bleed: true },
       {
         type: 'bento',
         items: [
@@ -294,6 +295,7 @@ const allProjects = [
     slug: 'dar-titawin',
     title: 'Dar Titawin',
     category: 'Interior Design',
+    fullbleed: true,
     cover: img('card-hotel-ground-floor'),
     blurb: 'A reception carved from sand and plaster, framed by timber arches.',
     available: true,
@@ -306,7 +308,7 @@ const allProjects = [
       'We treated the floor as one walk from the street to the sea. A reception desk hewn like raw stone sits beneath blue plaster arches; a cedar mashrabiya screens the lounge and scatters patterned light across the concrete; and the café opens fully onto the Mediterranean, with walnut, terracotta leather and black marble keeping the palette warm and grounded.',
     hero: img('dt-reception'),
     sections: [
-      { type: 'image', src: img('dt-desk'), alt: 'Hewn-stone reception desk before blue plaster arches with slatted cedar' },
+      { type: 'image', src: img('dt-desk'), alt: 'Hewn-stone reception desk before blue plaster arches with slatted cedar', bleed: true },
       {
         type: 'pair',
         flat: true,
@@ -317,7 +319,6 @@ const allProjects = [
       },
       {
         type: 'palette',
-        contained: true,
         swatches: [
           { name: 'Lime Plaster', hex: '#E4DDD3', rgb: '228, 221, 211', cmyk: '0, 3, 7, 11', area: 'a', ink: '#1E1B18' },
           { name: 'Tetouan Blue', hex: '#4169A0', rgb: '65, 105, 160', cmyk: '59, 34, 0, 37', area: 'b', ink: '#ffffff' },
@@ -325,7 +326,7 @@ const allProjects = [
           { name: 'Nero Marble', hex: '#1E1B18', rgb: '30, 27, 24', cmyk: '0, 10, 20, 88', area: 'd', ink: '#ffffff' },
         ],
       },
-      { type: 'image', src: img('dt-cafe'), alt: 'Café opening onto the Mediterranean, with a mashrabiya screen and black marble bar', parallax: true },
+      { type: 'image', src: img('dt-cafe'), alt: 'Café opening onto the Mediterranean, with a mashrabiya screen and black marble bar', parallax: true, bleed: true },
       {
         type: 'pair',
         flat: true,
@@ -334,7 +335,7 @@ const allProjects = [
           { src: img('dt-coffee'), alt: 'Coffee counter and walnut dining tables in warm light' },
         ],
       },
-      { type: 'image', src: img('dt-terrace'), alt: 'Dining room with walnut tables facing palms and the sea' },
+      { type: 'image', src: img('dt-terrace'), alt: 'Dining room with walnut tables facing palms and the sea', bleed: true },
     ],
   },
   {

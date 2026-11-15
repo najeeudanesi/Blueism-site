@@ -19,7 +19,7 @@ export default function Project() {
 
   return (
     <div
-      className={`project-page ${themed ? 'is-themed' : ''} ${p.skin ? `skin-${p.skin}` : ''}`}
+      className={`project-page ${themed ? 'is-themed' : ''} ${p.fullbleed ? 'is-fullbleed' : ''} ${p.skin ? `skin-${p.skin}` : ''}`}
       style={themed ? { '--p-bg': p.theme.bg, '--p-ink': p.theme.ink, '--p-accent': p.theme.accent } : undefined}
     >
       <Seo title={p.fullName ? `${p.title} (${p.fullName})` : p.title} description={p.intro} image={p.hero} />
@@ -60,12 +60,12 @@ export default function Project() {
           </div>
         </section>
 
-        <section className="container">
+        <section className={p.fullbleed ? 'project-hero-wrap' : 'container'}>
           <RevealImage
             src={p.hero}
             video={p.heroVideo}
             alt={p.title}
-            className={`project-hero ${p.heroFit === 'tall' ? 'is-tall' : ''} ${p.heroVideo ? 'is-video' : ''}`}
+            className={`project-hero ${p.fullbleed ? 'is-bleed' : ''} ${p.heroFit === 'tall' ? 'is-tall' : ''} ${p.heroVideo ? 'is-video' : ''}`}
             priority
             delay={0.5}
           />
