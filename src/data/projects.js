@@ -594,9 +594,9 @@ export const nextProject = (slug) => {
 
 // "Recently.." hero slider on the home page
 export const featured = [
-  { slug: 'dlvrnc', title: 'Delivrance', category: 'Sportswear', image: img('home-hero-dlvrnc') },
+  { slug: 'dlvrnc', title: 'DLVRNC.', category: 'Sportswear', image: img('home-hero-dlvrnc') },
   { slug: 'nouzha', title: 'Nouz’ha', category: 'Fragrance', image: img('nz-floral') },
   { slug: 'musical-co-working', title: 'Musical Co-working', category: 'Interior Design', image: img('mc-2') },
-  { slug: 'dlvrnc', title: 'Delivrance', category: 'Campaign', image: img('dl-night'), pos: 'center 40%' },
+  { slug: 'dlvrnc', title: 'DLVRNC.', category: 'Campaign', image: img('dl-night'), pos: 'center 40%' },
   { slug: 'nouzha', title: 'Nouz’ha', category: 'Packaging', image: img('nz-flatlay'), pos: 'center 45%' },
 ]
