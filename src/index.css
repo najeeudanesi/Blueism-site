@@ -1202,6 +1202,12 @@ body:has(.project-page) {
   object-fit: contain;
   transform: none !important;
 }
+.project-hero.is-natural img {
+  /* the artwork's own proportions — nothing cropped */
+  aspect-ratio: auto !important;
+  max-height: none !important;
+  height: auto;
+}
 .project-hero.is-tall img {
   aspect-ratio: 16 / 10;
   object-position: center 35%;

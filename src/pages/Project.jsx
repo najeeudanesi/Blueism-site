@@ -65,7 +65,7 @@ export default function Project() {
             src={p.hero}
             video={p.heroVideo}
             alt={p.title}
-            className={`project-hero ${p.fullbleed ? 'is-bleed' : ''} ${p.heroFit === 'tall' ? 'is-tall' : ''} ${p.heroFit === 'full' ? 'is-full' : ''} ${p.heroVideo ? 'is-video' : ''}`}
+            className={`project-hero ${p.fullbleed ? 'is-bleed' : ''} ${p.heroFit === 'tall' ? 'is-tall' : ''} ${p.heroFit === 'full' ? 'is-full' : ''} ${p.heroFit === 'natural' ? 'is-natural' : ''} ${p.heroVideo ? 'is-video' : ''}`}
             style={p.heroBg ? { background: p.heroBg } : undefined}
             priority
             delay={0.5}
