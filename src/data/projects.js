@@ -280,6 +280,7 @@ const allProjects = [
     title: 'Nouz’ha',
     category: 'Domain',
     cover: img('card-nouzha'),
+    back: img('card-nouzha-back'),
     blurb: 'Fragrance identity & art direction — scent, memory and personal ritual.',
     available: true,
     service: 'Visual Brand Identity',
@@ -372,7 +373,7 @@ const allProjects = [
   {
     slug: 'aurared',
     title: 'Aurared',
-    category: 'Branding',
+    category: 'Visuals',
     fullbleed: true,
     cover: img('card-aurared'),
     back: img('ar-wash-moss'),
