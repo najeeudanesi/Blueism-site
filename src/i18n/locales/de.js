@@ -546,6 +546,5 @@ export default {
     'same-hotel': { title: 'Projekt', blurb: 'Gleiches Hotel, andere erste zehn Sekunden – ein neu gedachtes Buchungserlebnis.' },
     'villa-013': { blurb: 'Essen und Wohnen in gedecktem Stein, Leinen und Ocker.' },
     'standing-orders': { blurb: 'Automatisierte Workflows, die wiederkehrende Arbeit vom Tisch nehmen.' },
-    'community-app': { title: 'Projektname', blurb: 'Benutzeroberfläche für Web und Mobile – eine Community- und Event-Plattform.' },
   },
 }

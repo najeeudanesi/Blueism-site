@@ -550,6 +550,5 @@ export default {
     'same-hotel': { title: 'Projet', blurb: 'Même hôtel, dix premières secondes différentes : une expérience de réservation repensée.' },
     'villa-013': { blurb: 'Salle à manger et salon en pierre sourde, lin et ocre.' },
     'standing-orders': { blurb: 'Des workflows automatisés qui vous débarrassent des tâches répétitives.' },
-    'community-app': { title: 'Nom du projet', blurb: 'Interface web et mobile : une plateforme de communauté et d’événements.' },
   },
 }

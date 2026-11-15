@@ -113,8 +113,8 @@ const allProjects = [
     slug: 'shoowarma',
     title: 'Shoowarma',
     category: 'Branding',
-    cover: img('card-shoowarma'),
-    back: img('sh-ayran-glow'),
+    cover: img('sh-climbers'),
+    back: img('sh-wraps-paper'),
     blurb: 'Identity, characters, packaging and website for a shawarma shop with big wrap energy.',
     available: true,
     service: 'Brand Identity & Web Design',
@@ -559,14 +559,6 @@ const allProjects = [
       },
     ],
   },
-  {
-    slug: 'community-app',
-    title: 'Project Name',
-    category: 'Software',
-    cover: img('card-project-name'),
-    blurb: 'User interface for web and mobile — a community and events platform.',
-    available: false,
-  },
 ]
 
 
@@ -582,7 +574,6 @@ const ORDER = [
   'nouzha',
   'villa-013',
   'kinetik',
-  'community-app',
 ]
 export const projects = ORDER.map((slug) => allProjects.find((p) => p.slug === slug))
 
