@@ -23,7 +23,7 @@ export const services = [
     items: ['Strategy', 'Visual communication', 'Art direction', 'Graphic design', 'Web & digital design'],
   },
   {
-    title: '3D Design',
+    title: '3D Visuals',
     image: '/images/svc-3d.webp',
     text: 'Product renders, spaces and objects built in 3D — visuals that let people see, turn and believe in something before it exists.',
     items: ['Product visualisation', 'Interior & architectural renders', '3D brand assets', 'Packaging mockups'],

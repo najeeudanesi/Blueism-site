@@ -141,7 +141,7 @@ export default {
       items: ['Estratégia', 'Comunicação visual', 'Direção de arte', 'Design gráfico', 'Design web e digital'],
     },
     {
-      title: 'Design 3D',
+      title: 'Visuais 3D',
       text: 'Renderizações de produtos, espaços e objetos em 3D: imagens que permitem ver, girar e acreditar em algo antes mesmo de ele existir.',
       items: ['Visualização de produtos', 'Renderizações de interiores e arquitetura', 'Ativos de marca em 3D', 'Mockups de embalagem'],
     },
@@ -413,99 +413,6 @@ export default {
           }
         }
       },
-    cubit: {
-      "blurb": "Site, app mobile e design system para um estúdio que diz o máximo com o mínimo.",
-      "service": "Design e desenvolvimento web e mobile",
-      "scope": "UI/UX · Design system · App mobile",
-      "platforms": "Web · iOS · Android",
-      "kicker": "Produto web e mobile",
-      "eyebrow": "Cubit. — Site, app mobile e design system",
-      "intro": "A Cubit é um estúdio de design multidisciplinar construído sobre uma ideia: dizer o máximo com o mínimo. Projetamos e desenvolvemos o site e o app sobre um único sistema responsivo — uma só cor de destaque, um só grid e componentes que se comportam igual em um desktop de 1440 px e em um celular na mão.",
-      "copy": {
-        "overview": "Visão geral",
-        "lead": "Um único design system move todas as telas — o site, o painel do cliente e o app mobile compartilham os mesmos tokens, grid e componentes.",
-        "cols": [
-          "Começamos no papel: fluxos de usuário, esboços do painel e wireframes mobile, que depois viraram uma biblioteca de componentes — navegação, toggles, cards, gráficos e botões — em modo claro e escuro.",
-          "O azul-cobalto é o único destaque. Ele marca ações, estados ativos e dados, enquanto o preto, o branco-gelo e um cinza suave sustentam todo o resto. Um grid de 12 colunas se reduz a um layout mobile com margens de 16 px sem perder o ritmo."
-        ],
-        "tags": [
-          "Web design",
-          "App mobile",
-          "UI/UX",
-          "Design system",
-          "Desenvolvimento"
-        ],
-        "brief": "O briefing",
-        "challenge": "Desafio",
-        "challengeTitle": "Um estúdio versátil e um produto que não pode gritar.",
-        "challengeText": "A Cubit precisava de um site para apresentar seu trabalho e de um app onde os clientes acompanham projetos, veem análises e gerenciam a conta. Os dois tinham de parecer um só produto — rápido, calmo e óbvio em qualquer tela.",
-        "approach": "Abordagem",
-        "approachTitle": "Um destaque, um grid, todas as telas.",
-        "approachText": "Projetamos mobile-first, definimos espaçamento e tipografia como tokens e construímos cada página com o mesmo conjunto de componentes. O movimento é lento e deliberado, para que o conteúdo seja lido antes do efeito.",
-        "process": "Processo",
-        "processTitle": "Do esboço ao sistema.",
-        "steps": [
-          {
-            "title": "Ouvir",
-            "lines": [
-              "Necessidades do usuário",
-              "O briefing"
-            ]
-          },
-          {
-            "title": "Esboçar",
-            "lines": [
-              "Fluxos de usuário",
-              "Wireframes no papel"
-            ]
-          },
-          {
-            "title": "Wireframe",
-            "lines": [
-              "Telas mobile",
-              "Especificações de espaçamento"
-            ]
-          },
-          {
-            "title": "Kit de UI",
-            "lines": [
-              "Componentes",
-              "Claro e escuro"
-            ]
-          },
-          {
-            "title": "Desenvolver",
-            "lines": [
-              "Um sistema responsivo",
-              "De 390 a 1440 px"
-            ]
-          },
-          {
-            "title": "Lançar",
-            "lines": [
-              "cubit.studio",
-              "Web e mobile"
-            ]
-          }
-        ],
-        "parallel": "Em paralelo",
-        "live": "No ar",
-        "system": "Cor e interface",
-        "systemTitle": "Um destaque, dois modos.",
-        "mobile": "Mobile",
-        "mobileTitle": "Feito para uma mão.",
-        "digital": "Digital",
-        "digitalTitle": "Um sistema, todas as telas.",
-        "caps": {
-          "system": "A biblioteca de componentes — navegação, controles, cards e gráficos em um só sistema",
-          "sketches": "Primeiros fluxos — onboarding, painel e análises esboçados no papel",
-          "type": "Guia — logotipo e cores, escala tipográfica, grid de 12 colunas e modos claro e escuro",
-          "wireframes": "Wireframes mobile — onboarding, análises, cards e configurações, com especificações de espaçamento",
-          "walkthrough": "cubit.studio — tour pelo site",
-          "digital": "Tablet, celular e desktop — o mesmo grid, a mesma tipografia, o mesmo cobalto"
-        }
-      }
-    },
     shoowarma: {
       "blurb": "Identidade, personagens, embalagens e site para uma casa de shawarma com muita energia de wrap.",
       "service": "Identidade de marca e web design",
@@ -557,7 +464,13 @@ export default {
       body: 'A identidade visual gira em torno de um emblema escultural, que combina curvas fluidas e detalhes afiados. Uma paleta de vinho-sangue, cinza-pérola, cinza quente e preto-tinta traz profundidade e suavidade, complementada por acabamentos metálicos e fotografia de produto dramática. Na embalagem e na comunicação visual, composições em close destacam textura, luz e forma, traduzindo o caráter sensorial da fragrância em uma experiência visual.',
     },
     'same-hotel': { title: 'Projeto', blurb: 'Mesmo hotel, dez primeiros segundos diferentes: uma experiência de reserva reconstruída.' },
-    'villa-013': { blurb: 'Jantar e estar em pedra suave, linho e ocre.' },
+    'villa-013': {
+      blurb: 'Jantar e estar em pedra suave, linho e ocre.',
+      service: "Design de interiores",
+      client: "Confidencial",
+      intro: "Uma moradia privada pensada como uma sequência longa e calma — sala, sala de jantar, dois quartos e uma casa de banho — em pedra suave, madeira fumada e linho, com algumas notas de ocre para a aquecer.",
+      body: "Planta aberta, mas nunca uma única grande sala: ripas de madeira, uma parede de lareira e um teto rebaixado sobre a mesa dividem o piso térreo em lugares para sentar, comer e conversar. Em cima, a paleta suaviza-se com painéis canelados, nogueira e tapetes de pelo alto, enquanto a casa de banho passa ao mosaico verde, a uma banheira de pedra e a um espelho retroiluminado — calma, tátil e com luz baixa.",
+    },
     'standing-orders': { blurb: 'Fluxos de trabalho automatizados que tiram o trabalho repetitivo da sua mesa.' },
   },
 }

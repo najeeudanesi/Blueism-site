@@ -144,7 +144,7 @@ export default {
       items: ['Stratégie', 'Communication visuelle', 'Direction artistique', 'Design graphique', 'Design web et numérique'],
     },
     {
-      title: 'Design 3D',
+      title: 'Visuels 3D',
       text: 'Rendus de produits, d’espaces et d’objets en 3D : des visuels qui permettent de voir, de faire pivoter et de croire en quelque chose avant même qu’il existe.',
       items: ['Visualisation de produits', 'Rendus d’intérieurs et d’architecture', 'Éléments de marque en 3D', 'Maquettes de packaging'],
     },
@@ -416,99 +416,6 @@ export default {
           }
         }
       },
-    cubit: {
-      "blurb": "Site web, application mobile et design system pour un studio qui en dit le plus avec le moins.",
-      "service": "Design et développement web et mobile",
-      "scope": "UI/UX · Design system · Application mobile",
-      "platforms": "Web · iOS · Android",
-      "kicker": "Produit web et mobile",
-      "eyebrow": "Cubit. — Site web, application mobile et design system",
-      "intro": "Cubit est un studio de design pluridisciplinaire bâti sur une idée : en dire le plus avec le moins. Nous avons conçu et développé son site et son application sur un seul système responsive — une seule couleur d’accent, une seule grille et des composants qui se comportent de la même façon sur un écran de 1440 px comme sur un téléphone tenu d’une main.",
-      "copy": {
-        "overview": "Aperçu",
-        "lead": "Un seul design system anime chaque écran — le site, l’espace client et l’application mobile partagent les mêmes tokens, la même grille et les mêmes composants.",
-        "cols": [
-          "Nous avons commencé sur papier : parcours utilisateurs, croquis du tableau de bord et wireframes mobiles, puis nous les avons transformés en bibliothèque de composants — navigation, interrupteurs, cartes, graphiques et boutons — en mode clair et sombre.",
-          "Le bleu cobalt est le seul accent. Il signale les actions, les états actifs et les données, tandis que le noir, le blanc cassé et un gris doux portent tout le reste. Une grille de 12 colonnes se réduit à une mise en page mobile avec des marges de 16 px sans perdre son rythme."
-        ],
-        "tags": [
-          "Web design",
-          "Application mobile",
-          "UI/UX",
-          "Design system",
-          "Développement"
-        ],
-        "brief": "Le brief",
-        "challenge": "Enjeu",
-        "challengeTitle": "Un studio aux multiples talents, et un produit qui ne doit pas crier.",
-        "challengeText": "Cubit avait besoin d’un site pour présenter son travail et d’une application où les clients suivent leurs projets, consultent leurs statistiques et gèrent leur compte. Les deux devaient former un seul produit — rapide, calme et évident sur tous les écrans.",
-        "approach": "Approche",
-        "approachTitle": "Un accent, une grille, tous les écrans.",
-        "approachText": "Nous avons conçu en mobile first, défini espacements et typographie sous forme de tokens et construit chaque page avec le même jeu de composants. Le mouvement est lent et réfléchi, pour que le contenu se lise avant l’effet.",
-        "process": "Processus",
-        "processTitle": "Du croquis au système.",
-        "steps": [
-          {
-            "title": "Écouter",
-            "lines": [
-              "Besoins utilisateurs",
-              "Le brief"
-            ]
-          },
-          {
-            "title": "Esquisser",
-            "lines": [
-              "Parcours utilisateurs",
-              "Wireframes papier"
-            ]
-          },
-          {
-            "title": "Wireframe",
-            "lines": [
-              "Écrans mobiles",
-              "Spécifications d’espacement"
-            ]
-          },
-          {
-            "title": "Kit UI",
-            "lines": [
-              "Composants",
-              "Clair et sombre"
-            ]
-          },
-          {
-            "title": "Développement",
-            "lines": [
-              "Un système responsive",
-              "De 390 à 1440 px"
-            ]
-          },
-          {
-            "title": "Lancement",
-            "lines": [
-              "cubit.studio",
-              "Web et mobile"
-            ]
-          }
-        ],
-        "parallel": "En parallèle",
-        "live": "En ligne",
-        "system": "Couleur et interface",
-        "systemTitle": "Un accent, deux modes.",
-        "mobile": "Mobile",
-        "mobileTitle": "Pensé pour une main.",
-        "digital": "Digital",
-        "digitalTitle": "Un système, tous les écrans.",
-        "caps": {
-          "system": "La bibliothèque de composants — navigation, contrôles, cartes et graphiques dans un seul système",
-          "sketches": "Premiers parcours — onboarding, tableau de bord et statistiques esquissés sur papier",
-          "type": "Charte — logotype et couleurs, échelle typographique, grille de 12 colonnes et modes clair et sombre",
-          "wireframes": "Wireframes mobiles — onboarding, statistiques, cartes et réglages, avec spécifications d’espacement",
-          "walkthrough": "cubit.studio — visite du site",
-          "digital": "Tablette, téléphone et ordinateur — même grille, même typographie, même cobalt"
-        }
-      }
-    },
     shoowarma: {
       "blurb": "Identité, personnages, packaging et site web pour une enseigne de shawarma pleine d’énergie.",
       "service": "Identité de marque et web design",
@@ -560,7 +467,13 @@ export default {
       body: 'L’identité visuelle s’articule autour d’un emblème sculptural, mêlant courbes fluides et détails acérés. Une palette de sang de bœuf, gris perle, gris chaud et noir d’encre apporte profondeur et douceur, complétée par des finitions métalliques et une photographie produit dramatique. Sur le packaging et la communication visuelle, les compositions en gros plan révèlent la texture, la lumière et la forme, traduisant le caractère sensoriel du parfum en une expérience visuelle.',
     },
     'same-hotel': { title: 'Projet', blurb: 'Même hôtel, dix premières secondes différentes : une expérience de réservation repensée.' },
-    'villa-013': { blurb: 'Salle à manger et salon en pierre sourde, lin et ocre.' },
+    'villa-013': {
+      blurb: 'Salle à manger et salon en pierre sourde, lin et ocre.',
+      service: "Architecture intérieure",
+      client: "Confidentiel",
+      intro: "Une villa privée pensée comme une longue séquence calme — séjour, salle à manger, deux chambres et une salle de bains — en pierre sourde, bois fumé et lin, avec quelques notes d’ocre pour la réchauffer.",
+      body: "Un plan ouvert, mais jamais une seule grande pièce : des lames de bois, un mur de cheminée et un plafond creusé au-dessus de la table divisent le rez-de-chaussée en lieux pour s’asseoir, manger et parler. À l’étage, la palette s’adoucit avec des panneaux cannelés, du noyer et des tapis épais, tandis que la salle de bains passe à la mosaïque verte, à une baignoire en pierre et à un miroir rétroéclairé — calme, tactile et doucement éclairée.",
+    },
     'standing-orders': { blurb: 'Des workflows automatisés qui vous débarrassent des tâches répétitives.' },
   },
 }

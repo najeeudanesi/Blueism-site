@@ -141,7 +141,7 @@ export default {
       items: ['Strategie', 'Visuelle Kommunikation', 'Art Direction', 'Grafikdesign', 'Web- & Digitaldesign'],
     },
     {
-      title: '3D-Design',
+      title: '3D-Visuals',
       text: 'Produktrenderings, Räume und Objekte in 3D – Visualisierungen, die man sehen, drehen und glauben kann, bevor sie existieren.',
       items: ['Produktvisualisierung', 'Innenraum- & Architekturrenderings', '3D-Markenelemente', 'Verpackungsmockups'],
     },
@@ -413,99 +413,6 @@ export default {
           }
         }
       },
-    cubit: {
-      "blurb": "Website, Mobile App und Designsystem für ein Studio, das mit dem Wenigsten das Meiste sagt.",
-      "service": "Web- und Mobile-Design · Entwicklung",
-      "scope": "UI/UX · Designsystem · Mobile App",
-      "platforms": "Web · iOS · Android",
-      "kicker": "Web- und Mobile-Produkt",
-      "eyebrow": "Cubit. – Website, Mobile App und Designsystem",
-      "intro": "Cubit ist ein multidisziplinäres Designstudio, das auf einer Idee beruht: mit dem Wenigsten das Meiste sagen. Wir haben Website und App auf einem einzigen responsiven System gestaltet und entwickelt – eine Akzentfarbe, ein Raster und Komponenten, die sich auf einem 1440-px-Desktop genauso verhalten wie auf einem Smartphone in einer Hand.",
-      "copy": {
-        "overview": "Überblick",
-        "lead": "Ein einziges Designsystem trägt jeden Screen – Website, Kunden-Dashboard und Mobile App teilen dieselben Tokens, dasselbe Raster und dieselben Komponenten.",
-        "cols": [
-          "Wir haben auf Papier begonnen: User Flows, Dashboard-Skizzen und mobile Wireframes, aus denen dann eine Komponentenbibliothek wurde – Navigation, Toggles, Karten, Diagramme und Buttons – im Hell- und Dunkelmodus.",
-          "Kobaltblau ist der einzige Akzent. Es markiert Aktionen, aktive Zustände und Daten, während Schwarz, gebrochenes Weiß und ein sanftes Grau alles andere tragen. Ein 12-Spalten-Raster wird zu einem mobilen Layout mit 16-px-Rändern, ohne seinen Rhythmus zu verlieren."
-        ],
-        "tags": [
-          "Webdesign",
-          "Mobile App",
-          "UI/UX",
-          "Designsystem",
-          "Entwicklung"
-        ],
-        "brief": "Das Briefing",
-        "challenge": "Herausforderung",
-        "challengeTitle": "Ein vielseitiges Studio – und ein Produkt, das nicht schreien darf.",
-        "challengeText": "Cubit brauchte eine Website, die seine Arbeit zeigt, und eine App, in der Kunden Projekte verfolgen, Analysen einsehen und ihr Konto verwalten. Beides sollte sich wie ein Produkt anfühlen – schnell, ruhig und auf jedem Screen selbsterklärend.",
-        "approach": "Ansatz",
-        "approachTitle": "Ein Akzent, ein Raster, jeder Screen.",
-        "approachText": "Wir haben mobile-first gestaltet, Abstände und Typografie als Tokens definiert und jede Seite aus denselben Komponenten gebaut. Bewegung ist langsam und bewusst, damit der Inhalt vor dem Effekt gelesen wird.",
-        "process": "Prozess",
-        "processTitle": "Von der Skizze zum System.",
-        "steps": [
-          {
-            "title": "Zuhören",
-            "lines": [
-              "Nutzerbedürfnisse",
-              "Das Briefing"
-            ]
-          },
-          {
-            "title": "Skizzieren",
-            "lines": [
-              "User Flows",
-              "Papier-Wireframes"
-            ]
-          },
-          {
-            "title": "Wireframe",
-            "lines": [
-              "Mobile Screens",
-              "Abstandsspezifikationen"
-            ]
-          },
-          {
-            "title": "UI-Kit",
-            "lines": [
-              "Komponenten",
-              "Hell und dunkel"
-            ]
-          },
-          {
-            "title": "Entwicklung",
-            "lines": [
-              "Ein responsives System",
-              "390 bis 1440 px"
-            ]
-          },
-          {
-            "title": "Launch",
-            "lines": [
-              "cubit.studio",
-              "Web und Mobile"
-            ]
-          }
-        ],
-        "parallel": "Parallel",
-        "live": "Live",
-        "system": "Farbe und Interface",
-        "systemTitle": "Ein Akzent, zwei Modi.",
-        "mobile": "Mobile",
-        "mobileTitle": "Für eine Hand gemacht.",
-        "digital": "Digital",
-        "digitalTitle": "Ein System, jeder Screen.",
-        "caps": {
-          "system": "Die Komponentenbibliothek – Navigation, Bedienelemente, Karten und Diagramme in einem System",
-          "sketches": "Erste Flows – Onboarding, Dashboard und Analysen auf Papier skizziert",
-          "type": "Richtlinien – Wortmarke und Farben, typografische Skala, 12-Spalten-Raster sowie Hell- und Dunkelmodus",
-          "wireframes": "Mobile Wireframes – Onboarding, Analysen, Karten und Einstellungen, mit Abstandsspezifikationen",
-          "walkthrough": "cubit.studio – Rundgang durch die Website",
-          "digital": "Tablet, Smartphone und Desktop – dasselbe Raster, dieselbe Schrift, dasselbe Kobalt"
-        }
-      }
-    },
     shoowarma: {
       "blurb": "Identität, Figuren, Verpackung und Website für einen Shawarma-Laden mit großer Wrap-Energie.",
       "service": "Markenidentität & Webdesign",
@@ -556,7 +463,13 @@ export default {
       body: 'Im Mittelpunkt der visuellen Identität steht ein skulpturales Emblem, das fließende Kurven mit scharfen Details verbindet. Eine Palette aus Ochsenblut, Perlgrau, Warmgrau und Tintenschwarz sorgt für Tiefe und Weichheit, ergänzt durch metallische Oberflächen und dramatische Produktfotografie. Auf Verpackung und in der visuellen Kommunikation heben Nahaufnahmen Textur, Licht und Form hervor und übersetzen den sinnlichen Charakter des Dufts in ein visuelles Erlebnis.',
     },
     'same-hotel': { title: 'Projekt', blurb: 'Gleiches Hotel, andere erste zehn Sekunden – ein neu gedachtes Buchungserlebnis.' },
-    'villa-013': { blurb: 'Essen und Wohnen in gedecktem Stein, Leinen und Ocker.' },
+    'villa-013': {
+      blurb: 'Essen und Wohnen in gedecktem Stein, Leinen und Ocker.',
+      service: "Innenarchitektur",
+      client: "Vertraulich",
+      intro: "Eine private Villa als lange, ruhige Abfolge – Wohnen, Essen, zwei Schlafzimmer und ein Bad – in gedämpftem Stein, Räuchereiche und Leinen, mit ein paar Ockertönen für Wärme.",
+      body: "Offen geplant, aber nie ein einziger großer Raum: Holzlamellen, eine Kaminwand und eine abgehängte Decke über dem Esstisch gliedern das Erdgeschoss in Orte zum Sitzen, Essen und Reden. Oben wird die Palette weicher mit kannelierten Paneelen, Nussbaum und Hochflorteppichen, während das Bad zu grünem Mosaik, einer Steinwanne und einem hinterleuchteten Spiegel wechselt – ruhig, haptisch und gedämpft beleuchtet.",
+    },
     'standing-orders': { blurb: 'Automatisierte Workflows, die wiederkehrende Arbeit vom Tisch nehmen.' },
   },
 }

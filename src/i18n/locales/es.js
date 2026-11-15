@@ -141,7 +141,7 @@ export default {
       items: ['Estrategia', 'Comunicación visual', 'Dirección de arte', 'Diseño gráfico', 'Diseño web y digital'],
     },
     {
-      title: 'Diseño 3D',
+      title: 'Visuales 3D',
       text: 'Renders de producto, espacios y objetos en 3D: imágenes que permiten ver, girar y creer en algo antes de que exista.',
       items: ['Visualización de producto', 'Renders de interiores y arquitectura', 'Recursos de marca en 3D', 'Mockups de packaging'],
     },
@@ -413,99 +413,6 @@ export default {
           }
         }
       },
-    cubit: {
-      "blurb": "Sitio web, app móvil y sistema de diseño para un estudio que dice lo máximo con lo mínimo.",
-      "service": "Diseño y desarrollo web y móvil",
-      "scope": "UI/UX · Sistema de diseño · App móvil",
-      "platforms": "Web · iOS · Android",
-      "kicker": "Producto web y móvil",
-      "eyebrow": "Cubit. — Sitio web, app móvil y sistema de diseño",
-      "intro": "Cubit es un estudio de diseño multidisciplinar construido sobre una idea: decir lo máximo con lo mínimo. Diseñamos y desarrollamos su sitio web y su app sobre un único sistema responsive: un solo color de acento, una sola retícula y componentes que se comportan igual en un escritorio de 1440 px que en un teléfono en una mano.",
-      "copy": {
-        "overview": "Resumen",
-        "lead": "Un único sistema de diseño impulsa cada pantalla: el sitio, el panel de clientes y la app móvil comparten los mismos tokens, retícula y componentes.",
-        "cols": [
-          "Empezamos en papel: flujos de usuario, bocetos del panel y wireframes móviles, que luego convertimos en una librería de componentes —navegación, interruptores, tarjetas, gráficos y botones— en modo claro y oscuro.",
-          "El azul cobalto es el único acento. Marca acciones, estados activos y datos, mientras el negro, el blanco roto y un gris suave sostienen todo lo demás. Una retícula de 12 columnas se reduce a un diseño móvil con márgenes de 16 px sin perder el ritmo."
-        ],
-        "tags": [
-          "Diseño web",
-          "App móvil",
-          "UI/UX",
-          "Sistema de diseño",
-          "Desarrollo"
-        ],
-        "brief": "El encargo",
-        "challenge": "Reto",
-        "challengeTitle": "Un estudio versátil y un producto que no debe gritar.",
-        "challengeText": "Cubit necesitaba un sitio que presentara su trabajo y una app donde los clientes siguieran proyectos, revisaran analíticas y gestionaran su cuenta. Ambos debían sentirse como un solo producto: rápido, sereno y evidente en cualquier pantalla.",
-        "approach": "Enfoque",
-        "approachTitle": "Un acento, una retícula, todas las pantallas.",
-        "approachText": "Diseñamos primero para móvil, definimos el espaciado y la tipografía como tokens y construimos cada página con el mismo conjunto de componentes. El movimiento es lento y deliberado, para que el contenido se lea antes que el efecto.",
-        "process": "Proceso",
-        "processTitle": "Del boceto al sistema.",
-        "steps": [
-          {
-            "title": "Escuchar",
-            "lines": [
-              "Necesidades del usuario",
-              "El encargo"
-            ]
-          },
-          {
-            "title": "Bocetar",
-            "lines": [
-              "Flujos de usuario",
-              "Wireframes en papel"
-            ]
-          },
-          {
-            "title": "Wireframe",
-            "lines": [
-              "Pantallas móviles",
-              "Especificaciones de espaciado"
-            ]
-          },
-          {
-            "title": "Kit de UI",
-            "lines": [
-              "Componentes",
-              "Claro y oscuro"
-            ]
-          },
-          {
-            "title": "Desarrollo",
-            "lines": [
-              "Un sistema responsive",
-              "De 390 a 1440 px"
-            ]
-          },
-          {
-            "title": "Lanzamiento",
-            "lines": [
-              "cubit.studio",
-              "Web y móvil"
-            ]
-          }
-        ],
-        "parallel": "En paralelo",
-        "live": "En vivo",
-        "system": "Color e interfaz",
-        "systemTitle": "Un acento, dos modos.",
-        "mobile": "Móvil",
-        "mobileTitle": "Diseñado para una mano.",
-        "digital": "Digital",
-        "digitalTitle": "Un sistema, todas las pantallas.",
-        "caps": {
-          "system": "La librería de componentes: navegación, controles, tarjetas y gráficos en un solo sistema",
-          "sketches": "Primeros flujos: onboarding, panel y analíticas bocetados en papel",
-          "type": "Guía — logotipo y colores, escala tipográfica, retícula de 12 columnas y modo claro y oscuro",
-          "wireframes": "Wireframes móviles: onboarding, analíticas, tarjetas y ajustes, con especificaciones de espaciado",
-          "walkthrough": "cubit.studio — recorrido por el sitio",
-          "digital": "Tableta, teléfono y escritorio: la misma retícula, tipografía y cobalto"
-        }
-      }
-    },
     shoowarma: {
       "blurb": "Identidad, personajes, packaging y web para una shawarmería con mucha energía de wrap.",
       "service": "Identidad de marca y diseño web",
@@ -557,7 +464,13 @@ export default {
       body: 'La identidad visual se centra en un emblema escultórico que combina curvas fluidas con detalles afilados. Una paleta de sangre de buey, gris perla, gris cálido y negro tinta aporta profundidad y suavidad, complementada con acabados metálicos y una fotografía de producto dramática. En el packaging y la comunicación visual, las composiciones en primer plano resaltan la textura, la luz y la forma, y trasladan el carácter sensorial de la fragancia a una experiencia visual.',
     },
     'same-hotel': { title: 'Proyecto', blurb: 'Mismo hotel, diferentes primeros diez segundos: una experiencia de reserva rediseñada.' },
-    'villa-013': { blurb: 'Comedor y salón en piedra apagada, lino y ocre.' },
+    'villa-013': {
+      blurb: 'Comedor y salón en piedra apagada, lino y ocre.',
+      service: "Interiorismo",
+      client: "Confidencial",
+      intro: "Una villa privada pensada como una secuencia larga y tranquila —salón, comedor, dos dormitorios y un baño— en piedra apagada, madera ahumada y lino, con algunas notas ocre para darle calidez.",
+      body: "Planta abierta, pero nunca una sola gran sala: listones de madera, un muro de chimenea y un techo rehundido sobre la mesa dividen la planta baja en lugares para sentarse, comer y conversar. Arriba la paleta se suaviza con paneles acanalados, nogal y alfombras de pelo largo, mientras el baño pasa al mosaico verde, una bañera de piedra y un espejo retroiluminado: sereno, táctil y con luz baja.",
+    },
     'standing-orders': { blurb: 'Flujos de trabajo automatizados que eliminan el trabajo repetitivo.' },
   },
 }

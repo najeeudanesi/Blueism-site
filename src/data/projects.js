@@ -5,111 +5,6 @@ const img = (name) => `/images/${name}.webp`
 
 const allProjects = [
   {
-    slug: 'cubit',
-    title: 'Cubit.',
-    category: 'Website',
-    cover: img('cubit-devices'),
-    back: img('cubit-devices'),
-    blurb: 'Website, mobile app and design system for a studio that says the most with the least.',
-    available: true,
-    service: 'Web & Mobile Design · Development',
-    scope: 'UI/UX · Design System · Mobile App',
-    platforms: 'Web · iOS · Android',
-    client: 'Cubit',
-    year: '2026',
-    eyebrow: 'Cubit. — Website, Mobile App & Design System',
-    kicker: 'Web & Mobile Product',
-    intro:
-      'Cubit is a multidisciplinary design studio built on one idea: say the most with the least. We designed and built its website and companion app on a single responsive system — one accent colour, one grid, and components that behave the same from a 1440 px desktop to a phone in one hand.',
-    hero: img('cubit-devices'),
-    heroFit: 'tall',
-    // Long-form copy used by the case-study sections below (translated per locale).
-    copy: {
-      overview: 'Overview',
-      lead: 'One design system powers every screen — the marketing site, the client dashboard and the mobile app share the same tokens, grid and components.',
-      cols: [
-        'We started on paper: user flows, dashboard sketches and mobile wireframes, then turned them into a component library — navigation, toggles, cards, charts and buttons — in light and dark mode.',
-        'Cobalt blue is the only accent. It marks actions, active states and data, while black, off-white and a soft grey carry everything else. A 12-column grid collapses to a 16 px-gutter mobile layout without losing rhythm.',
-      ],
-      tags: ['Web design', 'Mobile app', 'UI/UX', 'Design system', 'Development'],
-      brief: 'The brief',
-      challenge: 'Challenge',
-      challengeTitle: 'A studio with range, and a product that must not shout.',
-      challengeText:
-        'Cubit needed a site that presents its work and an app where clients follow projects, review analytics and manage their account. Both had to feel like one product — fast, calm and obvious to use on any screen.',
-      approach: 'Approach',
-      approachTitle: 'One accent, one grid, every screen.',
-      approachText:
-        'We designed mobile-first, defined spacing and type as tokens, and built every page from the same set of components. Motion is slow and deliberate, so content reads before the effect does.',
-      process: 'Process',
-      processTitle: 'From sketch to system.',
-      steps: [
-        { title: 'Listen', lines: ['User needs', 'The brief'] },
-        { title: 'Sketch', lines: ['User flows', 'Paper wireframes'] },
-        { title: 'Wireframe', lines: ['Mobile screens', 'Spacing specs'] },
-        { title: 'UI kit', lines: ['Components', 'Light and dark'] },
-        { title: 'Build', lines: ['One responsive system', '390 to 1440 px'] },
-        { title: 'Launch', lines: ['cubit.studio', 'Web and mobile'] },
-      ],
-      parallel: 'In parallel',
-      live: 'Live',
-      system: 'Colour & interface',
-      systemTitle: 'One accent, two modes.',
-      mobile: 'Mobile',
-      mobileTitle: 'Designed for one hand.',
-      digital: 'Digital',
-      digitalTitle: 'One system, every screen.',
-      caps: {
-        system: 'The component library — navigation, controls, cards and charts in one system',
-        sketches: 'Early flows — onboarding, dashboard and analytics sketched on paper',
-        type: 'Guidelines — wordmark and colours, type scale, 12-column grid and light and dark mode',
-        wireframes: 'Mobile wireframes — onboarding, analytics, cards and settings, with spacing specs',
-        walkthrough: 'cubit.studio — site walkthrough',
-        digital: 'Tablet, phone and desktop — the same grid, type and cobalt',
-      },
-    },
-    sections: [
-      { type: 'textblock' },
-      { type: 'image', src: img('cubit-ui-system'), alt: 'Exploded view of the Cubit interface: navigation bars, dashboard panels, charts, toggles and buttons', cap: 'system', num: '01' },
-      { type: 'brief' },
-      { type: 'heading', label: 'process', title: 'processTitle', n: '03' },
-      { type: 'process' },
-      { type: 'image', src: img('cubit-sketches'), alt: 'An open notebook with hand-drawn Cubit app flows and dashboard sketches, highlighted in blue', cap: 'sketches', num: '02' },
-      { type: 'heading', label: 'system', title: 'systemTitle', n: '04' },
-      {
-        type: 'palette',
-        swatches: [
-          { name: 'Off-White', hex: '#FFFFFE', rgb: '255, 255, 254', cmyk: '0, 0, 0, 0', area: 'a', ink: '#000000' },
-          { name: 'Cobalt Blue', hex: '#243BFF', rgb: '36, 59, 255', cmyk: '86, 77, 0, 0', area: 'b', ink: '#ffffff' },
-          { name: 'Black', hex: '#000000', rgb: '0, 0, 0', cmyk: '0, 0, 0, 100', area: 'c', ink: '#ffffff' },
-          { name: 'Mist Grey', hex: '#E6E3E4', rgb: '230, 227, 228', cmyk: '0, 1, 1, 10', area: 'd', ink: '#000000' },
-        ],
-      },
-      {
-        type: 'pair',
-        flat: true,
-        items: [
-          { src: img('cubit-guide-identity'), alt: 'Cubit guidelines: wordmark, clearspace and the colour palette' },
-          { src: img('cubit-guide-type'), alt: 'Cubit typographic scale, 12-column grid rules and light and dark mode UI contrast' },
-        ],
-        cap: 'type',
-        num: '03 — 04',
-      },
-      { type: 'heading', label: 'mobile', title: 'mobileTitle', n: '05' },
-      { type: 'image', src: img('cubit-wireframes'), alt: 'Four annotated mobile wireframes — onboarding, analytics, card management and settings — with 16 px margins and flow connectors', cap: 'wireframes', num: '05' },
-      {
-        type: 'duo',
-        items: [
-          { src: img('cubit-app-hand'), alt: 'A hand holding a phone with the Cubit app in a loft studio' },
-          { src: img('cubit-app-phones'), alt: 'Two phones showing Cubit app screens on sandstone' },
-        ],
-      },
-      { type: 'heading', label: 'digital', title: 'digitalTitle', n: '06' },
-      { type: 'smallvideo', src: '/media/cubit-walkthrough.mp4', poster: '/media/cubit-walkthrough-poster.jpg', alt: 'The Cubit website scrolling on a desktop monitor', cap: 'walkthrough' },
-      { type: 'image', src: img('cubit-desk'), alt: 'Cubit page layouts on a desktop display and a tablet', cap: 'digital', num: '06 — 07' },
-    ],
-  },
-  {
     slug: 'shoowarma',
     title: 'Shoowarma',
     category: 'Branding',
@@ -326,10 +221,11 @@ const allProjects = [
       {
         type: 'row',
         items: [
-          { src: img('sv-wrist'), alt: 'Figure in silhouette wearing the Silvatch watch against an amber spotlight', ratio: 0.7959 },
-          { src: img('sv-case'), alt: 'Silvatch case and bracelet suspended in a warm glow', ratio: 0.8021 },
+          { src: img('sv-dial'), alt: 'Silvatch sunray dial, screw-set octagonal bezel and integrated bracelet', ratio: 0.8003 },
+          { src: img('sv-caseback'), alt: 'Silvatch caseback catching a hard rim of amber light', ratio: 0.8003 },
         ],
       },
+      { type: 'image', src: img('sv-wrist-wide'), alt: 'Figure in silhouette wearing the Silvatch watch against an amber spotlight', bleed: true },
     ],
   },
   {
@@ -441,9 +337,37 @@ const allProjects = [
     slug: 'villa-013',
     title: 'Villa 013',
     category: 'Interior Design',
+    fullbleed: true,
     cover: img('card-villa-013'),
+    back: img('v13-bedroom'),
     blurb: 'Dining and living in muted stone, linen and ochre.',
-    available: false,
+    available: true,
+    service: 'Interior Design',
+    client: 'Redacted',
+    year: '2026',
+    intro:
+      'A private villa planned as one long, quiet sequence — living, dining, two bedrooms and a bath — in muted stone, smoked timber and linen, with a few notes of ochre to keep it warm.',
+    body:
+      'Open plan, but never one big room: timber slats, a fireplace wall and a sunken ceiling over the dining table divide the ground floor into places to sit, eat and talk. Upstairs the palette softens into fluted panels, walnut and deep-pile rugs, while the bathroom turns to green mosaic, a stone tub and a backlit mirror — calm, tactile and lit low.',
+    hero: img('v13-hero'),
+    sections: [
+      {
+        type: 'row',
+        items: [
+          { src: img('v13-living'), alt: 'Living room with fireplace wall, media panel and slate-blue lounge chairs', ratio: 1 },
+          { src: img('v13-dining'), alt: 'Dining table seen through vertical timber slats', ratio: 1 },
+        ],
+      },
+      { type: 'image', src: img('v13-bedroom-wide'), alt: 'Bedroom with fluted headboard wall, twin pendants and herringbone floor', bleed: true },
+      {
+        type: 'row',
+        items: [
+          { src: img('v13-bedroom-dusk'), alt: 'Guest bedroom at dusk with walnut ceiling fan and deep-pile rug', ratio: 1 },
+          { src: img('v13-vanity'), alt: 'Vanity with a backlit round mirror and marble basin', ratio: 1 },
+        ],
+      },
+      { type: 'image', src: img('v13-bath-wide'), alt: 'Bathroom with a stone freestanding tub, glass shower and green mosaic', bleed: true },
+    ],
   },
   {
     slug: 'kinetik',
@@ -601,14 +525,13 @@ const allProjects = [
 ]
 
 
-// Order of the "All Works" grid. DLVRNC leads; Cubit sits mid-grid.
+// Order of the "All Works" grid. DLVRNC leads.
 const ORDER = [
   'dlvrnc',
   'shoowarma',
   'avren',
   'musical-co-working',
   'silvatch',
-  'cubit',
   'dar-titawin',
   'nouzha',
   'villa-013',
@@ -628,7 +551,6 @@ export const nextProject = (slug) => {
 // "Recently.." hero slider on the home page
 export const featured = [
   { slug: 'dlvrnc', title: 'Delivrance', category: 'Sportswear', image: img('home-hero-dlvrnc') },
-  { slug: 'cubit', title: 'Cubit.', category: 'Website', image: img('cubit-desk'), pos: 'center 55%' },
   { slug: 'nouzha', title: 'Nouz’ha', category: 'Fragrance', image: img('nz-floral') },
   { slug: 'musical-co-working', title: 'Musical Co-working', category: 'Interior Design', image: img('mc-2') },
   { slug: 'dlvrnc', title: 'Delivrance', category: 'Campaign', image: img('dl-night'), pos: 'center 40%' },
