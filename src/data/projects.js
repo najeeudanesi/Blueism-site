@@ -345,13 +345,28 @@ const allProjects = [
       {
         type: 'video',
         src: '/media/dlvrnc-site.mp4',
-        poster: '/media/dlvrnc-site-poster.jpg',
+        poster: img('dl-website'),
         side: img('dl-appicon'),
         alt: 'DLVRNC. e-commerce website walkthrough',
       },
       { type: 'image', src: img('dl-grid'), alt: 'Cycling campaign photography grid', bleed: true },
-      { type: 'image', src: img('dl-ooh'), alt: 'Billboard, poster and bus-shelter campaign', bleed: true },
-      { type: 'image', src: img('dl-social'), alt: 'Social profile and story templates', bleed: true },
+      {
+        type: 'bento',
+        items: [
+          { src: img('dl-billboard'), alt: '“Built Different.” billboard for the black windbreaker', span: 12, ratio: 3.05 },
+          { src: img('dl-poster'), alt: '“Move at your pace.” street poster by a running track', span: 6, ratio: 1.49 },
+          { src: img('dl-shelter'), alt: '“Keep moving.” bus-shelter ad for the white mesh T-shirt', span: 6, ratio: 1.49 },
+        ],
+      },
+      {
+        type: 'bento',
+        items: [
+          { src: img('dl-profile'), alt: 'DLVRNC. social profile card', span: 6, ratio: 1.49 },
+          { src: img('dl-phone'), alt: 'DLVRNC. Instagram profile on a phone', span: 6, rows: 2, ratio: 0.73 },
+          { src: img('dl-mile'), alt: '“Every mile counts.” running collection card', span: 6, ratio: 1.42 },
+        ],
+      },
+      { type: 'image', src: img('dl-stories'), alt: 'Instagram story templates', bleed: true },
     ],
   },
   {
