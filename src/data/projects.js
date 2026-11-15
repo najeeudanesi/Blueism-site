@@ -278,7 +278,7 @@ const allProjects = [
   {
     slug: 'nouzha',
     title: 'Nouz’ha',
-    category: 'Domain',
+    category: 'Branding',
     cover: img('card-nouzha'),
     back: img('card-nouzha-back'),
     blurb: 'Fragrance identity & art direction — scent, memory and personal ritual.',
