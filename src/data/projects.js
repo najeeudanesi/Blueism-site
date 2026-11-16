@@ -6,6 +6,7 @@ const img = (name) => `/images/${name}.webp`
 const allProjects = [
   {
     slug: 'shoowarma',
+    hidden: true, // kept but not shown on the site — remove this line to bring it back
     title: 'Shoowarma',
     category: 'Branding',
     cover: img('sh-climbers'),
@@ -348,6 +349,7 @@ const allProjects = [
   },
   {
     slug: 'villa-013',
+    hidden: true, // kept but not shown on the site — remove this line to bring it back
     title: 'Villa 013',
     category: 'Interior Design',
     fullbleed: true,
@@ -579,7 +581,8 @@ const ORDER = [
   'villa-013',
   'kinetik',
 ]
-export const projects = ORDER.map((slug) => allProjects.find((p) => p.slug === slug))
+// Projects marked `hidden: true` keep their data but stay off the grid and get no page.
+export const projects = ORDER.map((slug) => allProjects.find((p) => p.slug === slug)).filter((p) => !p.hidden)
 
 export const availableProjects = projects.filter((p) => p.available)
 
