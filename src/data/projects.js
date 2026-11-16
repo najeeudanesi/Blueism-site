@@ -215,6 +215,7 @@ const allProjects = [
   },
   {
     slug: 'silvatch',
+    hidden: true, // kept but not shown on the site — remove this line to bring it back
     title: 'Silvatch',
     category: 'Visuals',
     fullbleed: true,
