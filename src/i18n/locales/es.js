@@ -204,10 +204,10 @@ export default {
     kinetik: {
       showcase: { label: "Escaparate de la app", title: "Mira un flujo que se ejecuta solo.", text: "El panel de Kinetik en movimiento: una factura pasa por extracción, conciliación con IA y el libro mayor; luego un recorrido por flujos, agentes, finanzas e integraciones, y la misma app en el móvil." },
         "blurb": "Un núcleo ERP autónomo: agentes de IA que concilian, compran y auditan, con personas en el circuito.",
-        "service": "Diseño y desarrollo de producto",
-        "scope": "Marca · UX/UI · Flujos de IA",
+        "service": "Diseño de producto, desarrollo y automatización",
+        "scope": "Marca · UX/UI · Flujos de IA · Automatización",
         "platforms": "Web · iOS · Android",
-        "kicker": "Plataforma de IA, marca y producto",
+        "kicker": "Plataforma de automatización con IA, marca y producto",
         "eyebrow": "Kinetik. — ERP autónomo: marca, diseño de producto y desarrollo",
         "intro": "Kinetik es un núcleo empresarial autónomo: agentes de IA que leen facturas, concilian libros contables y emiten órdenes de compra por sí solos, y se detienen a consultar a una persona cuando hay mucho en juego. Definimos la visión, creamos la marca y diseñamos y desarrollamos el producto, del lienzo de flujos a la app móvil de aprobaciones.",
         "copy": {

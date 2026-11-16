@@ -207,10 +207,10 @@ export default {
     kinetik: {
       showcase: { label: "Vitrine de l’app", title: "Un workflow qui tourne tout seul.", text: "Le tableau de bord Kinetik en mouvement : une facture qui passe par l’extraction, la réconciliation par l’IA et le grand livre, puis un tour des workflows, agents, finances et intégrations, et la même app sur téléphone." },
         "blurb": "Un cœur ERP autonome — des agents IA qui rapprochent, achètent et auditent, avec l’humain dans la boucle.",
-        "service": "Design et développement produit",
-        "scope": "Marque · UX/UI · Workflows IA",
+        "service": "Design produit, développement et automatisation",
+        "scope": "Marque · UX/UI · Workflows IA · Automatisation",
         "platforms": "Web · iOS · Android",
-        "kicker": "Plateforme IA, marque et produit",
+        "kicker": "Plateforme d’automatisation IA, marque et produit",
         "eyebrow": "Kinetik. — ERP autonome\u202F: marque, design produit et développement",
         "intro": "Kinetik est un cœur d’entreprise autonome\u202F: des agents IA qui lisent les factures, rapprochent les comptes et émettent des bons de commande seuls — et s’arrêtent pour consulter une personne quand l’enjeu est important. Nous avons défini la vision, créé la marque, puis conçu et développé le produit, du canevas de workflows à l’application mobile d’approbation.",
         "copy": {

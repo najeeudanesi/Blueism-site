@@ -85,7 +85,7 @@ const allProjects = [
     title: 'Musical Co-working',
     category: 'Interior Design',
     fullbleed: true,
-    cover: img('card-musical-coworking'),
+    cover: img('mc-2'),
     blurb: 'A co-working space tuned like an instrument — walnut, steel and sound.',
     available: true,
     service: 'Interior Design',
@@ -95,14 +95,14 @@ const allProjects = [
       'A co-working lounge designed around listening. Walnut panelling, brushed steel and a wall of speaker drivers turn a working floor into a room that feels tuned rather than furnished.',
     body:
       'We approached the space like an acoustic object. Warm timber absorbs and softens, the steel wall reflects and projects, and low lounge seating keeps sight lines open across the room. Vinyl, hi-fi and soft furnishings set a slower pace — a place to focus, meet, or simply listen.',
-    hero: img('mc-1'),
+    hero: img('mc-2'),
     sections: [
-      { type: 'image', src: img('mc-2'), alt: 'Lounge with steel speaker wall and walnut panelling', bleed: true },
+      { type: 'image', src: img('mc-4'), alt: 'Lounge with marble, walnut shelving and bean bags', bleed: true },
       {
         type: 'bento',
         items: [
           { src: img('mc-3'), alt: 'Record console beneath a wall of vinyl', span: 4, ratio: 1.08 },
-          { src: img('mc-4'), alt: 'Lounge with marble, walnut shelving and bean bags', span: 8, ratio: 2.16 },
+          { src: img('mc-1'), alt: 'Lounge with steel speaker wall, walnut panelling and people passing through', span: 8, ratio: 2.16 },
         ],
       },
     ],
@@ -227,30 +227,13 @@ const allProjects = [
     hero: img('dt-reception'),
     sections: [
       { type: 'image', src: img('dt-desk'), alt: 'Hewn-stone reception desk before blue plaster arches with slatted cedar', bleed: true },
-      {
-        type: 'pair',
-        flat: true,
-        items: [
-          { src: img('dt-lounge'), alt: 'Lounge with blue sofas and a carved cedar mashrabiya screen' },
-          { src: img('dt-arches'), alt: 'Lift lobby set into blue plaster arches' },
-        ],
-      },
-      {
-        type: 'palette',
-        swatches: [
-          { name: 'Lime Plaster', hex: '#E4DDD3', rgb: '228, 221, 211', cmyk: '0, 3, 7, 11', area: 'a', ink: '#1E1B18' },
-          { name: 'Tetouan Blue', hex: '#4169A0', rgb: '65, 105, 160', cmyk: '59, 34, 0, 37', area: 'b', ink: '#ffffff' },
-          { name: 'Cedar', hex: '#5A3A24', rgb: '90, 58, 36', cmyk: '0, 36, 60, 65', area: 'c', ink: '#ffffff' },
-          { name: 'Nero Marble', hex: '#1E1B18', rgb: '30, 27, 24', cmyk: '0, 10, 20, 88', area: 'd', ink: '#ffffff' },
-        ],
-      },
       { type: 'image', src: img('dt-cafe'), alt: 'Café opening onto the Mediterranean, with a mashrabiya screen and black marble bar', parallax: true, bleed: true },
       {
-        type: 'pair',
-        flat: true,
+        type: 'bento',
         items: [
-          { src: img('dt-bar'), alt: 'Coffee bar in black marble beneath a hanging planter' },
-          { src: img('dt-coffee'), alt: 'Coffee counter and walnut dining tables in warm light' },
+          { src: img('dt-lounge'), alt: 'Lounge with blue sofas and a carved cedar mashrabiya screen', span: 4, ratio: '16 / 9' },
+          { src: img('dt-arches'), alt: 'Lift lobby set into blue plaster arches', span: 4, ratio: '16 / 9' },
+          { src: img('dt-coffee'), alt: 'Coffee counter and walnut dining tables in warm light', span: 4, ratio: '16 / 9' },
         ],
       },
       { type: 'image', src: img('dt-terrace'), alt: 'Dining room with walnut tables facing palms and the sea', bleed: true },
@@ -403,12 +386,12 @@ const allProjects = [
     back: img('kn-screens'),
     blurb: 'An autonomous ERP core — AI agents that reconcile, procure and audit, with people in the loop.',
     available: true,
-    service: 'Product Design & Development',
-    scope: 'Brand · UX/UI · AI Workflows',
+    service: 'Product Design, Development & Automation',
+    scope: 'Brand · UX/UI · AI Workflows · Automation',
     platforms: 'Web · iOS · Android',
     client: 'Kinetik',
     year: '2026',
-    kicker: 'AI Platform, Brand & Product',
+    kicker: 'AI Automation Platform, Brand & Product',
     eyebrow: 'Kinetik. — Autonomous ERP: Brand, Product Design & Build',
     intro:
       'Kinetik is an autonomous enterprise core: AI agents that read invoices, reconcile ledgers and raise purchase orders on their own — and stop to ask a person when the stakes are high. We shaped the vision, built the brand, and designed and engineered the product, from the workflow canvas to the mobile approval app.',

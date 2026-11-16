@@ -204,10 +204,10 @@ export default {
     kinetik: {
       showcase: { label: "App-Showcase", title: "Ein Workflow, der von selbst läuft.", text: "Das Kinetik-Dashboard in Bewegung: eine Rechnung durchläuft Extraktion, KI-Abgleich und Hauptbuch, dann ein Rundgang durch Workflows, Agenten, Finanzen und Integrationen – und dieselbe App auf dem Smartphone." },
         "blurb": "Ein autonomer ERP-Kern – KI-Agenten, die abgleichen, beschaffen und prüfen, mit Menschen in der Schleife.",
-        "service": "Produktdesign & Entwicklung",
-        "scope": "Marke · UX/UI · KI-Workflows",
+        "service": "Produktdesign, Entwicklung & Automatisierung",
+        "scope": "Marke · UX/UI · KI-Workflows · Automatisierung",
         "platforms": "Web · iOS · Android",
-        "kicker": "KI-Plattform, Marke & Produkt",
+        "kicker": "KI-Automatisierungsplattform, Marke & Produkt",
         "eyebrow": "Kinetik. — Autonomes ERP: Marke, Produktdesign & Entwicklung",
         "intro": "Kinetik ist ein autonomer Unternehmenskern: KI-Agenten, die Rechnungen lesen, Konten abgleichen und Bestellungen selbstständig auslösen – und einen Menschen fragen, wenn viel auf dem Spiel steht. Wir haben die Vision geschärft, die Marke entwickelt und das Produkt gestaltet und gebaut, vom Workflow-Canvas bis zur mobilen Freigabe-App.",
         "copy": {
