@@ -80,6 +80,7 @@ export default {
     platforms: 'Platforms',
     scroll: 'Scroll',
     palette: ['Color', 'Palette'],
+    nowPlaying: "Now playing",
     appIconAlt: 'DLVRNC. app icon',
   },
   notFound: {

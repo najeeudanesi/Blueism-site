@@ -1,37 +1,65 @@
-import { Link, useParams } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Seo from '../components/Seo'
-import NotFound from './NotFound'
-import { RevealText, FadeUp, RevealImage, Rule, EASE } from '../components/motion'
-import { useI18n } from '../i18n/I18nProvider'
+import { Link, useParams } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useReducedMotion,
+} from "framer-motion";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Seo from "../components/Seo";
+import NotFound from "./NotFound";
+import {
+  RevealText,
+  FadeUp,
+  RevealImage,
+  Rule,
+  EASE,
+} from "../components/motion";
+import { useI18n } from "../i18n/I18nProvider";
 
 export default function Project() {
-  const { slug } = useParams()
-  const { t, lang, projects } = useI18n()
-  const available = projects.filter((x) => x.available)
-  const idx = available.findIndex((x) => x.slug === slug)
-  if (idx === -1) return <NotFound />
-  const p = available[idx]
-  const next = available[(idx + 1) % available.length]
-  const themed = Boolean(p.theme)
+  const { slug } = useParams();
+  const { t, lang, projects } = useI18n();
+  const available = projects.filter((x) => x.available);
+  const idx = available.findIndex((x) => x.slug === slug);
+  if (idx === -1) return <NotFound />;
+  const p = available[idx];
+  const next = available[(idx + 1) % available.length];
+  const themed = Boolean(p.theme);
 
   return (
     <div
-      className={`project-page ${themed ? 'is-themed' : ''} ${p.fullbleed ? 'is-fullbleed' : ''} ${p.skin ? `skin-${p.skin}` : ''}`}
-      style={themed ? { '--p-bg': p.theme.bg, '--p-ink': p.theme.ink, '--p-accent': p.theme.accent } : undefined}
+      className={`project-page ${themed ? "is-themed" : ""} ${p.fullbleed ? "is-fullbleed" : ""} ${p.skin ? `skin-${p.skin}` : ""}`}
+      style={
+        themed
+          ? {
+              "--p-bg": p.theme.bg,
+              "--p-ink": p.theme.ink,
+              "--p-accent": p.theme.accent,
+            }
+          : undefined
+      }
     >
-      <Seo title={p.fullName ? `${p.title} (${p.fullName})` : p.title} description={p.intro} image={p.hero} />
+      <Seo
+        title={p.fullName ? `${p.title} (${p.fullName})` : p.title}
+        description={p.intro}
+        image={p.hero}
+      />
       <Header rule={false} />
       <main className="page project" key={`${slug}-${lang}`}>
         <div className="container">
           <FadeUp delay={0.3}>
-            <Link to="/#work" className="back-link" data-cursor={t('cursor.allWork')}>
+            <Link
+              to="/#work"
+              className="back-link"
+              data-cursor={t("cursor.allWork")}
+            >
               <span aria-hidden="true" className="arrow arrow-back">
                 &lt;
-              </span>{' '}
-              {t('project.back')}
+              </span>{" "}
+              {t("project.back")}
             </Link>
           </FadeUp>
         </div>
@@ -39,7 +67,12 @@ export default function Project() {
 
         <section className="container project-head">
           <div>
-            <RevealText as="h1" className="project-title" text={p.title} delay={0.5} />
+            <RevealText
+              as="h1"
+              className="project-title"
+              text={p.title}
+              delay={0.5}
+            />
             {p.eyebrow && (
               <FadeUp as="p" className="project-kicker" delay={0.7}>
                 {p.kicker ?? p.service}
@@ -60,52 +93,61 @@ export default function Project() {
           </div>
         </section>
 
-        <section className={p.fullbleed ? 'project-hero-wrap' : 'container'}>
+        <section className={p.fullbleed ? "project-hero-wrap" : "container"}>
           <RevealImage
             src={p.hero}
             video={p.heroVideo}
             alt={p.title}
-            className={`project-hero ${p.fullbleed ? 'is-bleed' : ''} ${p.heroFit === 'tall' ? 'is-tall' : ''} ${p.heroFit === 'full' ? 'is-full' : ''} ${p.heroFit === 'natural' ? 'is-natural' : ''} ${p.heroVideo ? 'is-video' : ''}`}
+            className={`project-hero ${p.fullbleed ? "is-bleed" : ""} ${p.heroFit === "tall" ? "is-tall" : ""} ${p.heroFit === "full" ? "is-full" : ""} ${p.heroFit === "natural" ? "is-natural" : ""} ${p.heroVideo ? "is-video" : ""}`}
             style={p.heroBg ? { background: p.heroBg } : undefined}
             priority
             delay={0.5}
           />
-          {p.heroCap && <Caption text={p.copy?.caps?.[p.heroCap]} num={p.heroVideo ? t('project.scroll') : '01'} />}
+          {p.heroCap && (
+            <Caption
+              text={p.copy?.caps?.[p.heroCap]}
+              num={p.heroVideo ? t("project.scroll") : "01"}
+            />
+          )}
         </section>
 
         {p.body && (
-        <section className="container project-details">
-          <FadeUp as="p" className="project-body">
-            {p.body}
-          </FadeUp>
-          <FadeUp as="dl" className="project-meta" delay={0.1}>
-            <div>
-              <dt>{t('project.service')}</dt>
-              <dd>{p.service}</dd>
-            </div>
-            <div>
-              <dt>{t('project.client')}</dt>
-              <dd>
-                <bdi>{p.client}</bdi>
-              </dd>
-            </div>
-            <div>
-              <dt>{t('project.year')}</dt>
-              <dd>{p.year}</dd>
-            </div>
-          </FadeUp>
-        </section>
+          <section className="container project-details">
+            <FadeUp as="p" className="project-body">
+              {p.body}
+            </FadeUp>
+            <FadeUp as="dl" className="project-meta" delay={0.1}>
+              <div>
+                <dt>{t("project.service")}</dt>
+                <dd>{p.service}</dd>
+              </div>
+              <div>
+                <dt>{t("project.client")}</dt>
+                <dd>
+                  <bdi>{p.client}</bdi>
+                </dd>
+              </div>
+              <div>
+                <dt>{t("project.year")}</dt>
+                <dd>{p.year}</dd>
+              </div>
+            </FadeUp>
+          </section>
         )}
 
-        <div className={`project-sections ${p.copy ? 'is-editorial' : ''}`}>
+        <div className={`project-sections ${p.copy ? "is-editorial" : ""}`}>
           {p.sections.map((s, i) => (
             <Section key={i} s={s} p={p} />
           ))}
         </div>
 
         <div className="container next-wrap">
-          <Link to={`/work/${next.slug}`} className="next-link" data-cursor={next.title.toUpperCase()}>
-            <span className="next-label">{t('project.next')}</span>{' '}
+          <Link
+            to={`/work/${next.slug}`}
+            className="next-link"
+            data-cursor={next.title.toUpperCase()}
+          >
+            <span className="next-label">{t("project.next")}</span>{" "}
             <span aria-hidden="true" className="arrow arrow-next">
               &gt;
             </span>
@@ -117,18 +159,18 @@ export default function Project() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
 /** Small caption line under media: description left, figure number right. */
 function Caption({ text, num }) {
-  if (!text && !num) return null
+  if (!text && !num) return null;
   return (
     <FadeUp className="media-cap" amount={0.6}>
       <span>{text}</span>
       {num && <span>{num}</span>}
     </FadeUp>
-  )
+  );
 }
 
 /** "(03) Process" label + large heading, as in the studio's case-study format. */
@@ -141,58 +183,72 @@ function SecHead({ n, label, title }) {
       </FadeUp>
       <RevealText as="h2" className="sec-title" text={title} stagger={0.05} />
     </div>
-  )
+  );
 }
 
 const nodeVariants = {
-  hidden: { opacity: 0, y: 30, filter: 'blur(6px)' },
-  show: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.9, ease: EASE } },
-}
+  hidden: { opacity: 0, y: 30, filter: "blur(6px)" },
+  show: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.9, ease: EASE },
+  },
+};
 
 /** Build a flow from Cubit-style `steps` (0 → 1 → [2 ∥ 3] → 4 → 5) when no explicit `flow` is given. */
 function flowFrom(c) {
-  if (c.flow) return c.flow
-  const st = c.steps
+  if (c.flow) return c.flow;
+  const st = c.steps;
   return [
     st[0],
     st[1],
     { label: c.parallel, branch: [st[2], st[3]] },
-    { ...st[4], tone: 'dark' },
-    { ...st[5], tone: 'accent', small: c.live },
-  ]
+    { ...st[4], tone: "dark" },
+    { ...st[5], tone: "accent", small: c.live },
+  ];
 }
 
 /** Data-driven flow diagram: nodes and arrows draw in sequence; a `branch` stacks nodes that run in parallel. */
 function Process({ c }) {
-  const flow = flowFrom(c)
-  let n = 0
+  const flow = flowFrom(c);
+  let n = 0;
   const node = (st, key) => {
-    n += 1
+    n += 1;
     return (
-      <motion.div key={key} className={`pf-node ${st.tone ? `is-${st.tone}` : ''}`} variants={nodeVariants}>
-        <small>{st.small ?? String(n).padStart(2, '0')}</small>
+      <motion.div
+        key={key}
+        className={`pf-node ${st.tone ? `is-${st.tone}` : ""}`}
+        variants={nodeVariants}
+      >
+        <small>{st.small ?? String(n).padStart(2, "0")}</small>
         <strong>{st.title}</strong>
         {st.lines.map((l) => (
           <span key={l}>{l}</span>
         ))}
       </motion.div>
-    )
-  }
+    );
+  };
   const line = (k) => (
     <motion.i
       key={`l${k}`}
       className="pf-line"
       aria-hidden="true"
-      variants={{ hidden: { scaleX: 0 }, show: { scaleX: 1, transition: { duration: 0.7, ease: EASE } } }}
+      variants={{
+        hidden: { scaleX: 0 },
+        show: { scaleX: 1, transition: { duration: 0.7, ease: EASE } },
+      }}
     />
-  )
-  const names = flow.flatMap((f) => (f.branch ? f.branch.map((b) => b.title) : [f.title]))
+  );
+  const names = flow.flatMap((f) =>
+    f.branch ? f.branch.map((b) => b.title) : [f.title],
+  );
   return (
     <div className="container">
       <motion.div
         className="pf"
         role="group"
-        aria-label={names.join(' → ')}
+        aria-label={names.join(" → ")}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
@@ -203,7 +259,10 @@ function Process({ c }) {
           f.branch ? (
             <div className="pf-branch" key={`b${i}`}>
               {f.label && (
-                <motion.span className="pf-par" variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}>
+                <motion.span
+                  className="pf-par"
+                  variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
+                >
                   {f.label}
                 </motion.span>
               )}
@@ -215,7 +274,7 @@ function Process({ c }) {
         ])}
       </motion.div>
     </div>
-  )
+  );
 }
 
 /** Grid of numbered cards (product modules, governance features). */
@@ -223,22 +282,26 @@ function Features({ items, accent }) {
   return (
     <div className="container">
       <motion.div
-        className={`feat ${accent ? 'is-accent' : ''}`}
+        className={`feat ${accent ? "is-accent" : ""}`}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
         transition={{ staggerChildren: 0.08 }}
       >
         {items.map((it, i) => (
-          <motion.article key={it.title} className="feat-card" variants={nodeVariants}>
-            <span className="feat-n">{String(i + 1).padStart(2, '0')}</span>
+          <motion.article
+            key={it.title}
+            className="feat-card"
+            variants={nodeVariants}
+          >
+            <span className="feat-n">{String(i + 1).padStart(2, "0")}</span>
             <h3>{it.title}</h3>
             <p>{it.text}</p>
           </motion.article>
         ))}
       </motion.div>
     </div>
-  )
+  );
 }
 
 /** Phased plan: cards draw in along a progress rule. */
@@ -255,7 +318,10 @@ function Phases({ items }) {
         <motion.li
           className="phases-rule"
           aria-hidden="true"
-          variants={{ hidden: { scaleX: 0 }, show: { scaleX: 1, transition: { duration: 1.4, ease: EASE } } }}
+          variants={{
+            hidden: { scaleX: 0 },
+            show: { scaleX: 1, transition: { duration: 1.4, ease: EASE } },
+          }}
         />
         {items.map((ph) => (
           <motion.li key={ph.title} className="phase" variants={nodeVariants}>
@@ -268,7 +334,7 @@ function Phases({ items }) {
         ))}
       </motion.ol>
     </div>
-  )
+  );
 }
 
 function Stats({ items }) {
@@ -291,15 +357,110 @@ function Stats({ items }) {
         ))}
       </motion.div>
     </div>
-  )
+  );
+}
+
+/**
+ * Full-screen video showcase. The section is taller than the screen, so the video
+ * stays pinned for a moment while it grows from an inset card to full screen —
+ * visitors can't scroll past without noticing it. Plays only while in view.
+ */
+function Showcase({ s, p }) {
+  const { t } = useI18n();
+  const ref = useRef(null);
+  const videoRef = useRef(null);
+  const [progress, setProgress] = useState(0);
+  const reduce = useReducedMotion();
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end end"],
+  });
+  const scale = useTransform(
+    scrollYProgress,
+    [0, 0.5],
+    reduce ? [1, 1] : [0.8, 1],
+  );
+  const radius = useTransform(
+    scrollYProgress,
+    [0, 0.5],
+    reduce ? [0, 0] : [28, 0],
+  );
+  const sh = p.showcase ?? {};
+
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return undefined;
+    const io = new IntersectionObserver(
+      ([e]) => {
+        if (e.isIntersecting) v.play().catch(() => {});
+        else v.pause();
+      },
+      { threshold: 0.35 },
+    );
+    io.observe(v);
+    return () => io.disconnect();
+  }, []);
+
+  return (
+    <section
+      className="sec sec-bleed sec-showcase"
+      style={{ "--sc-bg": s.bg ?? "#0b0b0b", "--sc-ink": s.ink ?? "#ffffff" }}
+    >
+      <div className="container showcase-head">
+        <FadeUp as="p" className="showcase-live">
+          <i aria-hidden="true" />
+          {sh.label}
+          <span>· {t("project.nowPlaying")}</span>
+        </FadeUp>
+        <RevealText as="h2" className="showcase-title" text={sh.title} />
+        {sh.text && (
+          <FadeUp as="p" className="showcase-text" delay={0.15}>
+            {sh.text}
+          </FadeUp>
+        )}
+      </div>
+      <div ref={ref} className="showcase-pin">
+        <div className="showcase-sticky">
+          <motion.div
+            className="showcase-frame"
+            style={{ scale, borderRadius: radius }}
+          >
+            <video
+              ref={videoRef}
+              src={s.src}
+              poster={s.poster}
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={s.alt}
+              onTimeUpdate={(e) =>
+                setProgress(
+                  e.currentTarget.currentTime / (e.currentTarget.duration || 1),
+                )
+              }
+            />
+            <div className="showcase-bar" aria-hidden="true">
+              <span style={{ transform: `scaleX(${progress})` }} />
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 function Section({ s, p }) {
-  const { t, color } = useI18n()
-  const c = p.copy ?? {}
-  const cap = s.cap ? <Caption text={c.caps?.[s.cap] ?? p.stories?.[s.cap]} num={s.type === 'story' ? undefined : s.num} /> : null
+  const { t, color } = useI18n();
+  const c = p.copy ?? {};
+  const cap = s.cap ? (
+    <Caption
+      text={c.caps?.[s.cap] ?? p.stories?.[s.cap]}
+      num={s.type === "story" ? undefined : s.num}
+    />
+  ) : null;
   switch (s.type) {
-    case 'textblock':
+    case "textblock":
       return (
         <div className="container ed-block">
           <div>
@@ -309,29 +470,29 @@ function Section({ s, p }) {
             </FadeUp>
             <FadeUp as="dl" className="ed-meta" delay={0.1}>
               <div>
-                <dt>{t('project.client')}</dt>
+                <dt>{t("project.client")}</dt>
                 <dd>
                   <bdi>{p.client}</bdi>
                 </dd>
               </div>
               <div>
-                <dt>{t('project.service')}</dt>
+                <dt>{t("project.service")}</dt>
                 <dd>{p.service}</dd>
               </div>
               {p.scope && (
                 <div>
-                  <dt>{t('project.scope')}</dt>
+                  <dt>{t("project.scope")}</dt>
                   <dd>{p.scope}</dd>
                 </div>
               )}
               {p.platforms && (
                 <div>
-                  <dt>{t('project.platforms')}</dt>
+                  <dt>{t("project.platforms")}</dt>
                   <dd>{p.platforms}</dd>
                 </div>
               )}
               <div>
-                <dt>{t('project.year')}</dt>
+                <dt>{t("project.year")}</dt>
                 <dd>{p.year}</dd>
               </div>
             </FadeUp>
@@ -354,8 +515,8 @@ function Section({ s, p }) {
             </FadeUp>
           </div>
         </div>
-      )
-    case 'brief':
+      );
+    case "brief":
       return (
         <div className="container ed-block">
           <FadeUp className="sec-label">
@@ -375,11 +536,11 @@ function Section({ s, p }) {
             ))}
           </div>
         </div>
-      )
-    case 'heading':
-      return <SecHead n={s.n} label={c[s.label]} title={c[s.title]} />
-    case 'split': {
-      const items = c[s.items] ?? []
+      );
+    case "heading":
+      return <SecHead n={s.n} label={c[s.label]} title={c[s.title]} />;
+    case "split": {
+      const items = c[s.items] ?? [];
       return (
         <div className="container ed-block">
           <FadeUp className="sec-label">
@@ -387,8 +548,17 @@ function Section({ s, p }) {
             {c[s.label]}
           </FadeUp>
           <div>
-            {s.statement && <RevealText as="p" className="ed-statement" text={c[s.statement]} stagger={0.04} />}
-            <div className={`ed-cols is-brief ${s.statement ? 'has-statement' : ''}`}>
+            {s.statement && (
+              <RevealText
+                as="p"
+                className="ed-statement"
+                text={c[s.statement]}
+                stagger={0.04}
+              />
+            )}
+            <div
+              className={`ed-cols is-brief ${s.statement ? "has-statement" : ""}`}
+            >
               {items.map((it, i) => (
                 <FadeUp key={i} delay={i * 0.12}>
                   <div className="ed-small">{it.label}</div>
@@ -399,11 +569,11 @@ function Section({ s, p }) {
             </div>
           </div>
         </div>
-      )
+      );
     }
-    case 'phases':
-      return <Phases items={c[s.items] ?? []} />
-    case 'features':
+    case "phases":
+      return <Phases items={c[s.items] ?? []} />;
+    case "features":
       return (
         <>
           {s.label && (
@@ -413,26 +583,31 @@ function Section({ s, p }) {
           )}
           <Features items={c[s.items] ?? []} accent={s.accent} />
         </>
-      )
-    case 'stats':
-      return <Stats items={c[s.items] ?? []} />
-    case 'process':
+      );
+    case "stats":
+      return <Stats items={c[s.items] ?? []} />;
+    case "process":
       return (
         <>
           <Process c={c} />
           {cap && <div className="container">{cap}</div>}
         </>
-      )
-    case 'smallvideo':
+      );
+    case "smallvideo":
       return (
         <div className="container sec sec-smallvideo">
           <div className="smallvideo-frame">
-            <RevealImage video={s.src} poster={s.poster} src={s.poster} alt={s.alt} />
+            <RevealImage
+              video={s.src}
+              poster={s.poster}
+              src={s.poster}
+              alt={s.alt}
+            />
           </div>
           {cap && <div className="smallvideo-cap">{cap}</div>}
         </div>
-      )
-    case 'duo':
+      );
+    case "duo":
       return (
         <>
           <div className="container sec sec-duo">
@@ -442,42 +617,82 @@ function Section({ s, p }) {
           </div>
           {cap && <div className="container">{cap}</div>}
         </>
-      )
-    case 'image':
+      );
+    case "image":
       return (
-        <div className={s.bleed ? 'sec sec-bleed' : `container sec ${s.size === 'half' ? 'sec-half' : ''} ${s.inset ? 'sec-inset' : ''}`}>
-          <RevealImage src={s.src} video={s.video} alt={s.alt} parallax={s.parallax} className={`${s.bleed ? 'is-bleed' : ''} ${s.video ? 'is-showcase' : ''}`} />
+        <div
+          className={
+            s.bleed
+              ? "sec sec-bleed"
+              : `container sec ${s.size === "half" ? "sec-half" : ""} ${s.inset ? "sec-inset" : ""}`
+          }
+        >
+          <RevealImage
+            src={s.src}
+            video={s.video}
+            alt={s.alt}
+            parallax={s.parallax}
+            className={`${s.bleed ? "is-bleed" : ""} ${s.video ? "is-showcase" : ""}`}
+          />
           {cap}
         </div>
-      )
-    case 'trio':
+      );
+    case "trio":
       return (
-        <div className={s.flush ? 'sec sec-trio is-flush' : 'container sec sec-trio'}>
+        <div
+          className={
+            s.flush ? "sec sec-trio is-flush" : "container sec sec-trio"
+          }
+        >
           {s.items.map((it, k) => (
-            <RevealImage key={k} src={it.src} alt={it.alt} delay={k * 0.1} className={s.flush ? 'is-bleed' : ''} />
+            <RevealImage
+              key={k}
+              src={it.src}
+              alt={it.alt}
+              delay={k * 0.1}
+              className={s.flush ? "is-bleed" : ""}
+            />
           ))}
         </div>
-      )
-    case 'row':
+      );
+    case "row":
       // images side by side at one shared height, each shown whole — widths follow each image's ratio
       return (
         <>
           <div className="sec sec-row">
             {s.items.map((it, k) => (
-              <div key={k} className="row-cell" style={{ flex: `${it.ratio} 1 0` }}>
-                <RevealImage src={it.src} alt={it.alt} delay={k * 0.1} className="is-bleed is-whole" />
+              <div
+                key={k}
+                className="row-cell"
+                style={{ flex: `${it.ratio} 1 0` }}
+              >
+                <RevealImage
+                  src={it.src}
+                  alt={it.alt}
+                  delay={k * 0.1}
+                  className="is-bleed is-whole"
+                />
               </div>
             ))}
           </div>
           {cap && <div className="container row-cap">{cap}</div>}
         </>
-      )
-    case 'story': {
+      );
+    case "showcase":
+      return <Showcase s={s} p={p} />;
+    case "story": {
       // half-screen image beside a written panel; `flip` puts the text first
-      const st = p.stories ?? {}
+      const st = p.stories ?? {};
       return (
-        <div className={`sec sec-story ${s.flip ? 'is-flip' : ''}`} style={{ '--story-bg': s.bg, '--story-ink': s.ink }}>
-          <RevealImage src={s.src} alt={s.alt} className="is-bleed is-whole story-img" />
+        <div
+          className={`sec sec-story ${s.flip ? "is-flip" : ""}`}
+          style={{ "--story-bg": s.bg, "--story-ink": s.ink }}
+        >
+          <RevealImage
+            src={s.src}
+            alt={s.alt}
+            className="is-bleed is-whole story-img"
+          />
           <div className="story-text">
             <FadeUp as="p" className="story-num">
               {st[s.num]}
@@ -488,24 +703,30 @@ function Section({ s, p }) {
             </FadeUp>
           </div>
         </div>
-      )
+      );
     }
-    case 'pair':
+    case "pair":
       return (
         <>
-          <div className={`container sec sec-pair ${s.flat ? 'is-flat' : ''}`}>
+          <div className={`container sec sec-pair ${s.flat ? "is-flat" : ""}`}>
             {s.items.map((it, k) => (
               <RevealImage key={k} src={it.src} alt={it.alt} delay={k * 0.12} />
             ))}
           </div>
           {cap && <div className="container">{cap}</div>}
         </>
-      )
-    case 'palette':
+      );
+    case "palette":
       return (
-        <div className={`sec sec-palette ${s.contained ? 'container is-contained' : ''}`}>
-          <div className={s.contained ? undefined : 'container'}>
-            <RevealText as="h2" className="palette-title" lines={t('project.palette')} />
+        <div
+          className={`sec sec-palette ${s.contained ? "container is-contained" : ""}`}
+        >
+          <div className={s.contained ? undefined : "container"}>
+            <RevealText
+              as="h2"
+              className="palette-title"
+              lines={t("project.palette")}
+            />
           </div>
           <motion.div
             className={`palette palette-${s.swatches.length}`}
@@ -520,8 +741,11 @@ function Section({ s, p }) {
                 className={`swatch area-${c.area}`}
                 style={{ background: c.hex, color: c.ink }}
                 variants={{
-                  hidden: { clipPath: 'inset(100% 0% 0% 0%)' },
-                  show: { clipPath: 'inset(0% 0% 0% 0%)', transition: { duration: 1.1, ease: EASE } },
+                  hidden: { clipPath: "inset(100% 0% 0% 0%)" },
+                  show: {
+                    clipPath: "inset(0% 0% 0% 0%)",
+                    transition: { duration: 1.1, ease: EASE },
+                  },
                 }}
               >
                 <strong>{color(c.name)}</strong>
@@ -541,9 +765,9 @@ function Section({ s, p }) {
             ))}
           </motion.div>
         </div>
-      )
-    case 'marquee': {
-      const words = c[s.items] ?? []
+      );
+    case "marquee": {
+      const words = c[s.items] ?? [];
       const run = (hidden) => (
         <div className="marquee-run" aria-hidden={hidden || undefined}>
           {words.map((w, k) => (
@@ -553,17 +777,19 @@ function Section({ s, p }) {
             </span>
           ))}
         </div>
-      )
+      );
       return (
-        <div className={`sec sec-marquee ${s.reverse ? 'is-reverse' : ''} ${s.tone ? `is-${s.tone}` : ''}`}>
+        <div
+          className={`sec sec-marquee ${s.reverse ? "is-reverse" : ""} ${s.tone ? `is-${s.tone}` : ""}`}
+        >
           <div className="marquee-track">
             {run(false)}
             {run(true)}
           </div>
         </div>
-      )
+      );
     }
-    case 'bento':
+    case "bento":
       return (
         <>
           <div className="container sec sec-bento">
@@ -571,19 +797,33 @@ function Section({ s, p }) {
               <div
                 key={k}
                 className="bento-cell"
-                style={{ '--span': it.span ?? 6, '--rows': it.rows ?? 1, '--r': it.ratio ?? 'auto' }}
+                style={{
+                  "--span": it.span ?? 6,
+                  "--rows": it.rows ?? 1,
+                  "--r": it.ratio ?? "auto",
+                }}
               >
-                <RevealImage src={it.src} video={it.video} alt={it.alt} delay={(k % 3) * 0.08} className={it.whole ? 'is-whole' : ''} />
+                <RevealImage
+                  src={it.src}
+                  video={it.video}
+                  alt={it.alt}
+                  delay={(k % 3) * 0.08}
+                  className={it.whole ? "is-whole" : ""}
+                />
               </div>
             ))}
           </div>
           {cap && <div className="container">{cap}</div>}
         </>
-      )
-    case 'video':
+      );
+    case "video":
       return (
         <div className="sec sec-video">
-          <RevealImage src={s.side} alt={t('project.appIconAlt')} className="video-side" />
+          <RevealImage
+            src={s.side}
+            alt={t("project.appIconAlt")}
+            className="video-side"
+          />
           <motion.div
             className="video-frame"
             initial={{ opacity: 0, y: 40 }}
@@ -591,11 +831,20 @@ function Section({ s, p }) {
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 1.1, ease: EASE }}
           >
-            <video src={s.src} poster={s.poster} autoPlay muted loop playsInline preload="metadata" aria-label={s.alt} />
+            <video
+              src={s.src}
+              poster={s.poster}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={s.alt}
+            />
           </motion.div>
         </div>
-      )
+      );
     default:
-      return null
+      return null;
   }
 }
