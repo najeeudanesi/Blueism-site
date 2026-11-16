@@ -6,11 +6,10 @@ const img = (name) => `/images/${name}.webp`
 const allProjects = [
   {
     slug: 'shoowarma',
-    hidden: true, // kept but not shown on the site — remove this line to bring it back
     title: 'Shoowarma',
     category: 'Branding',
-    cover: img('sh-climbers'),
-    back: img('sh-wraps-paper'),
+    cover: img('sh-hero'),
+    back: img('sh-shop-illustration'),
     blurb: 'Identity, characters, packaging and website for a shawarma shop with big wrap energy.',
     available: true,
     service: 'Brand Identity & Web Design',
@@ -45,42 +44,10 @@ const allProjects = [
       {
         type: 'bento',
         items: [
-          { src: img('sh-climbers'), alt: 'Illustrated characters climbing a real shawarma spit', span: 6, ratio: 0.842 },
           { src: img('sh-box-anim'), alt: 'Shoowarma wrap box opening and closing — “Good food. Ready to go.”', span: 6, ratio: 0.842, whole: true },
-          { src: img('sh-wrap-hand'), alt: 'Hands holding two wraps with Shoowarma character stickers', span: 6, ratio: 0.56 },
-          { src: img('sh-wraps-paper'), alt: 'Two wraps in character-printed paper on an orange table', span: 6, ratio: 0.56 },
+          { src: img('sh-laptop-anim'), alt: 'Laptop on an orange chair scrolling the Shoowarma website', span: 6, ratio: 0.884 },
         ],
       },
-      { type: 'image', src: img('sh-bottle-box'), alt: 'Ayran bottle next to a chicken shawarma wrap box', bleed: true },
-      { type: 'image', src: img('sh-takeaway'), alt: 'Orange and cream bags, Ayran bottle, wrap, table tent and menus', bleed: true },
-      {
-        type: 'bento',
-        items: [
-          { src: img('sh-ayran-rock'), alt: 'Ayran bottle on dark rock in dappled shade', span: 6, ratio: 0.99 },
-          { src: img('sh-ayran-dark'), alt: 'Ayran bottle floating against a dark background', span: 6, ratio: 0.99 },
-          { src: img('sh-ayran-close'), alt: 'Close-up of the Ayran label and cap beaded with water', span: 6, ratio: 0.99 },
-          { src: img('sh-ayran-ice'), alt: 'Ayran bottle with ice and smoke on black stone', span: 6, ratio: 0.99 },
-          { src: img('sh-ayran-cliff'), alt: 'Ayran bottle floating between sandstone cliffs', span: 6, ratio: 0.97 },
-          { src: img('sh-ayran-glow'), alt: 'Ayran bottle on a glowing orange horizon', span: 6, ratio: 0.97 },
-        ],
-      },
-      { type: 'image', src: img('sh-counter'), alt: 'Shoowarma counter with the menu board, steel bar and the chef character', bleed: true },
-      {
-        type: 'bento',
-        items: [
-          { src: img('sh-crew-back'), alt: 'Back of a cream tee: the runner and “Fresh off the spit”', span: 4, ratio: 0.5 },
-          { src: img('sh-crew-apron'), alt: 'Orange cap, cream tee and black apron on a hook', span: 4, ratio: 0.5 },
-          { src: img('sh-crew-front'), alt: 'Black polo and orange apron printed with the crew', span: 4, ratio: 0.5 },
-        ],
-      },
-      {
-        type: 'bento',
-        items: [
-          { src: img('sh-laptop-anim'), alt: 'Laptop on an orange chair scrolling the Shoowarma website', span: 7, ratio: 0.884 },
-          { video: '/media/shoowarma-phone.mp4', src: img('sh-phone'), alt: 'Hand scrolling the Shoowarma mobile site', span: 5, ratio: 0.633 },
-        ],
-      },
-      { type: 'image', src: img('sh-homepage'), alt: 'Shoowarma homepage: “Good food. Big mood.”, wrap picker, visit us and footer', bleed: true },
       { type: 'showcase', src: '/media/shoowarma-showcase.mp4', poster: '/media/shoowarma-showcase-poster.jpg', bg: '#FBEDDC', ink: '#272626', alt: 'Shoowarma website showcase: desktop and mobile scrolling side by side' },
     ],
   },
@@ -100,7 +67,7 @@ const allProjects = [
       'Launch visuals for Avren, a city e-bike built around a single bar of light. We kept the bike in near darkness and let its integrated headlight do the talking — every frame is lit by the product itself.',
     body:
       'The renders work like a slow reveal: a streak of light at speed, the frame stepping out of the shadow, then the headtube up close, where the light bar sits flush in the carbon. A tight monochrome palette, soft falloff and motion blur keep the focus on form, finish and that one line of light.',
-    hero: img('av-hero'),
+    hero: img('av-hero-sharp'),
     sections: [
       {
         type: 'row',
@@ -110,7 +77,7 @@ const allProjects = [
           { src: img('av-headtube'), alt: 'Close-up of the Avren headtube with its integrated light bar', ratio: 0.4447 },
         ],
       },
-      { type: 'image', src: img('av-front'), alt: 'Avren e-bike in low light, front three-quarter view', bleed: true },
+      { type: 'image', src: img('av-front-full'), alt: 'Avren e-bike in low light, front three-quarter view', bleed: true },
     ],
   },
   {
