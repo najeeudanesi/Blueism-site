@@ -1370,6 +1370,10 @@ body:has(.project-page) {
 .is-fullbleed .project-sections :is(.sec-pair, .sec-bento, .sec-trio) {
   max-width: none;
 }
+/* images in gapped rows sit inside white margins, so they keep the site's rounded corners */
+.is-fullbleed .sec-row.is-gapped .reveal-img {
+  border-radius: var(--radius);
+}
 /* gapped row on a full-screen page: thin white margins and gutters between images, as in the layout */
 .is-fullbleed .project-sections .sec-row.is-gapped {
   --row-gap: clamp(8px, 1.2vw, 24px);

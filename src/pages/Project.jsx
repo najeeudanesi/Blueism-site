@@ -671,7 +671,7 @@ function Section({ s, p }) {
                   src={it.src}
                   alt={it.alt}
                   delay={k * 0.1}
-                  className={s.compact ? "is-whole" : "is-bleed is-whole"}
+                  className={s.compact || s.gapped ? "is-whole" : "is-bleed is-whole"}
                 />
               </div>
             ))}

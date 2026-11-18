@@ -52,8 +52,8 @@ const allProjects = [
     title: 'Avren',
     category: 'Visuals',
     fullbleed: true,
-    cover: img('card-avren'),
-    back: img('av-front'),
+    cover: img('av-red-hero'),
+    back: img('card-avren-bike'),
     blurb: 'Avren production visuals — light, speed and shadow for an e-bike launch.',
     available: true,
     service: 'Product Visuals · 3D Rendering',
@@ -106,7 +106,8 @@ const allProjects = [
     title: 'Musical Co-working',
     category: 'Interior Design',
     fullbleed: true,
-    cover: img('mc-2'),
+    cover: img('mc-1'),
+    back: img('mc-2'),
     blurb: 'A co-working space tuned like an instrument — walnut, steel and sound.',
     available: true,
     service: 'Interior Design',
@@ -134,6 +135,7 @@ const allProjects = [
     fullName: 'Delivrance',
     category: 'Branding',
     cover: img('card-dlvrnc'),
+    back: img('card-dlvrnc-night'),
     blurb: 'Sportswear identity & art direction built around movement and belonging.',
     available: true,
     service: 'Visual Brand Identity',
@@ -541,18 +543,18 @@ const allProjects = [
 ]
 
 
-// Order of the "All Works" grid. DLVRNC leads.
+// Order of the "All Works" grid.
 const ORDER = [
   'dlvrnc',
+  'nouzha',
+  'auraed',
+  'kinetik',
+  'dar-titawin',
   'shoowarma',
   'avren',
   'musical-co-working',
   'silvatch',
-  'auraed',
-  'dar-titawin',
-  'nouzha',
   'villa-013',
-  'kinetik',
 ]
 // Projects marked `hidden: true` keep their data but stay off the grid and get no page.
 export const projects = ORDER.map((slug) => allProjects.find((p) => p.slug === slug)).filter((p) => !p.hidden)
