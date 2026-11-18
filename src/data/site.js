@@ -23,6 +23,12 @@ export const services = [
     items: ['Strategy', 'Visual communication', 'Art direction', 'Graphic design', 'Web & digital design'],
   },
   {
+    title: 'Interior Design',
+    image: '/images/svc-interior.webp',
+    text: 'Spaces that feel like the brand they belong to. We design interiors from concept to final details — layouts, materials, lighting and furniture — and show them in photoreal 3D before anything is built.',
+    items: ['Space planning', 'Concept & mood', 'Materials & lighting', 'Furniture & joinery', 'Photoreal 3D walkthroughs'],
+  },
+  {
     title: '3D Visuals',
     image: '/images/svc-3d.webp',
     text: 'Product renders, spaces and objects built in 3D — visuals that let people see, turn and believe in something before it exists.',

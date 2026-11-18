@@ -143,6 +143,11 @@ export default {
       items: ['Estrategia', 'Comunicación visual', 'Dirección de arte', 'Diseño gráfico', 'Diseño web y digital'],
     },
     {
+      title: 'Interiorismo',
+      text: 'Espacios que se sienten como la marca a la que pertenecen. Diseñamos interiores del concepto al último detalle —distribución, materiales, iluminación y mobiliario— y los mostramos en 3D fotorrealista antes de construir nada.',
+      items: ['Distribución de espacios', 'Concepto y ambiente', 'Materiales e iluminación', 'Mobiliario y carpintería', 'Recorridos 3D fotorrealistas'],
+    },
+    {
       title: 'Visuales 3D',
       text: 'Renders de producto, espacios y objetos en 3D: imágenes que permiten ver, girar y creer en algo antes de que exista.',
       items: ['Visualización de producto', 'Renders de interiores y arquitectura', 'Recursos de marca en 3D', 'Mockups de packaging'],

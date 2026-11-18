@@ -146,6 +146,11 @@ export default {
       items: ['Stratégie', 'Communication visuelle', 'Direction artistique', 'Design graphique', 'Design web et numérique'],
     },
     {
+      title: 'Architecture intérieure',
+      text: 'Des espaces qui ressemblent à la marque qui les habite. Nous concevons les intérieurs du concept aux finitions — plans, matériaux, lumière et mobilier — et les montrons en 3D photoréaliste avant toute construction.',
+      items: ['Aménagement de l’espace', 'Concept et ambiance', 'Matériaux et lumière', 'Mobilier et menuiserie', 'Visites 3D photoréalistes'],
+    },
+    {
       title: 'Visuels 3D',
       text: 'Rendus de produits, d’espaces et d’objets en 3D : des visuels qui permettent de voir, de faire pivoter et de croire en quelque chose avant même qu’il existe.',
       items: ['Visualisation de produits', 'Rendus d’intérieurs et d’architecture', 'Éléments de marque en 3D', 'Maquettes de packaging'],

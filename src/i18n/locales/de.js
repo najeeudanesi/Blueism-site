@@ -143,6 +143,11 @@ export default {
       items: ['Strategie', 'Visuelle Kommunikation', 'Art Direction', 'Grafikdesign', 'Web- & Digitaldesign'],
     },
     {
+      title: 'Innenarchitektur',
+      text: 'Räume, die sich wie die Marke anfühlen, zu der sie gehören. Wir gestalten Interiors vom Konzept bis ins Detail – Grundriss, Materialien, Licht und Möbel – und zeigen sie in fotorealistischem 3D, bevor gebaut wird.',
+      items: ['Raumplanung', 'Konzept & Atmosphäre', 'Materialien & Licht', 'Möbel & Schreinerarbeiten', 'Fotorealistische 3D-Rundgänge'],
+    },
+    {
       title: '3D-Visuals',
       text: 'Produktrenderings, Räume und Objekte in 3D – Visualisierungen, die man sehen, drehen und glauben kann, bevor sie existieren.',
       items: ['Produktvisualisierung', 'Innenraum- & Architekturrenderings', '3D-Markenelemente', 'Verpackungsmockups'],

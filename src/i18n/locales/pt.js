@@ -143,6 +143,11 @@ export default {
       items: ['Estratégia', 'Comunicação visual', 'Direção de arte', 'Design gráfico', 'Design web e digital'],
     },
     {
+      title: 'Design de interiores',
+      text: 'Espaços que parecem a marca a que pertencem. Projetamos interiores do conceito ao último detalhe — layout, materiais, iluminação e mobiliário — e mostramo-los em 3D fotorrealista antes de qualquer obra.',
+      items: ['Planeamento de espaços', 'Conceito e ambiente', 'Materiais e iluminação', 'Mobiliário e marcenaria', 'Visitas 3D fotorrealistas'],
+    },
+    {
       title: 'Visuais 3D',
       text: 'Renderizações de produtos, espaços e objetos em 3D: imagens que permitem ver, girar e acreditar em algo antes mesmo de ele existir.',
       items: ['Visualização de produtos', 'Renderizações de interiores e arquitetura', 'Ativos de marca em 3D', 'Mockups de embalagem'],
