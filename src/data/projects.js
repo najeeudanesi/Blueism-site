@@ -37,13 +37,12 @@ const allProjects = [
       },
       { type: 'image', src: img('sh-shop-illustration'), alt: 'Illustrated Shoowarma shop: the carver at the spit, the counter and a customer grabbing her wrap' },
       {
-        // the three character animations side by side at one shared height, capped so they never upscale past their source pixels
+        // the character animations side by side at one shared height, capped so they never upscale past their source pixels
         type: 'row',
         compact: true,
         items: [
           { src: img('sh-roll-with-us'), alt: 'Shoowarma “Roll with us.” — the runner crew sprinting across an orange and cream banner', ratio: 1 },
           { src: img('sh-box-anim'), alt: 'Shoowarma wrap box opening and closing — “Good food. Ready to go.”', ratio: 0.842 },
-          { src: img('sh-laptop-anim'), alt: 'Laptop on an orange chair scrolling the Shoowarma website', ratio: 0.881 },
         ],
       },
     ],
@@ -317,6 +316,14 @@ const allProjects = [
           { src: img('nz-bottle-duo'), alt: 'Two bottles falling' },
           { src: img('nz-bottle-glow'), alt: 'Bottle in soft spotlight' },
         ],
+      },
+      {
+        // portrait product film, trimmed before the red splash; loops muted
+        type: 'video',
+        src: '/media/nouzha-film.mp4',
+        poster: '/media/nouzha-film-poster.webp',
+        bg: '#E5E5E3',
+        alt: 'Nouz’ha product film: the wordmark, steel bottles in red petals, the engraved rose and bottles tumbling in a clear bag',
       },
     ],
   },

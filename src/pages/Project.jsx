@@ -819,12 +819,17 @@ function Section({ s, p }) {
       );
     case "video":
       return (
-        <div className="sec sec-video">
-          <RevealImage
-            src={s.side}
-            alt={t("project.appIconAlt")}
-            className="video-side"
-          />
+        <div
+          className={`sec sec-video ${s.side ? "" : "is-solo"}`}
+          style={s.bg ? { "--video-bg": s.bg } : undefined}
+        >
+          {s.side && (
+            <RevealImage
+              src={s.side}
+              alt={t("project.appIconAlt")}
+              className="video-side"
+            />
+          )}
           <motion.div
             className="video-frame"
             initial={{ opacity: 0, y: 40 }}

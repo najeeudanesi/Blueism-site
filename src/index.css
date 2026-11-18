@@ -1509,6 +1509,19 @@ body:has(.project-page) {
   border-radius: 8px;
   box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.35);
 }
+/* solo film: no side image, centred on its own colour, never wider than the clip's own pixels */
+.sec-video.is-solo {
+  grid-template-columns: 1fr;
+  background: var(--video-bg, #eef2f3);
+}
+.sec-video.is-solo .video-frame {
+  padding-block: clamp(32px, 6vw, 96px);
+}
+.sec-video.is-solo .video-frame video {
+  width: auto;
+  max-width: min(100%, 720px);
+  max-height: 86vh;
+}
 .next-wrap {
   display: flex;
   justify-content: flex-end;
