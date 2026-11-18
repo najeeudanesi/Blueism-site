@@ -104,6 +104,7 @@ export default {
     Domain: 'Domínio',
     Software: 'Software',
     Automations: 'Automações',
+    Animations: 'Animações',
     Sportswear: 'Moda esportiva',
     Fragrance: 'Fragrância',
     Campaign: 'Campanha',
@@ -416,13 +417,12 @@ export default {
         }
       },
     shoowarma: {
-      showcase: { label: "Montra do site", title: "Peça um wrap em dois toques.", text: "O site da Shoowarma põe o menu em primeiro lugar — escolha o wrap, veja o que leva e encomende — com a equipa, a loja e o horário à distância de um scroll, em qualquer ecrã." },
-      "blurb": "Identidade, personagens, embalagens e site para uma casa de shawarma com muita energia de wrap.",
-      "service": "Identidade de marca e web design",
-      "scope": "Personagens · Embalagens · Ayran · Site",
-      "platforms": "Loja · Embalagens · Web · Redes",
-      "eyebrow": "Shoowarma — Identidade, personagens, embalagens e web",
-      "kicker": "Marca de restaurante e site",
+      "blurb": "Animações de personagens, identidade e embalagens para uma casa de shawarma com muita energia de wrap.",
+      "service": "Animação de personagens e identidade de marca",
+      "scope": "Animações · Personagens · Embalagens · Ayran",
+      "platforms": "Loja · Embalagens · Redes",
+      "eyebrow": "Shoowarma — Animações, personagens, identidade e embalagens",
+      "kicker": "Animações para uma marca de restaurante",
       "intro": "A Shoowarma é uma casa de shawarma que se recusa a ser séria. Demos a ela um laranja barulhento, um logotipo robusto e uma turma de personagens desenhados à mão que correm, escalam e fatiam por sacolas, garrafas, camisetas e telas — para que cada wrap pareça feito por alguém num dia ótimo.",
       "body": "A identidade nasce de três ingredientes: laranja espeto, creme de pita e tinta carvão; um logotipo grosso e arredondado; e um elenco de frequentadores ilustrados — o que fatia, o que corre e o amigo que sempre pega o último wrap. A turma está em todo lugar. Corre pelas sacolas, embrulha o papel, escala o espeto e estrela a garrafa de Ayran, enquanto três padrões — personagens, logo e fita — transformam qualquer superfície em Shoowarma num segundo."
     },

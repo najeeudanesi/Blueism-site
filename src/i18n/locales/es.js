@@ -104,6 +104,7 @@ export default {
     Domain: 'Dominio',
     Software: 'Software',
     Automations: 'Automatizaciones',
+    Animations: 'Animaciones',
     Sportswear: 'Ropa deportiva',
     Fragrance: 'Fragancia',
     Campaign: 'Campaña',
@@ -416,13 +417,12 @@ export default {
         }
       },
     shoowarma: {
-      showcase: { label: "Escaparate web", title: "Pide un wrap en dos toques.", text: "La web de Shoowarma pone la carta primero: elige tu wrap, mira lo que lleva y pide, con el equipo, el local y el horario a un scroll, en cualquier pantalla." },
-      "blurb": "Identidad, personajes, packaging y web para una shawarmería con mucha energía de wrap.",
-      "service": "Identidad de marca y diseño web",
-      "scope": "Personajes · Packaging · Ayran · Web",
-      "platforms": "Local · Packaging · Web · Redes",
-      "eyebrow": "Shoowarma — Identidad, personajes, packaging y web",
-      "kicker": "Marca de restaurante y web",
+      "blurb": "Animaciones de personajes, identidad y packaging para una shawarmería con mucha energía de wrap.",
+      "service": "Animación de personajes e identidad de marca",
+      "scope": "Animaciones · Personajes · Packaging · Ayran",
+      "platforms": "Local · Packaging · Redes",
+      "eyebrow": "Shoowarma — Animaciones, personajes, identidad y packaging",
+      "kicker": "Animaciones para una marca de restaurante",
       "intro": "Shoowarma es una shawarmería que se niega a ponerse seria. Le dimos un naranja ruidoso, un logotipo contundente y una pandilla de personajes dibujados a mano que corren, trepan y cortan por bolsas, botellas, camisetas y pantallas, para que cada wrap parezca hecho por alguien que está teniendo un buen día.",
       "body": "La identidad se construye con tres ingredientes: naranja asador, crema de pita y tinta carbón; un logotipo grueso y redondeado; y un reparto de clientes habituales ilustrados: el que corta, el que corre y el amigo que siempre se lleva el último wrap. La pandilla está en todas partes. Corre por las bolsas, envuelve el papel, trepa al asador y protagoniza la botella de Ayran, mientras tres patrones —personajes, logo y cinta— convierten cualquier superficie en Shoowarma en un segundo."
     },

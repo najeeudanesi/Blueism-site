@@ -659,18 +659,19 @@ function Section({ s, p }) {
       // images side by side at one shared height, each shown whole — widths follow each image's ratio
       return (
         <>
-          <div className="sec sec-row">
+          <div className={`sec sec-row ${s.compact ? "is-compact" : ""} ${s.gapped ? "is-gapped" : ""}`}>
             {s.items.map((it, k) => (
               <div
                 key={k}
                 className="row-cell"
-                style={{ flex: `${it.ratio} 1 0` }}
+                // grow factors scaled ×100 so they always sum above 1 — a lone image still fills the row
+                style={{ flex: `${it.ratio * 100} 1 0` }}
               >
                 <RevealImage
                   src={it.src}
                   alt={it.alt}
                   delay={k * 0.1}
-                  className="is-bleed is-whole"
+                  className={s.compact ? "is-whole" : "is-bleed is-whole"}
                 />
               </div>
             ))}

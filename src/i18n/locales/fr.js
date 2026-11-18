@@ -107,6 +107,7 @@ export default {
     Domain: 'Domaine',
     Software: 'Logiciel',
     Automations: 'Automatisations',
+    Animations: 'Animations',
     Sportswear: 'Sportswear',
     Fragrance: 'Parfum',
     Campaign: 'Campagne',
@@ -419,13 +420,12 @@ export default {
         }
       },
     shoowarma: {
-      showcase: { label: "Vitrine du site", title: "Un wrap commandé en deux gestes.", text: "Le site Shoowarma met le menu en premier — choisissez votre wrap, voyez ce qu’il contient et commandez — avec l’équipe, la boutique et les horaires à portée de défilement, sur tous les écrans." },
-      "blurb": "Identité, personnages, packaging et site web pour une enseigne de shawarma pleine d’énergie.",
-      "service": "Identité de marque et web design",
-      "scope": "Personnages · Packaging · Ayran · Site web",
-      "platforms": "Boutique · Packaging · Web · Réseaux",
-      "eyebrow": "Shoowarma — Identité, personnages, packaging et web",
-      "kicker": "Marque de restaurant et site web",
+      "blurb": "Animations de personnages, identité et packaging pour une enseigne de shawarma pleine d’énergie.",
+      "service": "Animation de personnages et identité de marque",
+      "scope": "Animations · Personnages · Packaging · Ayran",
+      "platforms": "Boutique · Packaging · Réseaux",
+      "eyebrow": "Shoowarma — Animations, personnages, identité et packaging",
+      "kicker": "Animations pour une marque de restaurant",
       "intro": "Shoowarma est une enseigne de shawarma qui refuse de se prendre au sérieux. Nous lui avons donné un orange qui claque, un logotype bien gras et une bande de personnages dessinés à la main qui courent, grimpent et découpent sur les sacs, les bouteilles, les tee-shirts et les écrans — pour que chaque wrap ait l’air préparé par quelqu’un de bonne humeur.",
       "body": "L’identité tient en trois ingrédients : l’orange broche, la crème de pita et l’encre charbon ; un logotype épais et arrondi ; et une galerie d’habitués illustrés — celui qui découpe, celui qui court et l’ami qui prend toujours le dernier wrap. La bande est partout. Elle court sur les sacs, habille le papier, escalade la broche et fait la une de la bouteille d’Ayran, tandis que trois motifs — personnages, logo et ruban — transforment n’importe quelle surface en Shoowarma en une seconde."
     },

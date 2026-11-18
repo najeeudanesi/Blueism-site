@@ -1133,6 +1133,13 @@ body:has(.project-page) {
   width: 100%;
   height: auto;
 }
+/* compact row: centred and width-capped so low-res animations stay crisp on big screens */
+.sec-row.is-compact {
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  gap: clamp(10px, 1.4vw, 20px);
+}
 @media (max-width: 760px) {
   .sec-row {
     flex-direction: column;
@@ -1349,6 +1356,13 @@ body:has(.project-page) {
 .is-fullbleed .project-sections .sec-bento {
   padding-inline: 0 !important;
   gap: 0;
+}
+/* gapped row on a full-screen page: thin white margins and gutters between images, as in the layout */
+.is-fullbleed .project-sections .sec-row.is-gapped {
+  --row-gap: clamp(8px, 1.2vw, 24px);
+  padding-inline: var(--row-gap) !important;
+  padding-block: calc(var(--row-gap) / 2);
+  gap: var(--row-gap);
 }
 .is-fullbleed .reveal-img {
   border-radius: 0;

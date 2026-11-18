@@ -7,28 +7,23 @@ const allProjects = [
   {
     slug: 'shoowarma',
     title: 'Shoowarma',
-    category: 'Branding',
+    category: 'Animations',
     cover: img('sh-hero'),
     back: img('sh-shop-illustration'),
-    blurb: 'Identity, characters, packaging and website for a shawarma shop with big wrap energy.',
+    blurb: 'Character animations, identity and packaging for a shawarma shop with big wrap energy.',
     available: true,
-    service: 'Brand Identity & Web Design',
+    service: 'Character Animation & Brand Identity',
     client: 'Shoowarma',
     year: '2026',
-    eyebrow: 'Shoowarma — Identity, Characters, Packaging & Web',
-    kicker: 'Restaurant Brand & Website',
+    eyebrow: 'Shoowarma — Animations, Characters, Identity & Packaging',
+    kicker: 'Restaurant Brand Animations',
     intro:
       'Shoowarma is a shawarma shop that refuses to be serious. We gave it a loud orange, a chunky wordmark and a crew of hand-drawn characters who sprint, climb and carve their way across bags, bottles, tees and screens — so every wrap feels like it was made by someone having a good day.',
     body:
       'The identity is built from three ingredients: Spit Orange, pita cream and charcoal ink; a heavy rounded wordmark; and a cast of illustrated regulars — the carver, the runner and the friend who always grabs the last wrap. The crew goes everywhere. They sprint across the bags, wrap the paper, climb the spit and star on the Ayran bottle, while three patterns — characters, logo wrap and ribbon — turn any surface into Shoowarma in a second.',
-    hero: img('sh-hero-anim'),
+    hero: img('sh-delivery-loop'),
     heroFit: 'full',
-    heroBg: '#F8F5ED',
-    showcase: {
-      label: "Website showcase",
-      title: "Order a wrap in two taps.",
-      text: "The Shoowarma site puts the menu first — pick your wrap, see what’s inside and order — with the crew, the shop and opening hours a scroll away, on any screen.",
-    },
+    heroBg: '#FFF3DB',
     sections: [
       { type: 'image', src: img('sh-wordmarks'), alt: 'Shoowarma wordmark in orange on charcoal and charcoal on orange', bleed: true },
       { type: 'image', src: img('sh-patterns'), alt: 'Three patterns: the crew, the logo wrap and the ribbon', bleed: true },
@@ -42,13 +37,15 @@ const allProjects = [
       },
       { type: 'image', src: img('sh-shop-illustration'), alt: 'Illustrated Shoowarma shop: the carver at the spit, the counter and a customer grabbing her wrap' },
       {
-        type: 'bento',
+        // the three character animations side by side at one shared height, capped so they never upscale past their source pixels
+        type: 'row',
+        compact: true,
         items: [
-          { src: img('sh-box-anim'), alt: 'Shoowarma wrap box opening and closing — “Good food. Ready to go.”', span: 6, ratio: 0.842, whole: true },
-          { src: img('sh-laptop-anim'), alt: 'Laptop on an orange chair scrolling the Shoowarma website', span: 6, ratio: 0.884 },
+          { src: img('sh-roll-with-us'), alt: 'Shoowarma “Roll with us.” — the runner crew sprinting across an orange and cream banner', ratio: 1 },
+          { src: img('sh-box-anim'), alt: 'Shoowarma wrap box opening and closing — “Good food. Ready to go.”', ratio: 0.842 },
+          { src: img('sh-laptop-anim'), alt: 'Laptop on an orange chair scrolling the Shoowarma website', ratio: 0.881 },
         ],
       },
-      { type: 'showcase', src: '/media/shoowarma-showcase.mp4', poster: '/media/shoowarma-showcase-poster.jpg', bg: '#FBEDDC', ink: '#272626', alt: 'Shoowarma website showcase: desktop and mobile scrolling side by side' },
     ],
   },
   {
@@ -67,17 +64,42 @@ const allProjects = [
       'Launch visuals for Avren, a city e-bike built around a single bar of light. We kept the bike in near darkness and let its integrated headlight do the talking — every frame is lit by the product itself.',
     body:
       'The renders work like a slow reveal: a streak of light at speed, the frame stepping out of the shadow, then the headtube up close, where the light bar sits flush in the carbon. A tight monochrome palette, soft falloff and motion blur keep the focus on form, finish and that one line of light.',
-    hero: img('av-hero-sharp'),
+    hero: img('av-red-hero'),
+    heroFit: 'natural',
     sections: [
       {
         type: 'row',
+        gapped: true,
         items: [
-          { src: img('av-light'), alt: 'Avren headlight cutting through the dark in a motion-blurred streak', ratio: 0.7993 },
-          { src: img('av-front'), alt: 'Avren e-bike front wheel and frame emerging from shadow', ratio: 0.7515 },
-          { src: img('av-headtube'), alt: 'Close-up of the Avren headtube with its integrated light bar', ratio: 0.4447 },
+          { src: img('av-red-headtube'), alt: 'Avren headtube and light bar against a red backdrop', ratio: 0.7984 },
+          { src: img('av-red-cassette'), alt: 'Avren rear cassette and derailleur against red spokes', ratio: 0.7985 },
         ],
       },
-      { type: 'image', src: img('av-front-full'), alt: 'Avren e-bike in low light, front three-quarter view', bleed: true },
+      {
+        type: 'row',
+        gapped: true,
+        items: [
+          { src: img('av-headtube'), alt: 'Close-up of the Avren headtube with its integrated light bar', ratio: 0.4447 },
+          { src: img('av-brake'), alt: 'Avren rear disc brake and chainstay lit from behind', ratio: 0.7518 },
+          { src: img('av-pedal'), alt: 'Avren bottom bracket, crank and pedal in low light', ratio: 0.8001 },
+        ],
+      },
+      {
+        type: 'row',
+        gapped: true,
+        items: [
+          { src: img('av-fork'), alt: 'Avren frame, fork and headlight up close, the AVREN wordmark on the downtube', ratio: 0.7517 },
+        ],
+      },
+      {
+        type: 'row',
+        gapped: true,
+        items: [
+          { src: img('av-seat'), alt: 'Avren saddle and seat tube in soft side light', ratio: 0.7984 },
+          { src: img('av-light'), alt: 'Avren headlight cutting through the dark in a motion-blurred streak', ratio: 0.7993 },
+        ],
+      },
+      { type: 'image', src: img('av-street'), alt: 'Avren e-bike moving through light and shadow on a city street', bleed: true },
     ],
   },
   {
@@ -494,7 +516,7 @@ const allProjects = [
       { type: 'split', n: '02', label: 'vision', statement: 'visionStatement', items: 'visionItems' },
       { type: 'heading', label: 'plan', title: 'planTitle', n: '03' },
       { type: 'phases', items: 'phases' },
-      { type: 'image', src: img('kn-glow'), alt: 'Kinetik wordmark over streaks of orange light', bleed: true },
+      { type: 'image', src: img('kn-bloom'), alt: 'The Kinetik flower mark glowing orange through vertical light slats', bleed: true },
       { type: 'heading', label: 'working', title: 'workingTitle', n: '04' },
       { type: 'process', cap: 'flow' },
       { type: 'features', label: 'modulesLabel', items: 'modules' },

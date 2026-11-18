@@ -104,6 +104,7 @@ export default {
     Domain: 'Domain',
     Software: 'Software',
     Automations: 'Automatisierungen',
+    Animations: 'Animationen',
     Sportswear: 'Sportbekleidung',
     Fragrance: 'Duft',
     Campaign: 'Kampagne',
@@ -416,13 +417,12 @@ export default {
         }
       },
     shoowarma: {
-      showcase: { label: "Website-Showcase", title: "Ein Wrap in zwei Taps bestellt.", text: "Die Shoowarma-Website stellt die Karte an erste Stelle – Wrap wählen, Zutaten sehen, bestellen – mit Crew, Laden und Öffnungszeiten nur einen Scroll entfernt, auf jedem Bildschirm." },
-      "blurb": "Identität, Figuren, Verpackung und Website für einen Shawarma-Laden mit großer Wrap-Energie.",
-      "service": "Markenidentität & Webdesign",
-      "scope": "Figuren · Verpackung · Ayran · Website",
-      "platforms": "Laden · Verpackung · Web · Social",
-      "eyebrow": "Shoowarma – Identität, Figuren, Verpackung & Web",
-      "kicker": "Restaurantmarke & Website",
+      "blurb": "Figurenanimationen, Identität und Verpackung für einen Shawarma-Laden mit großer Wrap-Energie.",
+      "service": "Figurenanimation & Markenidentität",
+      "scope": "Animationen · Figuren · Verpackung · Ayran",
+      "platforms": "Laden · Verpackung · Social",
+      "eyebrow": "Shoowarma – Animationen, Figuren, Identität & Verpackung",
+      "kicker": "Animationen für eine Restaurantmarke",
       "intro": "Shoowarma ist ein Shawarma-Laden, der sich weigert, ernst zu sein. Wir haben ihm ein lautes Orange, eine kräftige Wortmarke und eine Crew handgezeichneter Figuren gegeben, die über Tüten, Flaschen, Shirts und Screens rennen, klettern und schneiden – damit jeder Wrap wirkt, als hätte ihn jemand mit richtig guter Laune gemacht.",
       "body": "Die Identität besteht aus drei Zutaten: Spieß-Orange, Pita-Creme und anthrazitfarbene Tinte; eine dicke, runde Wortmarke; und ein Ensemble illustrierter Stammgäste – der Schneider, der Läufer und die Freundin, die sich immer den letzten Wrap schnappt. Die Crew ist überall. Sie rennt über die Tüten, wickelt das Papier, klettert auf den Spieß und ist der Star der Ayran-Flasche, während drei Muster – Figuren, Logo und Band – jede Fläche in Sekunden zu Shoowarma machen."
     },
