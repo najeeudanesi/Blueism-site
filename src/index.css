@@ -1366,6 +1366,10 @@ body:has(.project-page) {
   padding-inline: 0 !important;
   gap: 0;
 }
+/* image grids drop the 1600px container cap too, so they reach both edges on wide screens */
+.is-fullbleed .project-sections :is(.sec-pair, .sec-bento, .sec-trio) {
+  max-width: none;
+}
 /* gapped row on a full-screen page: thin white margins and gutters between images, as in the layout */
 .is-fullbleed .project-sections .sec-row.is-gapped {
   --row-gap: clamp(8px, 1.2vw, 24px);

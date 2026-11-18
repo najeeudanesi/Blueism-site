@@ -455,10 +455,10 @@ export default {
         'DLVRNC. ist ein Sportswear-Konzept, inspiriert von der Laufkultur und der Freiheit, die in Bewegung steckt. Unsere Aufgabe war es, eine Identität zu schaffen, die fokussiert und selbstbewusst wirkt und die Disziplin des Trainings mit der gemeinsamen Energie eines Laufclubs verbindet.',
       body: 'Die visuelle Identität basiert auf einer kompakten Wortmarke, kräftiger Typografie und einer reduzierten Palette aus Schwarz, Weiß und Eisblau. Fließende Muster und Bewegungsunschärfe vermitteln Tempo, ausbalanciert durch klare Layouts und Produktaufnahmen aus nächster Nähe. Auf Bekleidung, digitalen Medien und in Animationen ergibt sich so ein konsistenter Markenausdruck – gebaut auf Bewegung, Individualität und Zugehörigkeit.',
     },
-    aurared: {
+    auraed: {
       blurb: "Verpackung für botanische Hautpflege, inszeniert dort, wo die Zutaten wachsen.",
       service: "Verpackung und Art Direction",
-      intro: "Aurared ist eine botanische Pflegelinie mit drei Essentials – Handseife, Gesichtsreiniger und Handbalsam. Wir haben die Verpackung gestaltet und eine Kampagne art-directed, die jedes Produkt in die Landschaft zurückbringt, aus der seine Rezeptur stammt.",
+      intro: "Auraed ist eine botanische Pflegelinie mit drei Essentials – Handseife, Gesichtsreiniger und Handbalsam. Wir haben die Verpackung gestaltet und eine Kampagne art-directed, die jedes Produkt in die Landschaft zurückbringt, aus der seine Rezeptur stammt.",
       body: "Flaschengrünes Glas und Soft-Touch-Tuben tragen ein ruhiges, cremefarbenes Etikett. Statt Studiohintergründen steht jedes Produkt auf Moos, Stein, Treibholz oder Klippe – so wird die Verpackung immer im Licht und in der Textur gesehen, die sie heraufbeschwören soll.",
       stories: {
         branchNum: "02 / Gesichtsreiniger",

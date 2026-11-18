@@ -173,13 +173,6 @@ const allProjects = [
         ],
       },
       { type: 'image', src: img('dl-night'), alt: 'Night sprint on a red track', bleed: true, parallax: true },
-      {
-        type: 'video',
-        src: '/media/dlvrnc-site.mp4',
-        poster: img('dl-website'),
-        side: img('dl-appicon'),
-        alt: 'DLVRNC. e-commerce website walkthrough',
-      },
       { type: 'image', src: img('dl-grid'), alt: 'Cycling campaign photography grid', bleed: true },
       {
         type: 'bento',
@@ -198,7 +191,7 @@ const allProjects = [
         ],
       },
       { type: 'image', src: img('dl-stories'), alt: 'Instagram story templates', bleed: true },
-      { type: 'showcase', src: '/media/dlvrnc-showcase.mp4', poster: '/media/dlvrnc-showcase-poster.jpg', bg: '#E6EFF1', ink: '#101114', alt: 'DLVRNC. website showcase: desktop and mobile scrolling side by side' },
+      { type: 'showcase', src: '/media/dlvrnc-site-showcase.mp4', poster: '/media/dlvrnc-site-showcase-poster.jpg', bg: '#E6EFF1', ink: '#101114', alt: 'DLVRNC. website showcase: scrolling the store from the hero through new drops and collections to the footer' },
     ],
   },
   {
@@ -280,7 +273,7 @@ const allProjects = [
     hero: img('nz-hero'),
     heroFit: 'tall',
     sections: [
-      { type: 'image', src: img('nz-marks'), alt: 'Nouz’ha emblem on steel, oxblood and pearl gray', bleed: true },
+      { type: 'image', src: img('nz-marks-split'), alt: 'Nouz’ha emblem on steel, oxblood and pearl gray', bleed: true },
       {
         type: 'palette',
         swatches: [
@@ -365,19 +358,19 @@ const allProjects = [
     ],
   },
   {
-    slug: 'aurared',
-    title: 'Aurared',
+    slug: 'auraed',
+    title: 'Auraed',
     category: 'Visuals',
     fullbleed: true,
-    cover: img('card-aurared'),
+    cover: img('card-auraed'),
     back: img('ar-wash-moss'),
     blurb: 'Botanical skincare packaging, staged where the ingredients grow.',
     available: true,
     service: 'Packaging & Art Direction',
-    client: 'Aurared',
+    client: 'Auraed',
     year: '2026',
     intro:
-      'Aurared is a botanical skincare line of three essentials — a hand wash, a facial cleanser and a hand balm. We designed the packaging and art-directed a campaign that returns each product to the landscape its formula comes from.',
+      'Auraed is a botanical skincare line of three essentials — a hand wash, a facial cleanser and a hand balm. We designed the packaging and art-directed a campaign that returns each product to the landscape its formula comes from.',
     body:
       'Bottle-green glass and soft-touch tubes carry a quiet cream label. Instead of studio sweeps, every product is set on moss, stone, driftwood and sea cliff, so the packaging is always seen in the light and texture it is meant to evoke.',
     hero: img('ar-hero'),
@@ -393,17 +386,17 @@ const allProjects = [
         'Each label reads like a page of notes: a number, a name, what it does and how much is inside — 01 Hand Wash, 02 Facial Cleanser, 03 Hand Balm. A single rust-red rule is the only accent, so the glass, the green and the landscape do the rest.',
     },
     sections: [
-      { type: 'story', src: img('ar-cleanser-branch'), alt: 'Aurared Facial Cleanser resting on a moss-covered branch among ferns', num: 'branchNum', title: 'branchTitle', text: 'branchText', bg: '#E4E9E2', ink: '#1D2A1A' },
+      { type: 'story', src: img('ar-cleanser-branch'), alt: 'Auraed Facial Cleanser resting on a moss-covered branch among ferns', num: 'branchNum', title: 'branchTitle', text: 'branchText', bg: '#E4E9E2', ink: '#1D2A1A' },
       {
         type: 'row',
         cap: 'strip',
         items: [
-          { src: img('ar-balm-flowers'), alt: 'Aurared Hand Balm standing on moss among wildflowers', ratio: 1 },
-          { src: img('ar-wash-moss'), alt: 'Aurared Hand Wash lying in deep green moss and ferns', ratio: 1 },
-          { src: img('ar-balm-stone'), alt: 'Aurared Hand Balm resting on wet, mossy stone', ratio: 1 },
+          { src: img('ar-balm-flowers'), alt: 'Auraed Hand Balm standing on moss among wildflowers', ratio: 1 },
+          { src: img('ar-wash-moss'), alt: 'Auraed Hand Wash lying in deep green moss and ferns', ratio: 1 },
+          { src: img('ar-balm-stone'), alt: 'Auraed Hand Balm resting on wet, mossy stone', ratio: 1 },
         ],
       },
-      { type: 'story', flip: true, src: img('ar-cleanser-driftwood'), alt: 'Aurared Facial Cleanser set in weathered driftwood and moss', num: 'labelNum', title: 'labelTitle', text: 'labelText', bg: '#1D2A1A', ink: '#EEF0E6' },
+      { type: 'story', flip: true, src: img('ar-cleanser-driftwood'), alt: 'Auraed Facial Cleanser set in weathered driftwood and moss', num: 'labelNum', title: 'labelTitle', text: 'labelText', bg: '#1D2A1A', ink: '#EEF0E6' },
     ],
   },
   {
@@ -555,7 +548,7 @@ const ORDER = [
   'avren',
   'musical-co-working',
   'silvatch',
-  'aurared',
+  'auraed',
   'dar-titawin',
   'nouzha',
   'villa-013',

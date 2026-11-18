@@ -456,10 +456,10 @@ export default {
         'DLVRNC. é um conceito de moda esportiva inspirado na cultura da corrida e na liberdade encontrada no movimento. Nosso desafio foi criar uma identidade focada e confiante, que unisse a disciplina do treino à energia compartilhada de um clube de corrida.',
       body: 'A identidade visual se apoia em um logotipo compacto, tipografia marcante e uma paleta contida de preto, branco e azul-gelo. Padrões fluidos e desfoque de movimento trazem sensação de ritmo, equilibrados por layouts limpos e imagens de produto em close. Em roupas, peças digitais e animação, esses elementos criam uma expressão consistente da marca, construída em torno do movimento, da individualidade e do pertencimento.',
     },
-    aurared: {
+    auraed: {
       blurb: "Embalagem de cuidados botânicos, encenada onde crescem os ingredientes.",
       service: "Embalagem e direção de arte",
-      intro: "A Aurared é uma linha de cuidados botânicos com três essenciais: um sabonete de mãos, um gel de limpeza facial e um bálsamo de mãos. Criámos a embalagem e dirigimos uma campanha que devolve cada produto à paisagem de onde vem a sua fórmula.",
+      intro: "A Auraed é uma linha de cuidados botânicos com três essenciais: um sabonete de mãos, um gel de limpeza facial e um bálsamo de mãos. Criámos a embalagem e dirigimos uma campanha que devolve cada produto à paisagem de onde vem a sua fórmula.",
       body: "Vidro verde-garrafa e bisnagas de toque suave levam um rótulo creme e discreto. Em vez de fundos de estúdio, cada produto pousa em musgo, pedra, madeira trazida pelo mar ou falésia, para que a embalagem seja sempre vista na luz e na textura que quer evocar.",
       stories: {
         branchNum: "02 / Gel de limpeza facial",

@@ -1,3 +1,15 @@
 {
-  "rewrites": [{ "source": "/((?!.*\\.).*)", "destination": "/index.html" }]
+  "redirects": [
+    {
+      "source": "/work/aurared",
+      "destination": "/work/auraed",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!.*\\.).*)",
+      "destination": "/index.html"
+    }
+  ]
 }
