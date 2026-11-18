@@ -13,8 +13,8 @@ export default function WorkCard({ project, index }) {
   const { t, isRTL } = useI18n()
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] })
-  // Gentle column-offset parallax (odd column drifts a little more) — Orchard-style.
-  const y = useTransform(scrollYProgress, [0, 1], index % 2 ? [40, -40] : [16, -16])
+  // Gentle parallax — the same drift for both columns, so cards in a row stay level.
+  const y = useTransform(scrollYProgress, [0, 1], [24, -24])
 
   const inner = (
     <>
