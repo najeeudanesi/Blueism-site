@@ -6,6 +6,7 @@ const img = (name) => `/images/${name}.webp`
 const allProjects = [
   {
     slug: 'shoowarma',
+    hidden: true,
     title: 'Shoowarma',
     category: 'Animations',
     cover: img('sh-hero'),
@@ -549,9 +550,10 @@ const ORDER = [
   'nouzha',
   'auraed',
   'kinetik',
-  'dar-titawin',
-  'shoowarma',
   'avren',
+  'shoowarma',
+  // interior projects close the grid
+  'dar-titawin',
   'musical-co-working',
   'silvatch',
   'villa-013',
