@@ -404,7 +404,7 @@ const allProjects = [
     title: 'Kinetik.',
     category: 'Automations',
     fullbleed: true,
-    cover: img('card-kinetik'),
+    cover: img('card-kinetik-new'),
     back: img('kn-screens'),
     blurb: 'An autonomous ERP core — AI agents that reconcile, procure and audit, with people in the loop.',
     available: true,
@@ -417,7 +417,7 @@ const allProjects = [
     eyebrow: 'Kinetik. — Autonomous ERP: Brand, Product Design & Build',
     intro:
       'Kinetik is an autonomous enterprise core: AI agents that read invoices, reconcile ledgers and raise purchase orders on their own — and stop to ask a person when the stakes are high. We shaped the vision, built the brand, and designed and engineered the product, from the workflow canvas to the mobile approval app.',
-    hero: img('kn-monitor'),
+    hero: img('kn-hero'),
     heroFit: 'natural',
     copy: {
       overview: 'Overview',
