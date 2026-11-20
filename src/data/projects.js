@@ -6,13 +6,13 @@ const img = (name) => `/images/${name}.webp`
 const allProjects = [
   {
     slug: 'shoowarma',
-    hidden: true,
+    // on the grid as "coming soon": no page until `available` is true
     title: 'Shoowarma',
-    category: 'Animations',
-    cover: img('sh-hero'),
-    back: img('sh-shop-illustration'),
+    category: 'Website',
+    cover: '/images/card-shoowarma.jpg',
+    back: '/images/card-shoowarma-back.jpg',
     blurb: 'Character animations, identity and packaging for a shawarma shop with big wrap energy.',
-    available: true,
+    available: false,
     service: 'Character Animation & Brand Identity',
     client: 'Shoowarma',
     year: '2026',
@@ -66,9 +66,17 @@ const allProjects = [
       'The renders work like a slow reveal: a streak of light at speed, the frame stepping out of the shadow, then the headtube up close, where the light bar sits flush in the carbon. A tight monochrome palette, soft falloff and motion blur keep the focus on form, finish and that one line of light.',
     hero: img('av-red-hero'),
     heroFit: 'natural',
+    // short image captions (translated in i18n/locales)
+    copy: {
+      caps: {
+        red: "Every part pulled from the dark, lit only where it matters.",
+        street: "Out of the shadow, into the city.",
+      },
+    },
     sections: [
       {
         type: 'row',
+        cap: 'red',
         gapped: true,
         items: [
           { src: img('av-red-headtube'), alt: 'Avren headtube and light bar against a red backdrop', ratio: 0.7984 },
@@ -99,7 +107,7 @@ const allProjects = [
           { src: img('av-light'), alt: 'Avren headlight cutting through the dark in a motion-blurred streak', ratio: 0.7993 },
         ],
       },
-      { type: 'image', src: img('av-street'), alt: 'Avren e-bike moving through light and shadow on a city street', bleed: true },
+      { type: 'image', src: img('av-street'), alt: 'Avren e-bike moving through light and shadow on a city street', bleed: true, cap: 'street' },
     ],
   },
   {
@@ -119,10 +127,18 @@ const allProjects = [
     body:
       'We approached the space like an acoustic object. Warm timber absorbs and softens, the steel wall reflects and projects, and low lounge seating keeps sight lines open across the room. Vinyl, hi-fi and soft furnishings set a slower pace — a place to focus, meet, or simply listen.',
     hero: img('mc-2'),
+    // short image captions (translated in i18n/locales)
+    copy: {
+      caps: {
+        lounge: "Marble, walnut and room to sink in.",
+        records: "Records on the walls, focus in the room.",
+      },
+    },
     sections: [
-      { type: 'image', src: img('mc-4'), alt: 'Lounge with marble, walnut shelving and bean bags', bleed: true },
+      { type: 'image', src: img('mc-4'), alt: 'Lounge with marble, walnut shelving and bean bags', bleed: true, cap: 'lounge' },
       {
         type: 'bento',
+        cap: 'records',
         items: [
           { src: img('mc-3'), alt: 'Record console beneath a wall of vinyl', span: 4, ratio: 1.08 },
           { src: img('mc-1'), alt: 'Lounge with steel speaker wall, walnut panelling and people passing through', span: 8, ratio: 2.16 },
@@ -135,7 +151,7 @@ const allProjects = [
     title: 'DLVRNC.',
     fullName: 'Delivrance',
     category: 'Branding',
-    cover: img('card-dlvrnc'),
+    cover: '/images/card-dlvrnc-runner.jpg',
     back: img('card-dlvrnc-night'),
     blurb: 'Sportswear identity & art direction built around movement and belonging.',
     available: true,
@@ -154,6 +170,12 @@ const allProjects = [
       title: "The DLVRNC. online store.",
       text: "A sportswear shop built like a training log — new drops up front, collections by sport and a checkout that stays out of the way, on desktop and phone.",
     },
+    // short image captions (translated in i18n/locales)
+    copy: {
+      caps: {
+        track: "Track, ramp, open road — one kit for every kind of run.",
+      },
+    },
     sections: [
       { type: 'image', src: img('dl-construction'), alt: 'DLVRNC. wordmark construction grid', bleed: true },
       { type: 'image', src: img('dl-bezier'), alt: 'Wordmark curves and windbreaker detail', bleed: true },
@@ -161,6 +183,7 @@ const allProjects = [
       { type: 'image', src: img('dl-crowd'), alt: 'Running club in DLVRNC. kit', bleed: true, parallax: true },
       {
         type: 'trio',
+        cap: 'track',
         items: [
           { src: img('dl-sprint'), alt: 'Two runners sprinting on a blue track' },
           { src: img('dl-ramp'), alt: 'Runner on a concrete spiral ramp' },
@@ -242,8 +265,15 @@ const allProjects = [
     body:
       'We treated the floor as one walk from the street to the sea. A reception desk hewn like raw stone sits beneath blue plaster arches; a cedar mashrabiya screens the lounge and scatters patterned light across the concrete; and the café opens fully onto the Mediterranean, with walnut, terracotta leather and black marble keeping the palette warm and grounded.',
     hero: img('dt-reception'),
+    // short image captions (translated in i18n/locales)
+    copy: {
+      caps: {
+        desk: "Hewn stone and blue plaster — the first welcome.",
+        sea: "Walnut, palms and the open sea.",
+      },
+    },
     sections: [
-      { type: 'image', src: img('dt-desk'), alt: 'Hewn-stone reception desk before blue plaster arches with slatted cedar', bleed: true },
+      { type: 'image', src: img('dt-desk'), alt: 'Hewn-stone reception desk before blue plaster arches with slatted cedar', bleed: true, cap: 'desk' },
       { type: 'image', src: img('dt-cafe'), alt: 'Café opening onto the Mediterranean, with a mashrabiya screen and black marble bar', parallax: true, bleed: true },
       {
         type: 'bento',
@@ -253,7 +283,7 @@ const allProjects = [
           { src: img('dt-coffee'), alt: 'Coffee counter and walnut dining tables in warm light', span: 4, ratio: '16 / 9' },
         ],
       },
-      { type: 'image', src: img('dt-terrace'), alt: 'Dining room with walnut tables facing palms and the sea', bleed: true },
+      { type: 'image', src: img('dt-terrace'), alt: 'Dining room with walnut tables facing palms and the sea', bleed: true, cap: 'sea' },
     ],
   },
   {
@@ -275,8 +305,15 @@ const allProjects = [
       'The visual identity centres on a sculptural emblem, combining flowing curves with sharp details. A palette of oxblood, pearl gray, warm gray, and ink black brings depth and softness, complemented by metallic finishes and dramatic product imagery. Across packaging and visual communication, close-up compositions highlight texture, light, and form, translating the sensory character of fragrance into a visual experience.',
     hero: img('nz-hero'),
     heroFit: 'tall',
+    // short image captions (translated in i18n/locales)
+    copy: {
+      caps: {
+        emblem: "An emblem drawn from curve and thorn.",
+        fall: "Engraved steel, caught mid-fall.",
+      },
+    },
     sections: [
-      { type: 'image', src: img('nz-marks-split'), alt: 'Nouz’ha emblem on steel, oxblood and pearl gray', bleed: true },
+      { type: 'image', src: '/images/nz-marks-split.jpg', alt: 'Nouz’ha emblem on steel, oxblood and pearl gray', bleed: true },
       {
         type: 'palette',
         swatches: [
@@ -295,7 +332,7 @@ const allProjects = [
           { src: img('nz-seal-red'), alt: 'Red wax seal with the Nouz’ha emblem' },
         ],
       },
-      { type: 'image', src: img('nz-construction'), alt: 'Emblem construction grid', bleed: true },
+      { type: 'image', src: img('nz-construction'), alt: 'Emblem construction grid', bleed: true, cap: 'emblem' },
       { type: 'image', src: img('nz-bezier'), alt: 'Emblem bezier outlines', bleed: true },
       { type: 'image', src: img('nz-floral'), alt: 'Sculpted silver floral ornament', bleed: true, parallax: true },
       {
@@ -308,6 +345,7 @@ const allProjects = [
       { type: 'image', src: img('nz-flatlay'), alt: 'Engraved bottle and wax cap flat lay', inset: true },
       {
         type: 'pair',
+        cap: 'fall',
         items: [
           { src: img('nz-bottle-duo'), alt: 'Two bottles falling' },
           { src: img('nz-bottle-glow'), alt: 'Bottle in soft spotlight' },
@@ -320,6 +358,9 @@ const allProjects = [
         poster: '/media/nouzha-film-poster.webp',
         bg: '#E5E5E3',
         alt: 'Nouz’ha product film: the wordmark, steel bottles in red petals, the engraved rose and bottles tumbling in a clear bag',
+        // second clip shown beside the first; ratio = width / height, so both play at the same height
+        ratio: 720 / 1280,
+        second: { src: '/media/nouzha-film-2.mp4', ratio: 576 / 720, alt: 'Nouz’ha short product clip' },
       },
     ],
   },
@@ -407,7 +448,7 @@ const allProjects = [
     title: 'Kinetik.',
     category: 'Automations',
     fullbleed: true,
-    cover: img('card-kinetik-new'),
+    cover: '/images/card-kinetik-hq.jpg',
     back: img('kn-screens'),
     blurb: 'An autonomous ERP core — AI agents that reconcile, procure and audit, with people in the loop.',
     available: true,
@@ -420,7 +461,7 @@ const allProjects = [
     eyebrow: 'Kinetik. — Autonomous ERP: Brand, Product Design & Build',
     intro:
       'Kinetik is an autonomous enterprise core: AI agents that read invoices, reconcile ledgers and raise purchase orders on their own — and stop to ask a person when the stakes are high. We shaped the vision, built the brand, and designed and engineered the product, from the workflow canvas to the mobile approval app.',
-    hero: img('kn-hero'),
+    hero: '/images/kn-hero-hq.jpg',
     heroFit: 'natural',
     copy: {
       overview: 'Overview',
@@ -548,13 +589,15 @@ const allProjects = [
 const ORDER = [
   'dlvrnc',
   'nouzha',
+  // Auraed and Avren share a row
   'auraed',
-  'kinetik',
   'avren',
-  'shoowarma',
-  // interior projects close the grid
+  // the two interior projects share a row
   'dar-titawin',
   'musical-co-working',
+  'kinetik',
+  'shoowarma',
+  // hidden projects (kept for later)
   'silvatch',
   'villa-013',
 ]
@@ -570,11 +613,12 @@ export const nextProject = (slug) => {
   return availableProjects[(i + 1) % availableProjects.length]
 }
 
-// "Recently.." hero slider on the home page
+// "Recently.." hero slider on the home page: one slide per project, never its card or hover image.
+// `service` must be a title from the services list in data/site.js (it is translated from there).
 export const featured = [
-  { slug: 'dlvrnc', title: 'DLVRNC.', category: 'Sportswear', image: img('home-hero-dlvrnc') },
-  { slug: 'nouzha', title: 'Nouz’ha', category: 'Fragrance', image: img('nz-floral') },
-  { slug: 'musical-co-working', title: 'Musical Co-working', category: 'Interior Design', image: img('mc-2') },
-  { slug: 'dlvrnc', title: 'DLVRNC.', category: 'Campaign', image: img('dl-night'), pos: 'center 40%' },
-  { slug: 'nouzha', title: 'Nouz’ha', category: 'Packaging', image: img('nz-flatlay'), pos: 'center 45%' },
+  { slug: 'dlvrnc', title: 'DLVRNC.', image: img('home-hero-dlvrnc'), service: 'Brand Identity' },
+  { slug: 'musical-co-working', title: 'Musical Co-working', image: img('mc-4'), service: 'Interior Design' },
+  { slug: 'nouzha', title: 'Nouz’ha', image: img('nz-flatlay'), pos: 'center 45%', service: 'Brand Identity' },
+  { slug: 'avren', title: 'Avren', image: img('av-red-cassette'), pos: 'center 40%', service: '3D Visuals' },
+  { slug: 'auraed', title: 'Auraed', image: img('ar-balm-stone'), service: '3D Visuals' },
 ]

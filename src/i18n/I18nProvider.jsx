@@ -72,10 +72,13 @@ export function I18nProvider({ children }) {
       const o = dict.projects?.[p.slug] ?? {}
       return { ...p, ...o, category: cat(p.category) }
     })
+    const services = merge(baseServices, dict.services)
     const featured = baseFeatured.map((f) => {
       const p = projects.find((x) => x.slug === f.slug)
       const title = f.slug === 'dlvrnc' ? f.title : (p?.title ?? f.title)
-      return { ...f, title, category: cat(f.category) }
+      // label each slide with one of our services, in the current language
+      const si = baseServices.findIndex((x) => x.title === f.service)
+      return { ...f, title, category: si >= 0 ? services[si].title : f.service }
     })
 
     return {
@@ -87,7 +90,7 @@ export function I18nProvider({ children }) {
       t,
       cat,
       color,
-      services: merge(baseServices, dict.services),
+      services,
       values: merge(baseValues, dict.values),
       faqs: merge(baseFaqs, dict.faqs),
       projects,

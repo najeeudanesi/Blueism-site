@@ -207,6 +207,9 @@ export default {
     },
   ],
   projects: {
+    'dar-titawin': {
+      copy: { caps: {"desk": "Behauener Stein und blauer Putz – der erste Empfang.", "sea": "Nussbaum, Palmen und das offene Meer."} },
+    },
     kinetik: {
       showcase: { label: "App-Showcase", title: "Ein Workflow, der von selbst läuft.", text: "Das Kinetik-Dashboard in Bewegung: eine Rechnung durchläuft Extraktion, KI-Abgleich und Hauptbuch, dann ein Rundgang durch Workflows, Agenten, Finanzen und Integrationen – und dieselbe App auf dem Smartphone." },
         "blurb": "Ein autonomer ERP-Kern – KI-Agenten, die abgleichen, beschaffen und prüfen, mit Menschen in der Schleife.",
@@ -432,6 +435,7 @@ export default {
       "body": "Die Identität besteht aus drei Zutaten: Spieß-Orange, Pita-Creme und anthrazitfarbene Tinte; eine dicke, runde Wortmarke; und ein Ensemble illustrierter Stammgäste – der Schneider, der Läufer und die Freundin, die sich immer den letzten Wrap schnappt. Die Crew ist überall. Sie rennt über die Tüten, wickelt das Papier, klettert auf den Spieß und ist der Star der Ayran-Flasche, während drei Muster – Figuren, Logo und Band – jede Fläche in Sekunden zu Shoowarma machen."
     },
     avren: {
+      copy: { caps: {"red": "Jedes Teil aus dem Dunkel geholt, nur dort beleuchtet, wo es zählt.", "street": "Raus aus dem Schatten, rein in die Stadt."} },
       title: "Avren",
       blurb: "Produktionsvisuals für Avren – Licht, Tempo und Schatten für den Launch eines E-Bikes.",
       service: "Produktvisuals · 3D-Rendering",
@@ -439,6 +443,7 @@ export default {
       body: "Die Renderings wirken wie eine langsame Enthüllung: ein Lichtstreif in voller Fahrt, der Rahmen, der aus dem Schatten tritt, dann das Steuerrohr ganz nah, wo der Lichtbalken bündig im Carbon sitzt. Eine knappe Monochrom-Palette, weiche Verläufe und Bewegungsunschärfe lenken den Blick auf Form, Finish und diese eine Lichtlinie.",
     },
     'musical-co-working': {
+      copy: { caps: {"lounge": "Marmor, Nussbaum und Platz zum Versinken.", "records": "Platten an den Wänden, Fokus im Raum."} },
       blurb: 'Ein Co-Working-Space, gestimmt wie ein Instrument – Nussbaum, Stahl und Klang.',
       service: 'Innenarchitektur',
       client: 'Vertraulich',
@@ -447,6 +452,7 @@ export default {
       body: 'Wir haben den Raum wie ein akustisches Objekt behandelt. Warmes Holz absorbiert und dämpft, die Stahlwand reflektiert und projiziert, und niedrige Loungemöbel halten die Sichtachsen offen. Vinyl, Hi-Fi und weiche Textilien geben ein ruhigeres Tempo vor – ein Ort zum Konzentrieren, Treffen oder einfach Zuhören.',
     },
     dlvrnc: {
+      copy: { caps: {"track": "Bahn, Rampe, offene Straße – ein Kit für jeden Lauf."} },
       showcase: { label: "Website-Showcase", title: "Der DLVRNC. Onlineshop.", text: "Ein Sportswear-Shop wie ein Trainingstagebuch – neue Drops vorne, Kollektionen nach Sportart und ein Checkout, der nicht im Weg steht, auf Desktop und Smartphone." },
       blurb: 'Sportswear-Identität und Art Direction rund um Bewegung und Zugehörigkeit.',
       service: 'Visuelle Markenidentität',
@@ -479,6 +485,7 @@ export default {
     },
     'dar-titawin': { title: 'Dar Titawin', blurb: 'Eine Rezeption, geformt aus Sand und Putz, gerahmt von Holzbögen.', service: 'Innenarchitektur', client: 'Vertraulich', intro: 'Das Erdgeschoss eines Hotels am Meer in Tétouan – Rezeption, Lounge und Café –, inspiriert von der „Weißen Taube“ selbst: Kalkputz, andalusisches Blau und geschnitzte Zeder.', body: 'Wir haben das Geschoss als einen einzigen Weg von der Straße zum Meer gedacht. Ein Empfangstresen, behauen wie roher Stein, steht unter Bögen aus blauem Putz; eine Maschrabiya aus Zeder schirmt die Lounge ab und streut gemustertes Licht über den Beton; und das Café öffnet sich ganz zum Mittelmeer, wo Nussbaum, terrakottafarbenes Leder und schwarzer Marmor die Palette warm und geerdet halten.' },
     nouzha: {
+      copy: { caps: {"emblem": "Ein Emblem aus Kurve und Dorn.", "fall": "Gravierter Stahl, mitten im Fall festgehalten."} },
       blurb: 'Duft-Identität und Art Direction – Duft, Erinnerung und persönliches Ritual.',
       service: 'Visuelle Markenidentität',
       eyebrow: 'Nouz’ha — Duft-Identität & Art Direction',

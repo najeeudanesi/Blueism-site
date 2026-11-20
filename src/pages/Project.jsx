@@ -19,6 +19,12 @@ import {
 } from "../components/motion";
 import { useI18n } from "../i18n/I18nProvider";
 
+// one palette label line: rises in after its swatch has filled
+const SWATCH_LINE = {
+  hidden: { opacity: 0, y: 14 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE } },
+};
+
 export default function Project() {
   const { slug } = useParams();
   const { t, lang, projects } = useI18n();
@@ -644,6 +650,8 @@ function Section({ s, p }) {
             s.flush ? "sec sec-trio is-flush" : "container sec sec-trio"
           }
         >
+          {/* trio caption sits above the three images, across all columns */}
+          {cap && <div className="trio-cap">{cap}</div>}
           {s.items.map((it, k) => (
             <RevealImage
               key={k}
@@ -745,23 +753,33 @@ function Section({ s, p }) {
                   hidden: { clipPath: "inset(100% 0% 0% 0%)" },
                   show: {
                     clipPath: "inset(0% 0% 0% 0%)",
-                    transition: { duration: 1.1, ease: EASE },
+                    transition: {
+                      duration: 1.1,
+                      ease: EASE,
+                      // the labels rise in once the colour has filled the block
+                      delayChildren: 0.55,
+                      staggerChildren: 0.08,
+                    },
                   },
                 }}
               >
-                <strong>{color(c.name)}</strong>
-                {/* <bdi> keeps hex/RGB/CMYK values in reading order on RTL pages */}
-                <bdi dir="ltr">{c.hex}</bdi>
-                <span>
-                  RGB
-                  <br />
-                  <bdi dir="ltr">{c.rgb}</bdi>
-                </span>
-                <span>
-                  CMYK
-                  <br />
-                  <bdi dir="ltr">{c.cmyk}</bdi>
-                </span>
+                <div className="swatch-info">
+                  <motion.strong variants={SWATCH_LINE}>{color(c.name)}</motion.strong>
+                  {/* <bdi> keeps hex/RGB/CMYK values in reading order on RTL pages */}
+                  <motion.bdi dir="ltr" variants={SWATCH_LINE}>
+                    {c.hex}
+                  </motion.bdi>
+                  <motion.span variants={SWATCH_LINE}>
+                    RGB
+                    <br />
+                    <bdi dir="ltr">{c.rgb}</bdi>
+                  </motion.span>
+                  <motion.span variants={SWATCH_LINE}>
+                    CMYK
+                    <br />
+                    <bdi dir="ltr">{c.cmyk}</bdi>
+                  </motion.span>
+                </div>
               </motion.div>
             ))}
           </motion.div>
@@ -831,7 +849,12 @@ function Section({ s, p }) {
             />
           )}
           <motion.div
-            className="video-frame"
+            className={`video-frame ${s.second ? "is-duo" : ""}`}
+            style={
+              s.second
+                ? { "--duo-ratio": (s.ratio || 0.5625) + (s.second.ratio || 0.5625) }
+                : undefined
+            }
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.1 }}
@@ -846,7 +869,21 @@ function Section({ s, p }) {
               playsInline
               preload="metadata"
               aria-label={s.alt}
+              style={s.second ? { flexGrow: s.ratio || 0.5625 } : undefined}
             />
+            {s.second && (
+              <video
+                src={s.second.src}
+                poster={s.second.poster}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                aria-label={s.second.alt}
+                style={{ flexGrow: s.second.ratio || 0.5625 }}
+              />
+            )}
           </motion.div>
         </div>
       );

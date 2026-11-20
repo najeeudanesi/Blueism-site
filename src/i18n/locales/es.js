@@ -207,6 +207,9 @@ export default {
     },
   ],
   projects: {
+    'dar-titawin': {
+      copy: { caps: {"desk": "Piedra tallada y yeso azul: la primera bienvenida.", "sea": "Nogal, palmeras y el mar abierto."} },
+    },
     kinetik: {
       showcase: { label: "Escaparate de la app", title: "Mira un flujo que se ejecuta solo.", text: "El panel de Kinetik en movimiento: una factura pasa por extracción, conciliación con IA y el libro mayor; luego un recorrido por flujos, agentes, finanzas e integraciones, y la misma app en el móvil." },
         "blurb": "Un núcleo ERP autónomo: agentes de IA que concilian, compran y auditan, con personas en el circuito.",
@@ -432,6 +435,7 @@ export default {
       "body": "La identidad se construye con tres ingredientes: naranja asador, crema de pita y tinta carbón; un logotipo grueso y redondeado; y un reparto de clientes habituales ilustrados: el que corta, el que corre y el amigo que siempre se lleva el último wrap. La pandilla está en todas partes. Corre por las bolsas, envuelve el papel, trepa al asador y protagoniza la botella de Ayran, mientras tres patrones —personajes, logo y cinta— convierten cualquier superficie en Shoowarma en un segundo."
     },
     avren: {
+      copy: { caps: {"red": "Cada pieza sacada de la oscuridad, iluminada solo donde importa.", "street": "Fuera de la sombra, hacia la ciudad."} },
       title: "Avren",
       blurb: "Visuales de producción para Avren: luz, velocidad y sombra para el lanzamiento de una e-bike.",
       service: "Visuales de producto · Render 3D",
@@ -439,6 +443,7 @@ export default {
       body: "Los renders funcionan como una revelación lenta: un trazo de luz a toda velocidad, el cuadro saliendo de la sombra y, de cerca, el tubo de dirección, donde la barra de luz queda integrada en el carbono. Una paleta monocroma, degradados suaves y desenfoque de movimiento mantienen la atención en la forma, el acabado y esa única línea de luz.",
     },
     'musical-co-working': {
+      copy: { caps: {"lounge": "Mármol, nogal y espacio para hundirse.", "records": "Vinilos en las paredes, concentración en la sala."} },
       title: 'Coworking Musical',
       blurb: 'Un coworking afinado como un instrumento: nogal, acero y sonido.',
       service: 'Interiorismo',
@@ -448,6 +453,7 @@ export default {
       body: 'Abordamos el espacio como un objeto acústico. La madera cálida absorbe y suaviza, la pared de acero refleja y proyecta, y los asientos bajos mantienen abiertas las líneas de visión. Vinilos, alta fidelidad y textiles suaves marcan un ritmo más pausado: un lugar para concentrarse, reunirse o simplemente escuchar.',
     },
     dlvrnc: {
+      copy: { caps: {"track": "Pista, rampa, carretera abierta: un solo equipo para cada carrera."} },
       showcase: { label: "Escaparate web", title: "La tienda online de DLVRNC.", text: "Una tienda de ropa deportiva pensada como un diario de entrenamiento: novedades primero, colecciones por deporte y un pago que no estorba, en ordenador y móvil." },
       blurb: 'Identidad y dirección de arte de ropa deportiva, construida en torno al movimiento y la pertenencia.',
       service: 'Identidad visual de marca',
@@ -480,6 +486,7 @@ export default {
     },
     'dar-titawin': { title: 'Dar Titawin', blurb: 'Una recepción tallada en arena y yeso, enmarcada por arcos de madera.', service: 'Interiorismo', client: 'Confidencial', intro: 'La planta baja de un hotel frente al mar en Tetuán —recepción, salón y café— inspirada en la propia Paloma Blanca: yeso de cal, azul andalusí y cedro tallado.', body: 'Tratamos la planta como un único recorrido de la calle al mar. Un mostrador de recepción tallado como piedra en bruto se alza bajo arcos de yeso azul; una celosía de cedro separa el salón y esparce luz con dibujo sobre el hormigón; y el café se abre por completo al Mediterráneo, con nogal, cuero terracota y mármol negro que mantienen la paleta cálida y serena.' },
     nouzha: {
+      copy: { caps: {"emblem": "Un emblema trazado entre curva y espina.", "fall": "Acero grabado, captado en plena caída."} },
       blurb: 'Identidad y dirección de arte de fragancia: aroma, memoria y ritual personal.',
       service: 'Identidad visual de marca',
       eyebrow: 'Nouz’ha — Identidad y dirección de arte de fragancia',

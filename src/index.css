@@ -1411,6 +1411,9 @@ body:has(.project-page) {
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(14px, 3.5vw, 50px);
   align-items: start;
+}
+/* boxed trio sits on the plain page; a tint here would stop at the container edge on wide screens */
+.sec-trio.is-flush {
   background: var(--p-bg);
 }
 .sec-trio:not(.is-flush) {
@@ -1418,6 +1421,13 @@ body:has(.project-page) {
 }
 .sec-trio.is-flush {
   gap: 0;
+}
+.trio-cap {
+  grid-column: 1 / -1;
+  margin-bottom: calc(clamp(14px, 3.5vw, 50px) * -0.5);
+}
+.trio-cap .media-cap {
+  padding-top: 0;
 }
 .sec-trio.is-flush .reveal-img {
   height: 100%;
@@ -1486,13 +1496,50 @@ body:has(.project-page) {
   grid-area: d;
 }
 .swatch {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 1.1em;
   padding: clamp(14px, 2vw, 28px);
   font-size: clamp(11px, 1vw, 14px);
   line-height: 1.25;
+}
+.swatch-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.swatch-info > * {
+  display: block;
+}
+/* hover: a soft band of light sweeps across the colour and the labels lift */
+.swatch::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 30%, rgba(255, 255, 255, 0.22) 50%, transparent 70%);
+  transform: translateX(-120%);
+  pointer-events: none;
+}
+@media (hover: hover) {
+  .swatch:hover::after {
+    transform: translateX(120%);
+    transition: transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .swatch:hover .swatch-info {
+    transform: translateY(-6px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .swatch::after {
+    display: none;
+  }
+  .swatch-info {
+    transition: none;
+    transform: none !important;
+  }
 }
 .sec-video {
   display: grid;
@@ -1529,6 +1576,24 @@ body:has(.project-page) {
   width: auto;
   max-width: min(100%, 720px);
   max-height: 86vh;
+}
+/* two clips side by side: each grows by its width/height ratio, so both share one height */
+.sec-video.is-solo .video-frame.is-duo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(10px, 2vw, 28px);
+  width: min(100%, calc(80vh * var(--duo-ratio) + 2 * clamp(16px, 4vw, 56px) + clamp(10px, 2vw, 28px)), 1200px);
+  margin-inline: auto;
+}
+.sec-video.is-solo .video-frame.is-duo video {
+  flex-shrink: 1;
+  flex-basis: 0;
+  min-width: 0;
+  width: 0;
+  max-width: none;
+  max-height: none;
+  height: auto;
 }
 .next-wrap {
   display: flex;
@@ -2054,12 +2119,15 @@ body:has(.project-page) {
 }
 .media-cap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   gap: 16px;
   padding: 14px clamp(0px, 1vw, 14px) 0;
-  font-size: 14px;
-  line-height: 1.3;
-  color: #6b6b73;
+  font-size: 15px;
+  line-height: 1.35;
+  /* near-black from the page's own ink, so captions stay readable on every theme */
+  color: #2b2b31;
+  color: color-mix(in srgb, var(--p-ink, #111111) 82%, transparent);
 }
 .sec-label {
   font-size: 12px;

@@ -210,6 +210,9 @@ export default {
     },
   ],
   projects: {
+    'dar-titawin': {
+      copy: { caps: {"desk": "Pierre taillée et plâtre bleu — le premier accueil.", "sea": "Noyer, palmiers et la mer à perte de vue."} },
+    },
     kinetik: {
       showcase: { label: "Vitrine de l’app", title: "Un workflow qui tourne tout seul.", text: "Le tableau de bord Kinetik en mouvement : une facture qui passe par l’extraction, la réconciliation par l’IA et le grand livre, puis un tour des workflows, agents, finances et intégrations, et la même app sur téléphone." },
         "blurb": "Un cœur ERP autonome — des agents IA qui rapprochent, achètent et auditent, avec l’humain dans la boucle.",
@@ -435,6 +438,7 @@ export default {
       "body": "L’identité tient en trois ingrédients : l’orange broche, la crème de pita et l’encre charbon ; un logotype épais et arrondi ; et une galerie d’habitués illustrés — celui qui découpe, celui qui court et l’ami qui prend toujours le dernier wrap. La bande est partout. Elle court sur les sacs, habille le papier, escalade la broche et fait la une de la bouteille d’Ayran, tandis que trois motifs — personnages, logo et ruban — transforment n’importe quelle surface en Shoowarma en une seconde."
     },
     avren: {
+      copy: { caps: {"red": "Chaque pièce tirée de l’ombre, éclairée là où il faut.", "street": "Hors de l’ombre, dans la ville."} },
       title: "Avren",
       blurb: "Visuels de production pour Avren : lumière, vitesse et ombre pour le lancement d’un vélo électrique.",
       service: "Visuels produit · Rendu 3D",
@@ -442,6 +446,7 @@ export default {
       body: "Les rendus fonctionnent comme une lente révélation : un trait de lumière en pleine vitesse, le cadre qui sort de l’ombre, puis le tube de direction en gros plan, où la barre lumineuse s’intègre au carbone. Une palette monochrome, des dégradés doux et un flou de mouvement gardent l’attention sur la forme, la finition et cette ligne de lumière.",
     },
     'musical-co-working': {
+      copy: { caps: {"lounge": "Marbre, noyer et de quoi s’y enfoncer.", "records": "Des vinyles aux murs, la concentration dans la pièce."} },
       title: 'Coworking musical',
       blurb: 'Un espace de coworking accordé comme un instrument : noyer, acier et son.',
       service: 'Architecture intérieure',
@@ -451,6 +456,7 @@ export default {
       body: 'Nous avons abordé l’espace comme un objet acoustique. Le bois chaleureux absorbe et adoucit, le mur d’acier réfléchit et projette, et les assises basses préservent les perspectives dans toute la pièce. Vinyles, hi-fi et textiles doux installent un rythme plus lent : un lieu pour se concentrer, se réunir ou simplement écouter.',
     },
     dlvrnc: {
+      copy: { caps: {"track": "Piste, rampe, route ouverte — un seul kit pour chaque course."} },
       showcase: { label: "Vitrine du site", title: "La boutique en ligne DLVRNC.", text: "Une boutique de sportswear pensée comme un carnet d’entraînement : nouveautés en tête, collections par sport et un paiement qui ne gêne pas, sur ordinateur comme sur mobile." },
       blurb: 'Identité et direction artistique sportswear, construites autour du mouvement et de l’appartenance.',
       service: 'Identité visuelle de marque',
@@ -483,6 +489,7 @@ export default {
     },
     'dar-titawin': { title: 'Dar Titawin', blurb: 'Une réception sculptée dans le sable et le plâtre, encadrée d’arches en bois.', service: 'Architecture intérieure', client: 'Confidentiel', intro: 'Le rez-de-chaussée d’un hôtel face à la mer à Tétouan — réception, salon et café — inspiré de la Colombe blanche elle-même : enduit à la chaux, bleu andalou et cèdre sculpté.', body: 'Nous avons pensé l’étage comme une seule promenade, de la rue à la mer. Un comptoir de réception taillé comme une pierre brute s’installe sous des arches d’enduit bleu ; un moucharabieh en cèdre abrite le salon et projette une lumière ciselée sur le béton ; et le café s’ouvre entièrement sur la Méditerranée, où noyer, cuir terracotta et marbre noir gardent une palette chaleureuse et ancrée.' },
     nouzha: {
+      copy: { caps: {"emblem": "Un emblème tracé entre courbe et épine.", "fall": "L’acier gravé, saisi en pleine chute."} },
       blurb: 'Identité et direction artistique de parfum : senteur, mémoire et rituel intime.',
       service: 'Identité visuelle de marque',
       eyebrow: 'Nouz’ha — Identité et direction artistique de parfum',
