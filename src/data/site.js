@@ -3,10 +3,10 @@ export const SITE = {
   url: 'https://blueismstudio.com',
   email: 'support@blueismstudio.com',
   handle: '@blueismstudio',
-  location: 'Based In Morocco, Tetouan.',
+  location: 'Based In Morocco.',
   reach: 'Working Worldwide',
   description:
-    'Blueism Studio is an independent design studio in Tetouan, Morocco, crafting brand identities, digital experiences, 3D, motion, automation and interior design.',
+    'Blueism Studio is an independent design studio in Morocco, crafting brand identities, digital experiences, 3D, motion, automation and interior design.',
   socials: [
     { label: 'X', href: 'https://x.com/blueismstudio', icon: 'x' },
     { label: 'Dribbble', href: 'https://dribbble.com/blueismstudio', icon: 'dribbble' },

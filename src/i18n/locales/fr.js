@@ -29,7 +29,7 @@ export default {
   card: { soon: 'Étude de cas bientôt disponible', view: 'voir le projet' },
   footer: {
     startProject: 'Démarrer un projet',
-    location: 'Basé à Tétouan, au Maroc.',
+    location: 'Basé au Maroc.',
     reach: 'Actif dans le monde entier',
     rights: 'Tous droits réservés',
   },
@@ -61,8 +61,10 @@ export default {
     interior: 'Architecture intérieure',
     other: 'Autre chose',
     budgets: ['Moins de 2 000 $', '2 000 – 5 000 $', '5 000 – 10 000 $', '10 000 – 25 000 $', 'Plus de 25 000 $', 'Je ne sais pas encore'],
-    sent1: 'Merci ! Votre messagerie devrait s’ouvrir avec votre brief.',
-    sent2: 'Si ce n’est pas le cas, écrivez-nous à',
+    sent1: 'Merci ! Votre brief est bien parti. Nous revenons vers vous très vite.',
+    sent2: 'Vous pouvez aussi nous écrire à',
+    sending: 'Envoi…',
+    error: 'Une erreur est survenue et votre message n’a pas été envoyé. Réessayez, ou écrivez-nous à',
     back: 'Retour au formulaire',
     faq: 'FAQ',
     mailSubject: 'Nouveau projet',
@@ -92,7 +94,7 @@ export default {
   seo: {
     homeTitle: 'Identité de marque, design numérique et architecture intérieure',
     description:
-      'Blueism Studio est un studio de design indépendant basé à Tétouan, au Maroc, qui crée des identités de marque, des expériences numériques, de la 3D, du motion design, de l’automatisation et de l’architecture intérieure.',
+      'Blueism Studio est un studio de design indépendant basé au Maroc, qui crée des identités de marque, des expériences numériques, de la 3D, du motion design, de l’automatisation et de l’architecture intérieure.',
     aboutTitle: 'À propos',
     aboutDesc:
       'Blueism Studio est un studio de design indépendant qui travaille l’identité de marque, le design numérique et l’architecture intérieure, et construit des marques complètes et des systèmes numériques de A à Z.',

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -11,23 +11,32 @@ import { useI18n } from '../i18n/I18nProvider'
 export default function Contact() {
   const { t, lang, services, faqs } = useI18n()
   const [open, setOpen] = useState(0)
-  const [sent, setSent] = useState(false)
+  const [status, setStatus] = useState('idle') // idle | sending | sent | error
+  const sent = status === 'sent'
+  // When the form appeared — bots submit far faster than a person can type.
+  const startedAt = useRef(Date.now())
 
-  // No backend: compose the brief into an email to the studio.
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault()
-    const f = new FormData(e.currentTarget)
-    const subject = `${t('contact.mailSubject')} — ${f.get('services')} — ${f.get('name')}`
-    const body = [
-      `${t('contact.mailName')}: ${f.get('name')}`,
-      `${t('contact.mailEmail')}: ${f.get('email')}`,
-      `${t('contact.mailService')}: ${f.get('services')}`,
-      `${t('contact.mailBudget')}: ${f.get('budget')}`,
-      '',
-      f.get('message') || '',
-    ].join('\n')
-    window.location.href = `mailto:${SITE.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
-    setSent(true)
+    if (status === 'sending') return
+    const form = e.currentTarget
+    const data = Object.fromEntries(new FormData(form))
+    setStatus('sending')
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...data, lang, elapsed: Date.now() - startedAt.current }),
+      })
+      const json = await res.json().catch(() => ({}))
+      if (!res.ok || !json.ok) throw new Error(json.error || res.statusText)
+      form.reset()
+      startedAt.current = Date.now()
+      setStatus('sent')
+    } catch (err) {
+      console.error('Contact form failed:', err)
+      setStatus('error')
+    }
   }
 
   return (
@@ -62,7 +71,7 @@ export default function Contact() {
                     {SITE.email}
                   </a>
                 </p>
-                <button className="btn-light" onClick={() => setSent(false)}>
+                <button className="btn-light" onClick={() => setStatus('idle')}>
                   {t('contact.back')}
                 </button>
               </motion.div>
@@ -104,9 +113,28 @@ export default function Contact() {
                   <label htmlFor="message">{t('contact.message')}</label>
                   <textarea id="message" name="message" rows={7} dir="auto" placeholder={t('contact.messagePh')} />
                 </FadeUp>
+                {/* Honeypot: invisible to people and screen readers, but bots fill it in. */}
+                <div className="hp-field" aria-hidden="true">
+                  <label htmlFor="bs_hp_url">Leave this field empty</label>
+                  <input id="bs_hp_url" type="text" name="bs_hp_url" tabIndex={-1} autoComplete="new-password" defaultValue="" />
+                </div>
+                {status === 'error' && (
+                  <p className="form-error field-full" role="alert">
+                    {t('contact.error')}{' '}
+                    <a href={`mailto:${SITE.email}`} dir="ltr">
+                      {SITE.email}
+                    </a>
+                  </p>
+                )}
                 <FadeUp className="field-full" delay={0.25}>
-                  <button type="submit" className="btn-light" data-cursor={t('cursor.send')}>
-                    {t('contact.submit')}
+                  <button
+                    type="submit"
+                    className="btn-light"
+                    data-cursor={t('cursor.send')}
+                    disabled={status === 'sending'}
+                    aria-busy={status === 'sending'}
+                  >
+                    {status === 'sending' ? t('contact.sending') : t('contact.submit')}
                   </button>
                 </FadeUp>
               </motion.form>

@@ -26,7 +26,7 @@ export default {
   card: { soon: 'Case Study folgt in Kürze', view: 'Projekt ansehen' },
   footer: {
     startProject: 'Projekt starten',
-    location: 'Mit Sitz in Tétouan, Marokko.',
+    location: 'Mit Sitz in Marokko.',
     reach: 'Weltweit tätig',
     rights: 'Alle Rechte vorbehalten',
   },
@@ -58,8 +58,10 @@ export default {
     interior: 'Innenarchitektur',
     other: 'Etwas anderes',
     budgets: ['Unter 2.000 $', '2.000 – 5.000 $', '5.000 – 10.000 $', '10.000 – 25.000 $', 'Über 25.000 $', 'Noch unklar'],
-    sent1: 'Vielen Dank – Ihr E-Mail-Programm sollte sich mit Ihrer Anfrage öffnen.',
-    sent2: 'Falls nicht, schreiben Sie uns an',
+    sent1: 'Vielen Dank – Ihre Anfrage ist unterwegs. Wir melden uns in Kürze.',
+    sent2: 'Sie erreichen uns auch unter',
+    sending: 'Wird gesendet…',
+    error: 'Etwas ist schiefgelaufen, Ihre Nachricht wurde nicht gesendet. Bitte versuchen Sie es erneut oder schreiben Sie uns an',
     back: 'Zurück zum Formular',
     faq: 'FAQ',
     mailSubject: 'Neues Projekt',
@@ -89,7 +91,7 @@ export default {
   seo: {
     homeTitle: 'Markenidentität, digitales Design & Innenarchitektur',
     description:
-      'Blueism Studio ist ein unabhängiges Designstudio in Tétouan, Marokko, für Markenidentitäten, digitale Erlebnisse, 3D, Motion, Automatisierung und Innenarchitektur.',
+      'Blueism Studio ist ein unabhängiges Designstudio in Marokko, für Markenidentitäten, digitale Erlebnisse, 3D, Motion, Automatisierung und Innenarchitektur.',
     aboutTitle: 'Über uns',
     aboutDesc:
       'Blueism Studio ist ein unabhängiges Designstudio für Markenidentität, digitales Design und Innenarchitektur – wir entwickeln komplette Marken und digitale Systeme von Grund auf.',

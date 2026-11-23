@@ -26,7 +26,7 @@ export default {
   card: { soon: 'Estudo de caso em breve', view: 'ver projeto' },
   footer: {
     startProject: 'Comece um projeto',
-    location: 'Sediados em Tetuão, Marrocos.',
+    location: 'Sediados em Marrocos.',
     reach: 'Atendemos o mundo todo',
     rights: 'Todos os direitos reservados',
   },
@@ -58,8 +58,10 @@ export default {
     interior: 'Design de interiores',
     other: 'Outra coisa',
     budgets: ['Até US$ 2.000', 'US$ 2.000 – 5.000', 'US$ 5.000 – 10.000', 'US$ 10.000 – 25.000', 'Acima de US$ 25.000', 'Ainda não sei'],
-    sent1: 'Obrigado! Seu aplicativo de e-mail deve abrir com o seu briefing.',
-    sent2: 'Se isso não aconteceu, escreva para',
+    sent1: 'Obrigado! Seu briefing já está a caminho. Responderemos em breve.',
+    sent2: 'Você também pode escrever para',
+    sending: 'Enviando…',
+    error: 'Algo deu errado e sua mensagem não foi enviada. Tente novamente ou escreva para',
     back: 'Voltar ao formulário',
     faq: 'PERGUNTAS FREQUENTES',
     mailSubject: 'Novo projeto',
@@ -89,7 +91,7 @@ export default {
   seo: {
     homeTitle: 'Identidade de marca, design digital e de interiores',
     description:
-      'A Blueism Studio é um estúdio de design independente em Tetuão, Marrocos, que cria identidades de marca, experiências digitais, 3D, motion, automação e design de interiores.',
+      'A Blueism Studio é um estúdio de design independente em Marrocos, que cria identidades de marca, experiências digitais, 3D, motion, automação e design de interiores.',
     aboutTitle: 'Sobre',
     aboutDesc:
       'A Blueism Studio é um estúdio de design independente que atua em identidade de marca, design digital e design de interiores, criando marcas completas e sistemas digitais do zero.',
