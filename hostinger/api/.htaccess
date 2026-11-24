@@ -1,0 +1,4 @@
+# Only contact.php may be called from the web; config.php holds the password.
+<Files "config.php">
+  Require all denied
+</Files>
